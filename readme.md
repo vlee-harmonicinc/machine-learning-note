@@ -8,4 +8,5 @@ I have not read all papers. I just drop a short note when I read it from related
 
 # Build
 `sphinx-quickstart`  
+`make latex`
 `make html`

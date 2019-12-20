@@ -1,59 +1,25 @@
 # Useful Links
+
+* [Datasets](links/datasets.md)
+
 ## Papers
-arXiv.org: https://arxiv.org/  
-Papers With Code: https://paperswithcode.com/sota
-## Datasets
-List of datasets for machine learning research: https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
-### Image
-#### ImageNet
->14 million images  
-20000 categories  
-Labeled objects, bounding boxes, descriptive words, SIFT features  
+[arXiv.org](https://arxiv.org/)  
+[Papers With Code](https://paperswithcode.com)  
+[Papers With Code - State of the Art](https://paperswithcode.com/sota)  
 
-#### CIFAR-10
-10*6000
-small, low-resolution
-#### NUS-WIDE
+## Labeling Tools
+### Bounding box
+[OpenLabeling](https://github.com/Cartucho/OpenLabeling)  
+Image labeling in multiple annotation formats:
+* PASCAL VOC (= darkflow)
+* YOLO darknet  
+### Segmentation
+[labelme](https://github.com/wkentaro/labelme)
 
-#### Common Objects in COntext (COCO)
+## Model Visualization
+[netron](https://lutzroeder.github.io/netron/)
 
-### Image grading
-#### MIT-Adobe FiveK Dataset
-https://data.csail.mit.edu/graphics/fivek/
-5,000 photos in DNG format
-An Adobe Lightroom catalog with renditions by 5 experts
-Semantic information about each photo
-
-### Image Segmenation 
-#### PASCAL Visual Object Classes (PASCAL VOC)
-#### PASCAL-Context
-#### Cityscapes
-#### CamVid
-[CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
-RGB-D  
-#### SUN RGB-D
-A RGB-D Scene Understanding Benchmark Suite  
-[Project page](http://rgbd.cs.princeton.edu/)  
-[Challenge](http://rgbd.cs.princeton.edu/challenge.html)  
-
-#### NYU dataset
-https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html
-Tracking
-#### youtube-bb
-
-### Object Tracking
-#### MOT Challenge: Multiple Object Tracking
-https://motchallenge.net/
-detection is provided
-#### OTB2015
-provide one boundary box in a reference frame, then following this items
-http://cvlab.hanyang.ac.kr/tracker_benchmark/datasets.html
-### Face Datasets
-#### Labled Faces in the Wild (LFW)
-#### YouTube Faces (YTF)
-#### MegaFace Challenge
-
-### HDR Datasets
-#### Fairchild
-http://rit-mcsl.org/fairchild//HDR.html
-tone map with multi. exposures, 106 images
+## Hardware
+[A Full Hardware Guide to Deep Learning](https://timdettmers.com/2018/12/16/deep-learning-hardware-guide/)  
+[Which GPU(s) to Get for Deep Learning: My Experience and Advice for Using GPUs in Deep Learning](https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/)  
+[Win10 and Ubuntu 雙系統安裝筆記](https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4)

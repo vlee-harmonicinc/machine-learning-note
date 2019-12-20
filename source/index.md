@@ -4,5 +4,5 @@ Welcome to machine learning note's documentation!
 Contents
 --------
 
-* [Background](background.md)
+* [Background](basic/background.md)
 * [Useful Links](useful_links.md)
