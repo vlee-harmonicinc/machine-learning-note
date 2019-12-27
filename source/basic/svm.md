@@ -2,6 +2,8 @@
 Support-vector machines are supervised learning models with associated learning algorithms that analyze data.
 
 Maximize the margin
+### Hard Margin
+### Soft-margin
 
 ### Kernel Trick
 In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.  

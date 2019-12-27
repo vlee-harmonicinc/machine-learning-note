@@ -10,7 +10,4 @@ Math: find the derivation of loss
 TODO
 
 TODO: move to other page?
-## Image
-### Convolution
-![image convolution](/img/image_convolution.png)
 

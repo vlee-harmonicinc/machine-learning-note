@@ -108,6 +108,7 @@ mapping multiple neruals output to \[0,1]
 could be used for classification (each output is probability)
 ```math
 f_i(x)=\dfrac{e^{x_i}}{\Sigma^J_{j=1} e^{x_j}}
+f_i'(y)=y_i/cdot(1-y_i)
 ```
 where J is the number of neruals in the layer
 ### A-Softmax
