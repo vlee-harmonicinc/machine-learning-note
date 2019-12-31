@@ -105,5 +105,14 @@ For dynamic routing
 vector to vector instead of scalar to scalar
 
 
-## Object detection
+## Topics
 * [Object Detection](/CNN/object_detection/index.md)
+* [Image Translation](/CNN/image_translation/index.md)
+    * [Denoising]
+    * [Super-resolution]
+    * [Colorization]
+    * [Inpaint]
+    * [Style Transfer]
+    * [HDR] ( Bit depth expansion)
+    
+* [OCR (Optical character recognition)] (Image->text translation)
