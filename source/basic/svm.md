@@ -2,7 +2,20 @@
 Support-vector machines are supervised learning models with associated learning algorithms that analyze data.
 
 Maximize the margin
+Find hyperplane satisfying
+```math
+\vec{w}\cdot\vec{x}-b=0
+```
 ### Hard Margin
+```math
+\vec{w}\cdot\vec{x}_i-b\geq 1  \text{ if } y_i=1 \\  \text{or} \\
+\vec{w}\cdot\vec{x}_i-b\leq -1  \text{ if } y_i=-1
+```
+rewritten as
+```math
+y_i(\vec{w}\cdot\vec{x}_i-b)\geq 1
+```
+
 ### Soft-margin
 
 ### Kernel Trick
@@ -14,11 +27,15 @@ see also: [SVM with polynomial kernel visualization](https://www.youtube.com/wat
 ### Linear
 ### Gaussian (radial basis function) RBF
 ```math
-k(x,y)=exp(-\dfrac{||x-y||^2}{2\sigma^2})\\
-k(x_i, x_j)=exp(-\gamma||x_i-x_j||^2)
+k(x,y)=e^{-\dfrac{||x-y||^2}{2\sigma^2}}\\
+k(x_i, x_j)=e^{-\gamma||x_i-x_j||^2}
 ```
 it is the most used non-linear kernel, because the number of parameters is small hence faster speed with good result
 ### Polynomial
+```math
+
+
+```
 ### Sigmoid
 
 ## SVM application

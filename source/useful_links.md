@@ -7,6 +7,12 @@
 [Papers With Code](https://paperswithcode.com)  
 [Papers With Code - State of the Art](https://paperswithcode.com/sota)  
 
+
+[Computer Vision Foundataion open access](http://openaccess.thecvf.com/menu.py)
+[CVPR 2019](http://openaccess.thecvf.com/CVPR2019.py)
+[ICCV]
+[AAAI]
+
 ### summary of papers
 * [ICCV 2019 全部论文下载及解读汇总](http://bbs.cvmart.net/topics/447/iccv2019)
 

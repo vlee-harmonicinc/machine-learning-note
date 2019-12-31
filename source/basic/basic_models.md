@@ -1,4 +1,20 @@
 # Basic models
+## Fully connected
+
+## RNN
+### Layer
+#### LSTM (1997)
+Long Short-Term Memory
+#### GRU (2014)
+Gated recurrent unit  
+simplified variant of LSTM
+### RNN models
+#### seq2seq
+#### attention model
+
+## CNN (convolutional neural network)
+[CNN](/CNN/index.md)
+
 ## Restricted Boltzann machine
 shallow, 2 layer neural networks
 learning 

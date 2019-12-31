@@ -10,12 +10,15 @@ Contents
 * [Loss Functions](/basic/loss_functions.md)  
 * [Optimizer](/basic/optimizer.md)  
 * [Activation Functions](/basic/activation_functions.md)  
-* [Normalization](/basic/normalization.md)  
-```
+* [Normalization](/basic/normalization.md) 
+* [Models](/basic/basic_models.md)
 * [CNN](/CNN/index.md)
-    * [sublevel]()  
+```
+    * [Object Detection](/CNN/object_detection/index.md)
     * [pix2pix]()  
     * [style transfer]()  
     * [HDR]()  
 ```
+* [Issues](/issue.md)
+* [Tricks](/tricks.md)
 * [Useful Links](useful_links.md)
