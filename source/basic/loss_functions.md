@@ -67,14 +67,6 @@ f(y_i,\hat{y}_i)=\dfrac{1}{n}\sum^n_{i=1}D_{KL}(y_i||\hat{y}_i)\\
 =\dfrac{1}{n}\sum^n_{i=1}[y_i\cdot log(\dfrac{y_i}{\hat{y}_i})]\\
 =\dfrac{1}{n}\sum^n_{i=1}(y_i\cdot log(y_i))-\dfrac{1}{n}\sum^n_{i=1}(y_i\cdot log(\hat{y}_i))
 ```
-## Face
-TODO: link to face section
-[Pair Loss](/CNN/face.md)
-[FaceNet-Triplet Loss](/CNN/face.md)
-Centre Loss
-SphereFace
-CosFace
-ArcFace
 
 ## CNN Loss
 [Loss Functions for Image Restoration with Neural Networks](https://arxiv.org/pdf/1511.08861.pdf)
@@ -97,6 +89,20 @@ encourage spatial smoothness
 #### Kernel loss
 ### Adversarial loss - GAN
 depends, usually a binary classifier loss
+
+## Detection
+### Focal Loss
+[Focal Loss](/CNN/object_detection/focal_loss.md)  
+
+## Face
+TODO: link to face section
+[Pair Loss](/CNN/face.md)
+[FaceNet-Triplet Loss](/CNN/face.md)
+Centre Loss
+SphereFace
+CosFace
+ArcFace
+
 ## Divergence loss (on probability)
 measuring the similarity between two probability distributions
 ### KL-Divergence

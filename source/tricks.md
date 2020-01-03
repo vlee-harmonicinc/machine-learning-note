@@ -10,6 +10,8 @@ i.i.d (independent and identically distributed)
 #### OHEM (2016)
 [Training Region-based Object Detectors with Online Hard Example Mining](https://arxiv.org/abs/1604.03540)
 #### OHEM + sampling
+#### Focal Loss
+[Focal Loss](/CNN/object_detection/focal_loss.md)  
 ## Dropout
 [AlexNet](CNN/index#alexnet-2012)  
 solve: overfit

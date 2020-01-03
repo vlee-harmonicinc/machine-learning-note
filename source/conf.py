@@ -10,9 +10,10 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+
 import recommonmark
 from recommonmark.transform import AutoStructify
 import jieba # for chinese search engine
@@ -99,14 +100,31 @@ latex_elements = {
 html_search_language = 'zh'
 
 html_search_options = {'dict': jieba.DEFAULT_DICT}
+import numpy as np
+def url_prefix_patch(url):
+    '''
+    It incorrectly repeat the prefix, remove it
+    '''
+    relative_path = url.split('/')
+    index_first = np.argwhere(relative_path==relative_path[0])
+    if len(index_first>1):
+        max_len = index_first[1]-index_first[0]
+        for i in index_first[1::-1]:
+            if relative_path[i:i+max_len]==relative_path[0:max_len]:
+                return '/'.join(relative_path[i:])
+    return url
+
+doc_host_root = 'http://localhost:8080/build/html/'
 
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'enable_auto_toc_tree': True,
 #             'auto_toc_tree_section': 'Contents',
+            'auto_toc_maxdepth': 3, 
             'enable_math': True,
             'enable_inline_math': True,
             'enable_eval_rst': True,
-#             'url_resolver': lambda url: github_doc_root + url,
+#             'url_resolver': url_prefix_patch,
+#             'url_resolver': lambda url: doc_host_root + url,
             }, True)
     app.add_transform(AutoStructify)

@@ -13,12 +13,6 @@ Contents
 * [Normalization](/basic/normalization.md) 
 * [Models](/basic/basic_models.md)
 * [CNN](/CNN/index.md)
-```
-    * [Object Detection](/CNN/object_detection/index.md)
-    * [pix2pix]()  
-    * [style transfer]()  
-    * [HDR]()  
-```
 * [Issues](/issue.md)
 * [Tricks](/tricks.md)
 * [Useful Links](useful_links.md)

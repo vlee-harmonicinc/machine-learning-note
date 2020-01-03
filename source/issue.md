@@ -18,3 +18,5 @@ reason: input of layer/activation is not i.i.d. when there is a change in the in
 cause problem: unstable learning  
 good solutions: Normalization
 bad solution: lower learning rate
+## Latent Space
+better be independent and follow () distribution so that it could be manipulated

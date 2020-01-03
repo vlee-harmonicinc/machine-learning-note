@@ -1,4 +1,30 @@
 # CNN
+## Contents
+* [Concept](#concept)
+* [Mian](#main) some important models
+## Detection
+* [Object Detection](/CNN/object_detection/object_detection.md)
+```
+* [Tracking]
+* [Video Detection/ Tracking]
+```
+* [Segmentation](/CNN/object_detection/segmentation.md)
+* [Temporal Action Proposal Genration](/CNN/object_detection/temporal_proposal.md)
+```
+* [Face]
+* [Pose]
+```
+```* [Object Detection](/CNN/object_detection/index.md)```
+* [Image-to-image Translation](/CNN/image_translation/index.md)
+```
+    * [Denoising]
+    * [Super-resolution]
+    * [Colorization]
+    * [Inpaint] e.g. deepfake
+    * [Style Transfer]
+    * [HDR] (Bit depth expansion)
+* [OCR (Optical character recognition)] (Image->text translation)
+```
 
 ## Concept
 ### Image Convolution
@@ -103,16 +129,3 @@ disadv: 	higher memory requirement
 [Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829)
 For dynamic routing
 vector to vector instead of scalar to scalar
-
-
-## Topics
-* [Object Detection](/CNN/object_detection/index.md)
-* [Image Translation](/CNN/image_translation/index.md)
-    * [Denoising]
-    * [Super-resolution]
-    * [Colorization]
-    * [Inpaint]
-    * [Style Transfer]
-    * [HDR] ( Bit depth expansion)
-    
-* [OCR (Optical character recognition)] (Image->text translation)

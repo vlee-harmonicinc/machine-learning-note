@@ -3,18 +3,28 @@
 * [Datasets](links/datasets.md)
 
 ## Papers
-[arXiv.org](https://arxiv.org/)  
-[Papers With Code](https://paperswithcode.com)  
-[Papers With Code - State of the Art](https://paperswithcode.com/sota)  
+* [arXiv.org](https://arxiv.org/)  
+* [Papers With Code](https://paperswithcode.com)  
+* [Papers With Code - State of the Art](https://paperswithcode.com/sota)  
+* [arxiv-sanity](http://www.arxiv-sanity.com/top)
 
-
-[Computer Vision Foundataion open access](http://openaccess.thecvf.com/menu.py)
-[CVPR 2019](http://openaccess.thecvf.com/CVPR2019.py)
-[ICCV]
-[AAAI]
+* [Computer Vision Foundataion open access](http://openaccess.thecvf.com/menu.py)
+* [CVPR 2019](http://openaccess.thecvf.com/CVPR2019.py)
+* [ICCV]
+* [AAAI]
 
 ### summary of papers
 * [ICCV 2019 全部论文下载及解读汇总](http://bbs.cvmart.net/topics/447/iccv2019)
+
+## Discussion
+* [reddit: r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
+* [PaperWeekly](http://www.paperweekly.site/)
+
+## News
+* [机器之心](https://www.jiqizhixin.com/) 最新->理論  
+
+## Review Survey
+* The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches
 
 ## Labeling Tools
 ### Bounding box

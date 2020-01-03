@@ -1,11 +1,9 @@
-# Object detection
+# Detection
 
-* [Object detection and recognition]
-* [Ojbect Tracking]
+* [Object Detection](/CNN/object_detection/object_detection.md)
+* [Tracking]
 * [Video Detection/ Tracking]
-* [Segmentation]() (Pixel-wise labelling)
-
-* [Face Related]
+* [Segmentation](/CNN/object_detection/segmentation.md)
+* [Temporal Action Proposal Genration](/CNN/object_detection/temporal_proposal.md)
+* [Face]
 * [Pose]
-
-Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
