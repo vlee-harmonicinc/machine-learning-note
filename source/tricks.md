@@ -28,3 +28,6 @@ if the number of filters exceeded 1000, the residual variants started to exhibit
 caling down the residuals before adding them to the previous layer activation seemed to stabilize the training. 
 ## visual gradient vanishing
 [how-to-fix-these-vanishing-gradients](https://datascience.stackexchange.com/questions/28835/how-to-fix-these-vanishing-gradients)
+## Batch size
+[Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour(2017)](https://arxiv.org/abs/1706.02677)
+Solve difficulties of large minibatches with distributed *synchronous* stochastic gradient descent(SGD)  

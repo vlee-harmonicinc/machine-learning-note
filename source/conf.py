@@ -34,6 +34,7 @@ extensions = [
     'sphinx_rtd_theme',
     'recommonmark',
     'sphinx.ext.autosectionlabel', # Auto-generate section labels.
+    'sphinx_markdown_tables', # rendering markdown tables
 #     'sphinx.ext.imgmath',
 #     'sphinx.ext.mathjax',
 ]
@@ -120,7 +121,7 @@ def setup(app):
     app.add_config_value('recommonmark_config', {
             'enable_auto_toc_tree': True,
 #             'auto_toc_tree_section': 'Contents',
-            'auto_toc_maxdepth': 3, 
+            'auto_toc_maxdepth': 2, 
             'enable_math': True,
             'enable_inline_math': True,
             'enable_eval_rst': True,

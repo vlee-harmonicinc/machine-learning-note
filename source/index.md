@@ -1,6 +1,8 @@
 Welcome to machine learning note's documentation!
 =================================================
 
+This notes breifly mark some paper to keep track the development of each topic, for understanding the contribution of each paper.
+
 Contents
 --------
 
@@ -13,6 +15,7 @@ Contents
 * [Normalization](/basic/normalization.md) 
 * [Models](/basic/basic_models.md)
 * [CNN](/CNN/index.md)
+* [Generative Models](/generative_models.md)
 * [Issues](/issue.md)
 * [Tricks](/tricks.md)
 * [Useful Links](useful_links.md)

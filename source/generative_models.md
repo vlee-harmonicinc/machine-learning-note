@@ -1,6 +1,6 @@
 ## Generative Models
 ### GAN
-[GAN page](GAN.md)
+* [GAN page](/GAN.md)
 
 ### AutoEncoder, AE
 Usage:

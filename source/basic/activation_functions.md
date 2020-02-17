@@ -4,9 +4,9 @@ Introduce non-linearity into the output of a neuron
 ```math
     step(x)= \lambda
 \begin{cases}
-    0             , & \text{if } x< 0\\
-    0.5           , & \text{if } x= 0\\
-    1             , & \text{if } x\> 0
+    0              & \text{if } x< 0\\
+    0.5            & \text{if } x= 0\\
+    1              & \text{if } x\> 0
 \end{cases}
 ```
 could be used for hash layer
@@ -14,9 +14,9 @@ could be used for hash layer
 ```math
     sign(x)= \lambda
 \begin{cases}
-    -1            , & \text{if } x< 0\\
-    0             , & \text{if } x= 0\\
-    1             , & \text{if } x\> 0
+    -1             & \text{if } x< 0\\
+    0              & \text{if } x= 0\\
+    1              & \text{if } x\> 0
 \end{cases}
 ```
 could be used for hash layer

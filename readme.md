@@ -4,15 +4,16 @@ It was written in google doc as a personal note. But it become inconvenient when
 I have not read all papers. I just drop a short note when I read it from related work or reference list. I hope I will have time to read it someday :P  
 
 # Requirement
-`pip3 install sphinx sphinx-autobuild sphinx_rtd_theme recommonmark jieba`
+`pip3 install sphinx sphinx-autobuild sphinx_rtd_theme recommonmark jieba sphinx_markdown_tables`  
 sphinx: build rst to html  
 sphinx_rtd_theme: readthedoc theme  
 recommonmark: sphinx extension for markdown  
 jieba: chinese search engine  
+sphinx_markdown_tables: render table
 
 # Build
 ## config
-This section should be done
+This section should be skipped since it already generated, but if you want to config your own page, run
 `sphinx-quickstart`  
 ## build html
 `make html`

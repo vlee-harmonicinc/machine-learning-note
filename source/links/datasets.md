@@ -15,6 +15,10 @@ CIFAR-100: 100 classes containing 600 images each
 ### NUS-WIDE
 
 #### Common Objects in COntext (COCO)
+[COCO - Complex Adaptive Systems Laboratory](http://complexity.cecs.ucf.edu/coco/)
+Number of images in the dataset: 330,000 images while more than 200,000 are labeled (roughly equal halves for training and validation+test)  
+Number of classes: 80 object categories, 91 stuff categories  
+Image resolution: 640×480
 
 #### Open Image
 [Open Image Dataset V5](https://storage.googleapis.com/openimages/web/index.html) by google

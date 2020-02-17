@@ -2,11 +2,28 @@
 ## L2 & L1 Norm (regularization)
 ### L2 - Square
 ```math
-f(y,\hat{y})=\sum^N_{i=1} (y_i-\hat{y_i})^2
+&L_2(x)=x^2\\
+&f(y,\hat{y})=\sum^N_{i=1} (y_i-\hat{y_i})^2
 ```
 ### L1 - Absolute
 ```math
-f(y,\hat{y})=\sum^N_{i=1} |y_i-\hat{y}_i|
+&L_1(x)=|x|\\
+&f(y,\hat{y})=\sum^N_{i=1} |y_i-\hat{y}_i|
+```
+### Smooth L1
+```math
+\text{smooth L}_1(x)=
+\begin{cases}
+0.5x^2   & if |x|<1 \\
+|x|-0.5  & otherwise
+\end{cases}
+```
+```math
+&f(y,\hat{y})=
+\begin{cases}
+0.5(y-\hat{y})^2   & \text{if } |y-\hat{y}|<1 \\
+|y-\hat{y}|-0.5    & otherwise
+\end{cases}
 ```
 ## Regression Loss Functions
 ### MSE - Mean Squared Error
@@ -29,8 +46,9 @@ f(\vect{y},\hat{\vect{y}})=-\dfrac{\vect{y} \cdot \hat{\vect{y}}}{||\vect{y}||_2
 
 ## Binary Classification Loss Functions
 ### Binary Cross-Entropy
+``$`\hat{y}`$`` is prediction, y is ground truth
 ```math
-f(y,\hat{y})=-\dfrac{1}{n}\sum^n_{i=1}[y_i log(\hat{y}_i)+(1-\hat{y}_i) log(y_i)]
+f(y,\hat{y})=-\dfrac{1}{n}\sum^n_{i=1}[y_i log(\hat{y}_i)+(1-y_i) log(1-\hat{y}_i)]
 ```
 ### Hinge Loss
 max-margin objective
@@ -45,7 +63,7 @@ f(y,\hat{y})=\dfrac{1}{n}\sum^n_{i=1}(max(0,m-y_i\cdot\hat{y}_i))^2
 ## Multi-Class Classification Loss Functions
 ### Multi-Class Cross-Entropy Loss
 ```math
-f(y,\hat{y})=-\sum^M_{c=1}y_{c}log(\hat{y}_{c})
+f(y,\hat{y})=-\sum^M_{c=1}y_c log(\hat{y}_c)
 ```
 M: total number of class
 ### Softmax Loss, Negative Logarithmic Likelihood, NLL
