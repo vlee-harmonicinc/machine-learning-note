@@ -5,9 +5,7 @@ This notes breifly mark some paper to keep track the development of each topic, 
 
 Contents
 --------
-
-* [Linear Regession](/basic/linear_regression.md)
-* [Support Vector Machine](/basic/svm.md)
+* [Algorithm](/algorithm/index.md)
 * [Neural Network](/basic/neural_network.md)
 * [Loss Functions](/basic/loss_functions.md)  
 * [Optimizer](/basic/optimizer.md)  
@@ -16,6 +14,8 @@ Contents
 * [Models](/basic/basic_models.md)
 * [CNN](/CNN/index.md)
 * [Generative Models](/generative_models.md)
+* [NLP](/NLP/index.md)
+* [AutoML](/AutoML/index.md)
 * [Issues](/issue.md)
 * [Tricks](/tricks.md)
-* [Useful Links](useful_links.md)
+* [Useful Links](/links/useful_links.md)

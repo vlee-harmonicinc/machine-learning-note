@@ -1,9 +1,10 @@
-# Non-neural network methods
-## Linear Regression
-[Linear Regression](linear_regression.md)
+## Contents
+* [Linear Regession](/algorithm/linear_regression.md)
+* [Classifier](/algorithm/classifier.md)
+
 ## Logistic Regression
 ## Support Vector Machine, SVM
-[Support Vector Machine](svm.md)
+[Support Vector Machine](/algorithm/classifier.md)
 ## K-Nearest Neighbors,KNN
 supervised learning
 For classification:  
@@ -23,5 +24,4 @@ clustering
 ## Decision Tree
 ## Random Forest
 ## Naive Bayes
-## Dimensional Reduction
 ## Gradient Boosting

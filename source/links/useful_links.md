@@ -1,6 +1,6 @@
 # Useful Links
 
-* [Datasets](links/datasets.md)
+* [Datasets](/links/datasets.md)
 
 ## Papers
 * [arXiv.org](https://arxiv.org/)  
@@ -19,6 +19,9 @@
 ## Discussion
 * [reddit: r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
 * [PaperWeekly](http://www.paperweekly.site/)
+
+## Blog
+* [Google AI Blog](https://ai.googleblog.com/)
 
 ## News
 * [机器之心](https://www.jiqizhixin.com/) 最新->理論  
