@@ -113,13 +113,7 @@ depends, usually a binary classifier loss
 [Focal Loss](/CNN/object_detection/focal_loss.md)  
 
 ## Face
-TODO: link to face section
-[Pair Loss](/CNN/face.md)
-[FaceNet-Triplet Loss](/CNN/face.md)
-Centre Loss
-SphereFace
-CosFace
-ArcFace
+see [Face Feature Embedding](/CNN/object_detection/face.html#face-feature-embedding)
 
 ## Divergence loss (on probability)
 measuring the similarity between two probability distributions
