@@ -1,3 +1,4 @@
+# Algorithm
 ## Contents
 * [Linear Regession](/algorithm/linear_regression.md)
 * [Classifier](/algorithm/classifier.md)
@@ -16,7 +17,6 @@ Given a test instance i, find the k closest neighbors and their value
 Predict i’s value as the mean of the value of the k nearest neighbors
 
 Could be used directly without training. "Training" process is building a index for searching neighbors faster.
-### k
 small k-> overfitting  
 large k-> underfitting  
 ## K-Means

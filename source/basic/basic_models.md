@@ -27,7 +27,7 @@ application: classification, collaborative filtering, feature learning
 (better improve activation function, rarely use now)
 
 ## Generative Models
-[Generative Models](generative_models.md)
+[Generative Models](/generative_models/index.md)
 
 ## Siamese network (IJPRAI 1993)
 [Signature Verification using a "Siamese" Time Delay Neural Network](https://papers.nips.cc/paper/769-signature-verification-using-a-siamese-time-delay-neural-network.pdf)

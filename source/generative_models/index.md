@@ -1,6 +1,7 @@
 ## Generative Models
 ### GAN
-* [GAN page](/GAN.md)
+* [GAN page](/generative_models/GAN.md)
+* [GAN_for_data_augmentation.md](/generative_models/GAN_for_data_augmentation.md)
 
 ### AutoEncoder, AE
 Usage:
@@ -44,11 +45,3 @@ Generative Models - OpenAI](https://openai.com/blog/glow/)
 BIG disadvantage: computation cost for training is too high  
 256x256 high resolution face is in trained with 40 GPU for about a week. ~1 year for 1 GPU _(:3 J L)_
 [github issue #37: anyone reproduced the celeba-HQ results in the paper](https://github.com/openai/glow/issues/37)
-## Latent Space
-Latent Space of encoder could be manipulated
-### Process
-input: unlabelled dataset to train enco
-1. Train encoder-decoder with unlabelled dataset
-2. Obtain average encoding of positive and negative inputs from labelled dataset
-3. Get manipulation vector by taking difference
-4. Manipulate new x_input along z_manipulate

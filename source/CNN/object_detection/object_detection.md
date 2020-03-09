@@ -306,6 +306,8 @@ result: balance training time while the accuracy and inference time still compar
 
 MS: multi. scale
 
+## More
+* [Two-stage Detector](/CNN/object_detection/two-stage_detector.md)
 
 
 
