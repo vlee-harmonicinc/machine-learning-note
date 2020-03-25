@@ -25,10 +25,6 @@ Feature Enhance Module (FEM)
 
 ## Face Feature Embedding
 Could used for recognition with simple classifier
-### AutoEncoder
-train to output same data of input / other task such as classification  
-take intermediate bottleneck layer as representation  
-reduce dimension with PCA  
 
 ### DDML (CVPR 2014)
 [Discriminative Deep Metric Learning for Face Verification in the Wild](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Hu_Discriminative_Deep_Metric_2014_CVPR_paper.pdf)
@@ -66,7 +62,8 @@ admits easier implementation and relieves the need for joint supervision from th
 
 ### ArcFace
 [ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/abs/1801.07698)
-![](img/ArcFace.png)  
 Implementation: [https://github.com/deepinsight/insightface]  
 RetinaNet: detection  
 InsightNet: embedding  
+![](img/ArcFace.png)  
+![](img/margin_loss_.png)

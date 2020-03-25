@@ -13,8 +13,11 @@
 * [ICCV]
 * [AAAI]
 
-### summary of papers
+### Papers Summary
 * [ICCV 2019 全部论文下载及解读汇总](http://bbs.cvmart.net/topics/447/iccv2019)
+
+## Book
+* [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville  
 
 ## Discussion
 * [reddit: r/MachineLearning](https://www.reddit.com/r/MachineLearning/)

@@ -1,7 +1,7 @@
 # Representation Learning
-usage: 
-1. manipulate output of generative models
-2. Transfer learning, embedding feature for classification / recognition / other task
+Usage: 
+1. Manipulate output of generative models
+2. Transfer learning, embedding feature for other task (e.g. faceNet for face recognition, word2vec for NLP)
 
 ## Latent Space
 Latent Space of encoder
@@ -13,9 +13,10 @@ input: unlabelled dataset to train encoder
 4. Manipulate new x_input along z_manipulate
 
 ## Embedding Models
+#### autoencoder
+> The quintessential example of a representation learning algorithm is theau-toencoder. An autoencoder is the combination of anencoderfunction, whichconverts the input data into a diﬀerent representation, and adecoderfunction,which converts the new representation back into the original format. Autoencodersare trained to preserve as much information as possible when an input is runthrough the encoder and then the decoder, but they are also trained to make thenew representation have various nice properties. Diﬀerent kinds of autoencodersaim to achieve diﬀerent kinds of properties. --Deep Learning
 #### word2vec
 #### faceNet
 ## Generative models
-### InfoGAN(NIPS)
-[InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://papers.nips.cc/paper/6399-infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.pdf)
-* TODO!!
+### InfoGAN(NIPS 2016)
+[generative_models/GAN.md#InfoGAN(NIPS 2016)](generative_models/GAN#InfoGAN-NIPS-2016)

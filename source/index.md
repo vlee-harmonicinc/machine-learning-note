@@ -5,6 +5,7 @@ This notes breifly mark some paper to keep track the development of each topic, 
 
 Contents
 --------
+* [Math](/math/index.md)
 * [Algorithm](/algorithm/index.md)
 * [Neural Network](/basic/neural_network.md)
 * [Loss Functions](/basic/loss_functions.md)  

@@ -17,9 +17,6 @@ x,y coordinates are augmented with third dimension which is a function of pixel'
 Compression, image representation, image filter approximation
 The task of computing the operator and fitting the recipe is offloaded to the cloud while the mobile device need only apply the recipe, thereby saving time and energy
 [Bilateral Guided Upsampling (2016)](https://people.csail.mit.edu/hasinoff/pubs/ChenEtAl16-bgu.pdf)
-## pix2pix
-used as baseline
-[pix2pix](#pix2pix)
 ## Contribution
 targeting photographic transformation, which are often well-approximated with linear operation in bilateral space. Much faster than image-to-image transformation
 1. Slicing: perform prediction in low-resolution bilateral grid

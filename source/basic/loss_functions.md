@@ -92,21 +92,8 @@ f(y_i,\hat{y}_i)=\dfrac{1}{n}\sum^n_{i=1}D_{KL}(y_i||\hat{y}_i)\\
 compare pixel by pixel
 Blurry results because Euclidean distance is minimized by averaging all plausible output
 e.g. MAE, MSE
-### Perceptual Loss (ECCV 2016)
-[Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/pdf/1603.08155.pdf)
-compare two image based on high-level representations (based on human understanding) from pretrained CNN
-e.g. autoencoder, VGG loss ( pretrained for classification), individual features 
-#### Feature Reconstruction Loss
-Euclidean distance between feature representation, computed by the loss network
-#### Style Reconstruction Loss
-penalize difference in style  
-reshape layer to Gram-Matrix (relations between feature)
-![](img/perceptual_loss.png)
-#### Total Variation Regularization
-encourage spatial smoothness
-#### Kernel loss
-### Adversarial loss - GAN
-depends, usually a binary classifier loss
+### Perceptual Loss
+[Style Transfer/Perceptual Loss](/generative_models/style_transfer#perceptual-loss-eccv-2016)
 
 ## Detection
 ### Focal Loss

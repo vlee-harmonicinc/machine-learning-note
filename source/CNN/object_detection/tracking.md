@@ -1,3 +1,7 @@
+# Tracking
+1. with sequence of detection results, matchs same object
+2. with reference frame, keep tracking same object
+
 # Tracking Based on detection sequence
 Multi-Object Tracking Challenge:[MOT Challenge](https://motchallenge.net/)  
 Great summay: [Multi-Object-Tracking-Paper-List](https://github.com/SpyderXu/multi-object-tracking-paper-list)
