@@ -26,7 +26,15 @@
 ##### Feature generation
 ##### Feature encoding
 
+## Papers
+### MnasNet (CVPR 2019)
+[MnasNet: Platform-Aware Neural Architecture Search for Mobile](https://arxiv.org/abs/1807.11626) by Google  
 
+### EfficientNet (ICML 2019)
+[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) by Google Brain  
+[Blog](https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html) | 
+[Code: tensorflow/tpu/models/official/efficientnet](https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet)
+[如何评价谷歌大脑的EfficientNet？ - 知乎](https://www.zhihu.com/question/326833457)
 
 ## Others
 [Google's AutoML: Cutting Through the Hype](https://www.fast.ai/2018/07/23/auto-ml-3/)

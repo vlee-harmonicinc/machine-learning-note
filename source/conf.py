@@ -129,3 +129,4 @@ def setup(app):
 #             'url_resolver': lambda url: doc_host_root + url,
             }, True)
     app.add_transform(AutoStructify)
+    app.add_stylesheet('css/style.css')

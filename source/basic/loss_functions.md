@@ -111,9 +111,4 @@ smoothen version of KL divergence via
 D_{JS}(p||q)=\dfrac{1}{2}D_{KL}(p||\dfrac{p+q}{2})+\dfrac{1}{2}D_{KL}(q||\dfrac{p+q}{2})
 ```
 ### Wasserstein distance= Earth-Mover(EM) distance (NIPS 2017)
-[WGAN](https://docs.google.com/document/d/19T7L1ZXNq-WNtDqxcaZ8wnb2UXTR8JdaXygqxZS3ifQ/edit#heading=h.j14fnetnl1e)
-//TODO: move to a WGAN section
-the minimum cost of transporting mass in converting the data distribution q to the data distribution p
-solve: vanishing gradients in GAN casued by good discriminator + bad generator
-![](img/WGAN_critic.png)
-
+[WGAN](/generative_models/GAN.html#wgan-icml-2017)

@@ -205,14 +205,14 @@ addresses 2 limitations of anchor-based detection:
 
 
 ## CenterNet: Keypoint Triplets for Object Detection (ICCV 2019)
-[CenterNet: Keypoint Triplets for Object Detection](https://arxiv.org/abs/1904.08189)
+[CenterNet: Keypoint Triplets for Object Detection](https://arxiv.org/abs/1904.08189)  
 [中科院牛津华为诺亚提出CenterNet，one-stage detector可达47AP，已开源！](https://zhuanlan.zhihu.com/p/62789701)  
 detect centre point for context information to reduce incorrect bounding boxes
 backbone  -> corner heatmaps -> embeddings + offset ( same as CornerNet)
          |-> center heatmaps -> offset, for checking if there is a center keypoint of the same class falling within its central region
 
 ## ExtremeNet (CVPR 2019)
-[https://arxiv.org/abs/1901.08043](Bottom-up Object Detection by Grouping Extreme and Center Points)
+[Bottom-up Object Detection by Grouping Extreme and Center Points](https://arxiv.org/abs/1901.08043)  
 based on [CornerNet](#cornernet-eccv-2018)  
 predict 5 heatmaps: top, left, bottom, right, center + 4 offset map: top, left, bottom, right  
 No embedding, brute center grouping  
@@ -220,9 +220,9 @@ code: [xingyizhou/ExtremeNet (PyTorch v0.4.1)](https://github.com/xingyizhou/Ext
 Disadvantage: for single-scale testing, AP lower than CornerNet, for larger objects. It is probably due to center response map is not accurate enough to perform well on large objects.
 
 ## CenterNet: Objects as Points (2019)
-[Objects as Points](https://arxiv.org/abs/1904.07850)  
+[Objects as Points](https://arxiv.org/abs/1904.07850) by same Author of [ExtremeNet](#extremenet-cvpr-2019)  
 It is NOT [CenterNet: Keypoint Triplets for Object Detection](#centernet-keypoint-triplets-for-object-detection-iccv-2019)  
-code: [xingyizhou/CenterNet (pyTorch)](https://github.com/xingyizhou/CenterNet), Same Author of [ExtremeNet](#extremenet-cvpr-2019)  
+code: [xingyizhou/CenterNet (pyTorch)](https://github.com/xingyizhou/CenterNet)  
 output: heatmap of center points (# of class channel) + width, height of pixel location (2 channels) + offset (2 channels)
 ### From points to bounding boxes (Inference)
 0. Get network output keypoints ``$`\hat{Y}`$`` x number of class, offset ``$`O`$`` x 2 channels (x,y) and size ``$`S`$`` x 2 channels
@@ -260,6 +260,13 @@ CenterNet is unable to predict <0.1% objects due to collision in center points. 
 According to [issue 269: Comparing with ExtremeNet and CornerNet](https://github.com/xingyizhou/CenterNet/issues/269)  
 , the paper is rejected because it is not all better than ExtremeNet. But it is faster than ExtremeNet.
 
+## FCOS (ICCV 2019)
+[FCOS: Fully Convolutional One-Stage Object Detection](https://arxiv.org/abs/1904.01355)  
+[code](https://github.com/tianzhi0549/FCOS)
+
+## MatrixNet (ICCV 2019)
+[Matrix Nets: A New Deep Architecture for Object Detection](https://arxiv.org/abs/1908.04646v2)  
+[pyTorch](https://github.com/arashwan/matrixnet)
 
 ## TTFNet (AAAI 2020)
 [Training-Time-Friendly Network for Real-Time Object Detection](https://arxiv.org/abs/1909.00700)  

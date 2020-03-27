@@ -19,4 +19,4 @@ input: unlabelled dataset to train encoder
 #### faceNet
 ## Generative models
 ### InfoGAN(NIPS 2016)
-[generative_models/GAN.md#InfoGAN(NIPS 2016)](generative_models/GAN#InfoGAN-NIPS-2016)
+[generative_models/GAN.md#InfoGAN(NIPS 2016)](generative_models/GAN#infogan-nips-2016)

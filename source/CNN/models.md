@@ -75,3 +75,8 @@ vector to vector instead of scalar to scalar
 ## Deep Layer Aggregation, DLA (CVPR 2018)
 [Deep Layer Aggregation](https://arxiv.org/abs/1707.06484)  
 image classification network with hierarchical skip connections
+
+## CSPNet (2019)
+[CSPNet: A New Backbone that can Enhance Learning Capability of CNN](https://arxiv.org/abs/1911.11929v1)  
+[Darknet code](https://github.com/WongKinYiu/CrossStagePartialNetworks) | 
+[AlexeyAB darknet](https://github.com/AlexeyAB/darknet/issues/4406)  
