@@ -23,3 +23,4 @@ Contents
 * [Issues](/issue.md)
 * [Tricks](/tricks.md)
 * [Useful Links](/links/useful_links.md)
+* [Blog](/blog/index.md)

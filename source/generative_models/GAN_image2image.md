@@ -27,9 +27,9 @@ first proposed in Equation 6 of this paper
 [Project](https://junyanz.github.io/CycleGAN/)| 
 [Torch](https://github.com/junyanz/CycleGAN) | 
 [pyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) | 
-[CVPR2018 slides](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/CycleGAN.pdf)
+[CVPR2018 slides](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/CycleGAN.pdf)  
 Could be applyed on any **unapired** datasets (better if two datasets share similar visual content)  
-![](img/cycleGAN.png)
+![](img/cycleGAN_result.png)
 ![](img/cycle-consistency_loss.png)
 
 ## Augmented CycleGAN (ICML 2018)
@@ -44,6 +44,9 @@ Apart from generator, also have 2 encoders ``$`E_A: A \times B → Z_a, E_B: B \
 Could apply specified style from input_reference to input_source, as a one-to-many transformation  
 ![](img/paired_CycleGAN_result.png) ![](img/paired_CycleGAN_FG.png)
 pre-train makeup removal function F(many-to-one) with CycleGAN first, then alternate the training of makeup transfer function G (one-to-many)
+
+## StarGAN (CVPR 2018)
+## ComboGAN (CVPR 2018)
 
 ## Progressive GAN (ICLR 2018)
 [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196.pdf) by Nvidia  

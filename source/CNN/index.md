@@ -1,9 +1,6 @@
 # CNN
-## Contents
 * [Models](/CNN/models.md)
 * [Image-to-Image Translation](/CNN/img2img/index.md)
-* [Video Enhancement](/CNN/video_enhancement.md)
-* [Image-to-Text]() (image to tags, image to caption, etc...)
 * [Optical character recognition, OCR](/CNN/optical_character_recognition.md)
 ## Detection
 * [Object Detection](/CNN/object_detection/object_detection.md)
