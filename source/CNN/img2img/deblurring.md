@@ -31,3 +31,5 @@ revert NINJA commit (b15a520d660e4366e10bd1110398c731da1f1f6c)
 ### DeblurGAN-v2 (ICCV 2019)
 [DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better](https://arxiv.org/abs/1908.03826)
 [pyTorch](https://github.com/TAMU-VITA/DeblurGANv2)
+* Framework: introduce [FPN](/CNN/object_detection/object_detection.html#fpn-cvpr-2017) to image restoration
+* Backbone: use [Inception-ResNet-v2](/CNN/models.html#resnet-2015-cvpr-2016) for quality, [MobileNet](/CNN/light-weight_models.html#mobilenet-v2-cvpr-2018) for speed

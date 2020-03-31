@@ -6,7 +6,7 @@ MMD -> human drawed Anime
 TODO: need to collect data and parse frame...how much sample is needed? how to handle resolution?
 play with cycleGAN's dataset and have a taste first...
 ## Trying cycleGAN's dataset
-sadly I only have a poor RTX 2080, which only could fit 2 batch.
+sadly I only have a poor RTX 2070, which only could fit 2 batch.
 ### horse2zebras
 Tried pyTorch CycleGAN (Python 3 + pyTorch 1.4) to run horse2zebras, superisingly good :D  Expecially horse2zebras. 
 -30/03/2020

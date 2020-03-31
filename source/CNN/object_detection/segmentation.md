@@ -40,6 +40,7 @@ Atrous Spatial Pyramid Pooling, ASPP
 [Some](https://www.zhihu.com/question/53356671) said that it is difficult to re-product its result.  
 
 ## RefineNet (CVPR 2017)
+[RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation](https://arxiv.org/abs/1611.06612)  
 provides multiple paths over which information from different resolutions and via potentially long-range connections
 ### Multi-Path Refinement
 divide pre-trained ResNet into 4 blocks and employ a 4-cascaed architecture with 4 RefineNet units.  

@@ -14,6 +14,7 @@ discriminator: PatchGAN which also take conditional as pairs
 aim for **high-resolution** image via using low-resolution image as condition, similar to residual learning
 > In this paper we introduce a **generative parametric model** capable of producing high quality samples of natural images. Our approach uses **a cascade of convolutional networks** within a **Laplacian pyramid framework** to generate images in a coarse-to-fine fashion. 
 Note: Could I consider it as GAN plus residual+GAN based super-resolution?
+![](img/LAPGAN_sampling_procedure.png)
 
 ## DTN (ICLR 2017)
 [Unsupervised Cross-Domain Image Generation](https://arxiv.org/abs/1611.02200)  
@@ -31,22 +32,37 @@ first proposed in Equation 6 of this paper
 Could be applyed on any **unapired** datasets (better if two datasets share similar visual content)  
 ![](img/cycleGAN_result.png)
 ![](img/cycle-consistency_loss.png)
+### below 4 conditional variants
+
+|GAN               |condition apply to|the amount of generator/encoder| input                     |
+|------------------|---------------|-----------------------|--------------------------------------|
+|Augmented CycleGAN| within domain | 2 generators          | source image + encoding              |
+|Paired CycleGAN   | within domain | 2 generators          | source image  + reference image      |
+|ComboGAN          | cross-domain  | encoder-decoder pairs | source image (to target encoder)     |
+|StarGAN           | cross-domain  | 1 generators          | source image + label of target domain|
 
 ## Augmented CycleGAN (ICML 2018)
 [Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data](https://arxiv.org/abs/1802.10151)  
 [pyTorch (Python2, pyTorch 0.3)](https://github.com/aalmah/augmented_cyclegan) | [Theano re-implementation](https://github.com/justanhduc/AugmentedCycleGAN)  
 ![](img/AugCGAN_male_to_females.png)
-Apart from generator, also have 2 encoders ``$`E_A: A \times B → Z_a, E_B: B \times A → Z_b`$`` which enable optimization of cycle-consistency with stochastic, structured mapping  
+Apart from generator, also have 2 **encoders** ``$`E_A: A \times B → Z_a, E_B: B \times A → Z_b`$`` which enable optimization of cycle-consistency with stochastic, structured mapping  
 ![](img/AugCGAN_components.png)
 
 ## Paired CycleGAN (CVPR 2018)
 [PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://adoberesearch.ctlprojects.com/wp-content/uploads/2018/04/CVPR2018_Paper3623_Chang.pdf)  
 Could apply specified style from input_reference to input_source, as a one-to-many transformation  
-![](img/paired_CycleGAN_result.png) ![](img/paired_CycleGAN_FG.png)
-pre-train makeup removal function F(many-to-one) with CycleGAN first, then alternate the training of makeup transfer function G (one-to-many)
+![](img/paired_CycleGAN_result.png) ![](img/paired_CycleGAN_FG.png)  
+pre-train makeup removal function F(many-to-one) with CycleGAN first, then alternate the training of makeup transfer function G (one-to-many)  
+Note: Consider as conditional GAN with (input source + input reference) as conditions
+
+## ComboGAN (CVPR 2018)
+[ComboGAN: Unrestrained Scalability for Image Domain Translation](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w13/Anoosheh_ComboGAN_Unrestrained_Scalability_CVPR_2018_paper.pdf)  
+encoder-decoder pairs that share the latent coding. 
 
 ## StarGAN (CVPR 2018)
-## ComboGAN (CVPR 2018)
+[StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation](https://arxiv.org/abs/1711.09020)  
+[pyTorch code](https://github.com/yunjey/stargan)  
+input mask vector, an one-shot label, the target domain as second input condition
 
 ## Progressive GAN (ICLR 2018)
 [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196.pdf) by Nvidia  
@@ -56,8 +72,9 @@ resize + w * conv, increase weighting of convolution to fade smoothly
 fully integrate previous learning result into bigger model  
 ### Result
 <iframe src="https://www.youtube.com/embed/XOxxPcy5Gr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Compare with LAPGAN
-LAPGAN learning residual, Progressive GAN learn image
+Progressive GAN merge the small model into large model. In inference step, Progressive GAN take features as input, LAPGAN take low-resolution image as input
 
 ## pix2pixHD (CVPR 2018)
 [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://arxiv.org/pdf/1711.11585.pdf) by Nvidia + author of pix2pix  
@@ -77,6 +94,9 @@ Question: What if growing network like Progressive GAN (fade) instead of residua
 [Video-to-Video Synthesis (Arxiv)](https://arxiv.org/abs/1808.06601) | 
 [Video-to-Video Synthesis](https://tcwang0509.github.io/vid2vid/) | 
 [github](https://github.com/NVIDIA/vid2vid) - by Nvidia (Includes works of pix2pixHD and SPADE)
+
+## Transferring GANs (ECCV 2018)
+[Transferring GANs: generating images from limited data](http://openaccess.thecvf.com/content_ECCV_2018/papers/yaxing_wang_Transferring_GANs_generating_ECCV_2018_paper.pdf)
 
 ## GauGAN
 ### SPADE (CVPR 2019)

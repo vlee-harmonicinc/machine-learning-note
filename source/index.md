@@ -19,6 +19,7 @@ Contents
 * [Transfer Learning](transfer_learning/index.md)
 * [RNN](/RNN/index.md)
 * [NLP](/NLP/index.md)
+* [Audio](/Audio/index.md)
 * [AutoML](/AutoML/index.md)
 * [Issues](/issue.md)
 * [Tricks](/tricks.md)
