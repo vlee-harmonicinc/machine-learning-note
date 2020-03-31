@@ -4,12 +4,9 @@ Apply condition, interactive/editing
 [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784) by Mehdi Mirza, Simon Osindero  
 Apply GAN by learning conditions (supervised)  
 ![](img/cGAN.png)
-![](img/cGAN_MNIST.png)
-application in paper: genetarte MNIST digits (from noise+condition) & image tagging
-variants: 
-* pix2pix (GAN with image condition)
-* cycleGAN
-* BicycleGAN
+![](img/cGAN_MNIST.png)  
+Applications shown in paper: genetarte MNIST digits (from noise+condition that specified digit number) & image tagging  
+Image-to-image translation model like pix2pix could be considiered conditional GAN, with image input as condition.  
 
 ### DCGAN (ICLR 2016)
 [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
@@ -34,9 +31,9 @@ application: manipulate visual content in a user-controlled fashion
 ### StyleGAN (CVPR 2019)
 [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948) by Nvidia  
 [links](https://nvlabs.github.io/stylegan2/versions.html)
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/kSLJriaOumA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kSLJriaOumA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### StyleGAN2
 [Analyzing and Improving the Image Quality of StyleGAN](https://arxiv.org/abs/1912.04958)  
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/c-NJtV9Jvp0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/c-NJtV9Jvp0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

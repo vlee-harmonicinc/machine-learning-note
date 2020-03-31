@@ -26,10 +26,24 @@ first proposed in Equation 6 of this paper
 [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593) by Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A. Efros  
 [Project](https://junyanz.github.io/CycleGAN/)| 
 [Torch](https://github.com/junyanz/CycleGAN) | 
-[pyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
-Could be applyed on any 2 dataset (better if two datasets share similar visual content)  
+[pyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) | 
+[CVPR2018 slides](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/CycleGAN.pdf)
+Could be applyed on any **unapired** datasets (better if two datasets share similar visual content)  
 ![](img/cycleGAN.png)
 ![](img/cycle-consistency_loss.png)
+
+## Augmented CycleGAN (ICML 2018)
+[Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data](https://arxiv.org/abs/1802.10151)  
+[pyTorch (Python2, pyTorch 0.3)](https://github.com/aalmah/augmented_cyclegan) | [Theano re-implementation](https://github.com/justanhduc/AugmentedCycleGAN)  
+![](img/AugCGAN_male_to_females.png)
+Apart from generator, also have 2 encoders ``$`E_A: A \times B → Z_a, E_B: B \times A → Z_b`$`` which enable optimization of cycle-consistency with stochastic, structured mapping  
+![](img/AugCGAN_components.png)
+
+## Paired CycleGAN (CVPR 2018)
+[PairedCycleGAN: Asymmetric Style Transfer for Applying and Removing Makeup](https://adoberesearch.ctlprojects.com/wp-content/uploads/2018/04/CVPR2018_Paper3623_Chang.pdf)  
+Could apply specified style from input_reference to input_source, as a one-to-many transformation  
+![](img/paired_CycleGAN_result.png) ![](img/paired_CycleGAN_FG.png)
+pre-train makeup removal function F(many-to-one) with CycleGAN first, then alternate the training of makeup transfer function G (one-to-many)
 
 ## Progressive GAN (ICLR 2018)
 [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196.pdf) by Nvidia  

@@ -1,6 +1,10 @@
 # CNN
 ## Contents
 * [Models](/CNN/models.md)
+* [Image-to-Image Translation](/CNN/img2img/index.md)
+* [Video Enhancement](/CNN/video_enhancement.md)
+* [Image-to-Text]() (image to tags, image to caption, etc...)
+* [Optical character recognition, OCR](/CNN/optical_character_recognition.md)
 ## Detection
 * [Object Detection](/CNN/object_detection/object_detection.md)
 * [Segmentation](/CNN/object_detection/segmentation.md)
@@ -12,13 +16,6 @@
 * [Pose Estimation](/CNN/object_detection/pose.md)
 * [Action Recognition](/CNN/object_detection/action.md)
 * [3D Object Detection](/CNN/object_detection/3d_object_detection.md)
-## Image-to-image Translation
-* [Image-to-image Translation](/CNN/img2img/index.md)
-## Other
-* [Optical character recognition, OCR](/CNN/optical_character_recognition.md)
-```
-Image-to-caption
-```
 
 ## Concept
 ### Image Convolution

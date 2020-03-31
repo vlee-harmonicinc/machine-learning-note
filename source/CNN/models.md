@@ -80,3 +80,6 @@ image classification network with hierarchical skip connections
 [CSPNet: A New Backbone that can Enhance Learning Capability of CNN](https://arxiv.org/abs/1911.11929v1)  
 [Darknet code](https://github.com/WongKinYiu/CrossStagePartialNetworks) | 
 [AlexeyAB darknet](https://github.com/AlexeyAB/darknet/issues/4406)  
+
+## Light-weights models
+* [Light-weights model](/CNN/light-weight_models.md)

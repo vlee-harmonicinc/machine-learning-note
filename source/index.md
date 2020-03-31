@@ -16,6 +16,7 @@ Contents
 * [CNN](/CNN/index.md)
 * [Generative Models](/generative_models/index.md)
 * [Representation Learning](/representation_learning.md)
+* [Transfer Learning](transfer_learning/index.md)
 * [RNN](/RNN/index.md)
 * [NLP](/NLP/index.md)
 * [AutoML](/AutoML/index.md)
