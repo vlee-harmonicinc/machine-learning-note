@@ -8,15 +8,36 @@ play with cycleGAN's dataset and have a taste first...
 ## Trying cycleGAN's dataset
 sadly I only have a poor RTX 2070, which only could fit 2 batch.
 ### horse2zebras
-Tried pyTorch CycleGAN (Python 3 + pyTorch 1.4) to run horse2zebras, superisingly good :D  Expecially horse2zebras. 
--30/03/2020
-#### Futher thought
+Tried pyTorch CycleGAN (Python 3 + pyTorch 1.4) to run horse2zebras, superisingly good :D  Expecially horse2zebras.  
+![](img/cycleGAN_horse/horse_epoch200_fake_B.png)![](img/cycleGAN_horse/horse_epoch200_fake_A.png)
+-29/03/2020
 zebras2horse is relatively bad comparing to horse2zebras, probably because generator try to keep zebras detail? If continus training, the generator of zebras2horse will try to encode the striped coats into somewhere imperceptible to human(and discriminator based on the loss)?  
 There is a paper already discussing this issue: [CycleGAN, a Master of Steganography](https://arxiv.org/abs/1712.02950)  
 -31/03/2020
 ### apple2orange
 horse2zebras have almost same shape, what if dataset have different shape? try apple2orange and see if how well cycleGAN could modifiy the shape...
-training...-30/03/2020
+trained 200 epoch, only change color, fail to change shape or inside...  
+
+|real|fake|rec|idt|
+|---|---|---|---|
+|![](img/cycleGAN_apple/epoch200_real_A.png)|![](img/cycleGAN_apple/epoch200_fake_B.png)|![](img/cycleGAN_apple/epoch200_rec_A.png)|![](img/cycleGAN_apple/epoch200_idt_A.png)|
+|![](img/cycleGAN_apple/epoch200_real_B.png)|![](img/cycleGAN_apple/epoch200_fake_A.png)|![](img/cycleGAN_apple/epoch200_rec_B.png)|![](img/cycleGAN_apple/epoch200_idt_B.png)|
+continue with more epochs, training...-31/03/2020
+ps there is some weird apple...
+![](img/cycleGAN_apple/apples/n07740461_106.jpg)
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_10842.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11408.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11598.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11917.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14327.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14593.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14767.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14889.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_4163.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_5067.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_7004.jpg
+	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_8902.jpg
+
 ## TODO experiments
 * train cycleGAN in patch manner
 * train cycleGAN with small / middle size, so that the receptive field can get more sense of whole image  
