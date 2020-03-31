@@ -32,6 +32,9 @@ first proposed in Equation 6 of this paper
 Could be applyed on any **unapired** datasets (better if two datasets share similar visual content)  
 ![](img/cycleGAN_result.png)
 ![](img/cycle-consistency_loss.png)
+### Other two-way GAN
+Dual GAN: [DualGAN: Unsupervised Dual Learning for Image-to-Image Translation (ICCV 2017)](https://arxiv.org/abs/1704.02510)  
+DiscoGAN: [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks (ICML 2017)](https://arxiv.org/abs/1703.05192)
 ### below 4 conditional variants
 
 |GAN               |condition apply to|the amount of generator/encoder| input                     |

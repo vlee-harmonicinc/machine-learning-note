@@ -5,9 +5,7 @@
 * [Inpaint](/CNN/img2img/inpaint.md)
 * [Style Transfer](/CNN/img2img/style_transfer.md)
 * [Framerate Upconversion](/CNN/img2img/framerate_upconversion.md)
-## HDR
-* [HDR-net](/CNN/img2img/hdrnet.md)
-### Bit-Net
+* [HDR](/CNN/img2img/hdr.md)
 
 ## GAN
 [GAN image-to-image](/generative_models/GAN_image2image.md)
