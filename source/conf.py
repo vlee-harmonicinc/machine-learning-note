@@ -13,7 +13,7 @@
 import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import numpy as np
 import recommonmark
 from recommonmark.transform import AutoStructify
 import jieba # for chinese search engine
@@ -101,7 +101,7 @@ latex_elements = {
 html_search_language = 'zh'
 
 html_search_options = {'dict': jieba.DEFAULT_DICT}
-import numpy as np
+
 def url_prefix_patch(url):
     '''
     It incorrectly repeat the prefix, remove it

@@ -4,6 +4,4 @@ I addicts to internet, it is hard to put down the phone when walking and eating 
 
 # Blog
 * [my computer](/blog/computer.md)
-* [MMD->Anime](/blog/MMD_to_anime.md)
-## not start yet
-* [dubbing](/blog/dubbing.md)
+* [testing cycleGAN](/blog/cycleGAN.md)
