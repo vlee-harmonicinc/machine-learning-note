@@ -7,11 +7,7 @@ Contents
 --------
 * [Math](/math/index.md)
 * [Algorithm](/algorithm/index.md)
-* [Neural Network](/basic/neural_network.md)
-* [Loss Functions](/basic/loss_functions.md)  
-* [Optimizer](/basic/optimizer.md)  
-* [Activation Functions](/basic/activation_functions.md)  
-* [Normalization](/basic/normalization.md) 
+* [Neural Network](/basic/index.md)
 * [Models](/basic/basic_models.md)
 * [CNN](/CNN/index.md)
 * [Generative Models](/generative_models/index.md)
