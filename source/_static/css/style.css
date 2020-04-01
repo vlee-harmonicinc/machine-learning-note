@@ -3,3 +3,7 @@ iframe {
     height: calc(100vw*9/16);
     max-height: calc(800px*9/16);
 }
+
+img[alt=small_img]{
+    max-width:150px;
+}

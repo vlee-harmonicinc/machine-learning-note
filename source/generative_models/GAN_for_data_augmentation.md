@@ -6,6 +6,7 @@ Just list some paper
 Sadly, seems that GAN-based data augmentation is not better than tranditional data augmentation
 
 ## Adversarial Domain Adaptation
+
 ||mean IOU|Per-pixel accuracy|
 |---|---|---|
 |Oracle (Train and test on Real)|60.3|93.1|

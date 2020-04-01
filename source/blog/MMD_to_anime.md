@@ -22,21 +22,24 @@ trained 200 epoch, only change color, fail to change shape or inside...
 |---|---|---|---|
 |![](img/cycleGAN_apple/epoch200_real_A.png)|![](img/cycleGAN_apple/epoch200_fake_B.png)|![](img/cycleGAN_apple/epoch200_rec_A.png)|![](img/cycleGAN_apple/epoch200_idt_A.png)|
 |![](img/cycleGAN_apple/epoch200_real_B.png)|![](img/cycleGAN_apple/epoch200_fake_A.png)|![](img/cycleGAN_apple/epoch200_rec_B.png)|![](img/cycleGAN_apple/epoch200_idt_B.png)|
-continue with more epochs, training...-31/03/2020
-ps there is some weird apple...
-![](img/cycleGAN_apple/apples/n07740461_106.jpg)
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_10842.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11408.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11598.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_11917.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14327.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14593.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14767.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_14889.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_4163.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_5067.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_7004.jpg
-	new file:   source/blog/img/cycleGAN_apple/apples/n07740461_8902.jpg
+
+continue training with more epochs ...
+Btw, there is some weird apple in the dataset...
+![small_img](img/cycleGAN_apple/apples/n07740461_106.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_10842.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_11408.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_11598.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_11917.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_14327.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_14593.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_14767.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_14889.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_4163.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_5067.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_7004.jpg)
+![small_img](img/cycleGAN_apple/apples/n07740461_8902.jpg)
+Might clean the dataset and re-train later, have a look of the result with above images first.
+-31/03/2020  
 
 ## TODO experiments
 * train cycleGAN in patch manner

@@ -46,6 +46,9 @@ Image labeling in multiple annotation formats:
 [netron](https://lutzroeder.github.io/netron/)
 
 ## Hardware
-[A Full Hardware Guide to Deep Learning](https://timdettmers.com/2018/12/16/deep-learning-hardware-guide/)  
-[Which GPU(s) to Get for Deep Learning: My Experience and Advice for Using GPUs in Deep Learning](https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/)  
-[Win10 and Ubuntu 雙系統安裝筆記](https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4)
+* [A Full Hardware Guide to Deep Learning](https://timdettmers.com/2018/12/16/deep-learning-hardware-guide/)  
+* [Which GPU(s) to Get for Deep Learning: My Experience and Advice for Using GPUs in Deep Learning](https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/)  
+* [Win10 and Ubuntu 雙系統安裝筆記](https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4)
+
+## Other
+* [Online LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)

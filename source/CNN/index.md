@@ -2,6 +2,7 @@
 * [Models](/CNN/models.md)
 * [Image-to-Image Translation](/CNN/img2img/index.md)
 * [Optical character recognition, OCR](/CNN/optical_character_recognition.md)
+* [Image Retrieval](/CNN/image_retrieval.md)
 ## Detection
 * [Object Detection](/CNN/object_detection/object_detection.md)
 * [Segmentation](/CNN/object_detection/segmentation.md)
@@ -12,7 +13,10 @@
 * [Face Recognition](/CNN/object_detection/face.md)
 * [Pose Estimation](/CNN/object_detection/pose.md)
 * [Action Recognition](/CNN/object_detection/action.md)
-* [3D Object Detection](/CNN/object_detection/3d_object_detection.md)
+## 3D
+* [3D Object Detection](/CNN/3D/3D_object_detection.md)
+* [3D Pose Estimation](/CNN/3D/3D_pose_estimation.md)
+* [3D Reconstruction](/CNN/3D/3D_reconstruction.md)
 
 ## Concept
 ### Image Convolution

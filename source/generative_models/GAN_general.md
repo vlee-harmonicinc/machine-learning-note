@@ -45,6 +45,14 @@ contrib: gradient penalty
 > We propose a novel, *projection based* way to **incorporate the conditional information into the discriminator** of GANs that respects the role of the conditional information in the underlining probabilistic model. This approach is in contrast with most frameworks of conditional GANs used in application today, which use the conditional information by concatenating the (embedded) conditional vector to the feature vectors. With this modification, we were able to significantly improve the quality of the class conditional image generation on ILSVRC2012 (ImageNet) 1000-class image dataset from the current state-of-the-art result, and we achieved this with a single pair of a discriminator and a generator. We were also able to extend the application to super-resolution and succeeded in producing highly discriminative super-resolution images. This new structure also enabled high quality category transformation based on parametric functional transformation of conditional batch normalization layers in the generator. 
 [code](https://github.com/pfnet-research/sngan_projection)
 
+### Relativistic Discriminator (ICLR 2019)
+[The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)  
+[Relativistic GAN – Alexia Jolicoeur-Martineau](https://ajolicoeur.wordpress.com/relativisticgan/) | [reddit](https://www.reddit.com/r/MachineLearning/comments/8vr9am/r_the_relativistic_discriminator_a_key_element/)  
+also called: RaGAN  
+![](https://ajolicoeur.files.wordpress.com/2018/06/screenshot-from-2018-06-30-11-04-05.png)  
+Aim to stablize the training process of GAN  
+![](img/RaGAN_explaination.png)
+
 ### SA-GAN (PMLR 2019)
 [Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)  
 learn global, **long-range dependencies** for generating images.  
