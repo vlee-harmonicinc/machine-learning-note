@@ -17,6 +17,7 @@ import numpy as np
 import recommonmark
 from recommonmark.transform import AutoStructify
 import jieba # for chinese search engine
+from docutils import nodes
 
 # -- Project information -----------------------------------------------------
 
@@ -102,20 +103,39 @@ html_search_language = 'zh'
 
 html_search_options = {'dict': jieba.DEFAULT_DICT}
 
-def url_prefix_patch(url):
-    '''
-    It incorrectly repeat the prefix, remove it
-    '''
-    relative_path = url.split('/')
-    index_first = np.argwhere(relative_path==relative_path[0])
-    if len(index_first>1):
-        max_len = index_first[1]-index_first[0]
-        for i in index_first[1::-1]:
-            if relative_path[i:i+max_len]==relative_path[0:max_len]:
-                return '/'.join(relative_path[i:])
-    return url
+class AutoStructifyPatch(AutoStructify):
+    def parse_ref(self, ref):
+        """
+        Patch AutoStructify for relative path
+        """
+        title = None
+        if len(ref.children) == 0:
+            title = ref['name'] if 'name' in ref else None
+        elif isinstance(ref.children[0], nodes.Text):
+            title = ref.children[0].astext()
+        uri = ref['refuri']
+        if uri.find('://') != -1:
+            return (title, uri, None)
+        anchor = None
+        arr = uri.split('#')
+        if len(arr) == 2:
+            anchor = arr[1]
+        if len(arr) > 2 or len(arr[0]) == 0:
+            return (title, uri, None)
+        uri = arr[0]
 
-doc_host_root = 'http://localhost:8080/build/html/'
+        abspath = os.path.abspath(os.path.join(self.file_dir, uri))
+        # ** Patch
+        if uri[0] != '/': # input uri is relative path
+            abspath = '/' + os.path.relpath(abspath, self.root_dir)
+        relpath = os.path.relpath(abspath, self.root_dir)
+
+        # use url resolver
+        if self.url_resolver:
+            uri = self.url_resolver(relpath)
+        if anchor:
+            uri += '#' + anchor
+        return (title, uri, None)
 
 def setup(app):
     app.add_config_value('recommonmark_config', {
@@ -125,8 +145,6 @@ def setup(app):
             'enable_math': True,
             'enable_inline_math': True,
             'enable_eval_rst': True,
-#             'url_resolver': url_prefix_patch,
-#             'url_resolver': lambda url: doc_host_root + url,
             }, True)
-    app.add_transform(AutoStructify)
+    app.add_transform(AutoStructifyPatch) # replace AutoStructify to patch parse_ref
     app.add_stylesheet('css/style.css')
