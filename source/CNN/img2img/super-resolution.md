@@ -45,9 +45,5 @@ generate affine transformation parameters for spatial-wise feature modulation
 ![](img/SFTGAN.png)
 ![](img/SFTGAN_architecture.png)
 
-
-## Zooming-Slow-Mo (CVPR-2020)
-[Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution](https://arxiv.org/abs/2002.11616)  
-
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/8mgD8JxBOus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Zooming Slow-Mo
+[Video Frame Interpolation/Zooming Slow-Mo](/video_frame_interpolation#zooming-slow-mo-cvpr-2020)

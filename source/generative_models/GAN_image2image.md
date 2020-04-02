@@ -1,5 +1,10 @@
 # image-to-image
 
+pix2pix -> start point
+LAPGAN, Progressive GAN, pix2pixHD -> high-resolution
+cycleGAN -> unpaired, cross domain
+Augmented CycleGAN, Paired CycleGAN, ComboGAN, StarGAN -> cycleGAN variant for representational learning/ multi. domains
+
 ## pix2pix (CVPR 2017)
 [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) by Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros  
 [https://phillipi.github.io/pix2pix/](https://phillipi.github.io/pix2pix/) | 
@@ -18,8 +23,9 @@ Note: Could I consider it as GAN plus residual+GAN based super-resolution?
 
 ## DTN (ICLR 2017)
 [Unsupervised Cross-Domain Image Generation](https://arxiv.org/abs/1611.02200)  
-Domain Transfer Network(DTN)  
-### Identity Loss
+Domain Transfer Network(DTN) with Identity Loss.  
+![](img/DTN.png)
+##### Identity Loss
 first proposed in Equation 6 of this paper  
 > The generator trained with this loss will often be more conservative for unknown content. -- from CycleGAN FAQ
 
