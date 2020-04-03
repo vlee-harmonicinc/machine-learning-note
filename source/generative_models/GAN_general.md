@@ -1,4 +1,3 @@
-
 ## General
 [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) (NIPS 2014) by iangoodfellow  
 [Ian Goodfellow NIPS 2016 tutorial](https://arxiv.org/pdf/1701.00160.pdf)| [PPT](http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf) 

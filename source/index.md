@@ -1,11 +1,9 @@
-Welcome to machine learning note's documentation!
-=================================================
+# Vivian's machine learning note's
 
 This notes breifly mark some paper to keep track of the development on some topic that I interested in and understand the main contribution of each paper. 
 To be honest, for most of paper, I haven't read every sections of it. Some of paper haven't been read at all, just mark a link. Please correct me in git issue/pull request if I wrote something wrong. 
 
-Contents
---------
+## Contents
 * [Math](/math/index.md)
 * [Algorithm](/algorithm/index.md)
 * [Neural Network](/basic/index.md)
@@ -22,3 +20,11 @@ Contents
 * [Tricks](/tricks.md)
 * [Useful Links](/links/useful_links.md)
 * [Blog](/blog/index.md)
+
+### Important pages
+[CNN Models](/CNN/models.md)  
+[object_detection](/CNN/object_detection/object_detection.md)  
+[super-resolution](/CNN/img2img/super-resolution.md)  
+[GAN: image2image](/generative_models/GAN_image2image.html)  
+[GAN: repersentation learning / condition](/generative_models/GAN_repersentation_learning.html)  
+[GAN: general improvement](/generative_models/GAN_general.html)  
