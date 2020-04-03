@@ -1,9 +1,9 @@
 # image-to-image
 
-pix2pix -> start point
-LAPGAN, Progressive GAN, pix2pixHD -> high-resolution
-cycleGAN -> unpaired, cross domain
-Augmented CycleGAN, Paired CycleGAN, ComboGAN, StarGAN -> cycleGAN variant for representational learning/ multi. domains
+pix2pix -> start point  
+LAPGAN, Progressive GAN, pix2pixHD -> higher resolution  
+cycleGAN -> unpaired, cross domain  
+Augmented CycleGAN, Paired CycleGAN, ComboGAN, StarGAN -> cycleGAN variant for representational learning/ multi. domains  
 
 ## pix2pix (CVPR 2017)
 [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) by Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros  

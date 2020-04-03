@@ -29,6 +29,7 @@ stride, pooling or resize
 less computation required 
 get high level features
 ##### Stride vs pooling
+
 ---------
 |stride|pooling|
 |---|--|-----|
