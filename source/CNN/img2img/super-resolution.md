@@ -45,5 +45,19 @@ generate affine transformation parameters for spatial-wise feature modulation
 ![](img/SFTGAN.png)
 ![](img/SFTGAN_architecture.png)
 
-## Zooming Slow-Mo
-[Video Frame Interpolation/Zooming Slow-Mo](/video_frame_interpolation#zooming-slow-mo-cvpr-2020)
+## ESRGAN (ECCV 2018)
+[ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks](https://arxiv.org/abs/1809.00219) from CUHK  
+RRDB (Residual in Residual Dense Blcok)
+
+## ===Video super-resolution===
+
+## EDVR (CVPR 2019)
+[EDVR: Video Restoration with Enhanced Deformable Convolutional Networks](https://arxiv.org/abs/1905.02716) from SenseTime, CUHK  
+[Project](https://xinntao.github.io/projects/EDVR) | [pyTorch (deperciated)](https://github.com/xinntao/EDVR) | [MMSR](https://github.com/open-mmlab/mmsr)
+![](https://xinntao.github.io/projects/EDVR_src/arch.png)
+##### PCD and TSA Modules
+**Left**: PCD alignment module with Pyramid, Cascading and Deformable convolution; **Right**: TSA fusion module with Temporal and Spatial
+![](https://xinntao.github.io/projects/EDVR_src/pcd_tsa.jpg)
+
+## Zooming Slow-Mo (CVPR 2020)
+[Video Frame Interpolation/Zooming Slow-Mo](video_frame_interpolation.html#zooming-slow-mo-cvpr-2020)

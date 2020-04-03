@@ -38,6 +38,12 @@ first proposed in Equation 6 of this paper
 Could be applyed on any **unapired** datasets (better if two datasets share similar visual content)  
 ![](img/cycleGAN_result.png)
 ![](img/cycle-consistency_loss.png)
+```math
+\begin{equation}
+\mathfrak{L}_{cyc}(G,F) & = \mathbb{E}_{x \sim p_{data}(x)} [||F(G(x))-x||_1]] \\
+                        & + \mathbb{E}_{y \sim p_{data}(y)} [||F(G(y))-y||_1]]
+\end{equation} 
+```
 ### Other two-way GAN
 Dual GAN: [DualGAN: Unsupervised Dual Learning for Image-to-Image Translation (ICCV 2017)](https://arxiv.org/abs/1704.02510)  
 DiscoGAN: [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks (ICML 2017)](https://arxiv.org/abs/1703.05192)

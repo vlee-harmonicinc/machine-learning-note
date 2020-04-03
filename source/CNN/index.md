@@ -29,7 +29,7 @@
 stride, pooling or resize
 less computation required 
 get high level features
-#### Stride vs pooling
+##### Stride vs pooling
 ---------
 |stride|pooling|
 |---|--|-----|
@@ -40,12 +40,13 @@ could propagate with pooling indice
 ### Upscale / Up-sampling
 used for 1. reverse downscale, 2. increase resolution  
 usually required for pix 2 pix application, e.g. segmentation, super-resolution
-#### Methods:
+###### Methods
 1. resize  
 resampling and interpolation
 2. un-pooling (if pooling is used) [Deconvnet](#deconvnet-iccv-2015)
 3. Transposed Convolution (deconvolution)
 4. [PixelShuffle](#pixelshuffle-cvpr-2016)
+
 ### 1x1 convolution
 could be used for changing the number of features
 see [Inception (ILSVRC 2014)](#inception-ilsvrc-2014), 

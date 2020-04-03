@@ -1,20 +1,6 @@
 # Basic models
 ## Fully connected
 
-## RNN
-### Layer
-#### LSTM (1997)
-Long Short-Term Memory
-#### GRU (2014)
-Gated recurrent unit  
-simplified variant of LSTM
-### RNN models
-#### seq2seq
-#### attention model
-
-## CNN (convolutional neural network)
-[CNN](/CNN/index.md)
-
 ## Restricted Boltzann Machine, RBM
 shallow, 2 layer neural networks. First is visible layer, second is hidden layer with sigmoid.  
 probabilistic graphical model
@@ -26,11 +12,17 @@ The initial weighting is better-> solve local minimum
 application: classification, collaborative filtering, feature learning
 (better improve activation function, rarely use now)
 
-## Generative Models
-[Generative Models](/generative_models/index.md)
+## CNN (convolutional neural network)
+[CNN](/CNN/index.md)
+
+## RNN
+[RNN](/RNN/index.md)
 
 ## Attention
 * [Attention Mechanism](/basic/attention.md)
+
+## Generative Models
+[Generative Models](/generative_models/index.md)
 
 ## Siamese network (IJPRAI 1993)
 [Signature Verification using a "Siamese" Time Delay Neural Network](https://papers.nips.cc/paper/769-signature-verification-using-a-siamese-time-delay-neural-network.pdf)

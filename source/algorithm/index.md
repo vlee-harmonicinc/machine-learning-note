@@ -1,5 +1,4 @@
 # Algorithm
-## Contents
 * [Linear Regession](/algorithm/linear_regression.md)
 * [Classifier](/algorithm/classifier.md)
 
