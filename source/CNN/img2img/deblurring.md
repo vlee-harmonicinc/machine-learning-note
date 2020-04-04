@@ -1,5 +1,5 @@
-# deblurring
-Many [super-resolution](/CNN/img2img/super-resolution) paper also handle some blur
+# Deblurring
+Many [super-resolution](super-resolution.md) papers also handle deblur
 ## Type of blur or noise
 * Motion Blur
 * Out of Focus
@@ -41,7 +41,7 @@ python3 test.py --dataroot <folder> --model test --dataset_mode single --learn_r
 [feature/video_inference](https://github.com/htleeab/DeblurGANv2/tree/feature/video_inference) support video inference :)
 
 ## CDVD-TSP (CVPR 2020)
-[Cascaded Deep Video Deblurring Using Temporal Sharpness Prior]() - has not released yet?  
+[Cascaded Deep Video Deblurring Using Temporal Sharpness Prior] - has not released yet?  
 [Project](https://baihaoran.xyz/projects/cdvd-tsp/index.html) |
 [PyTorch code](https://github.com/csbhr/CDVD-TSP)
 

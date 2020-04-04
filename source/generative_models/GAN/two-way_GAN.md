@@ -28,17 +28,11 @@ Full Objective
                              & + \mathfrak{L}_{cyc}(G,F)          \\
 G^*, F^* = arg min_{G, F} max_{D_X, D_Y} \mathfrak{L}(G, F, D_x, D_Y)
 ```
-### Other two-way GAN
+### my testing
+[testing cycleGAN](/blog/cycleGAN.md)
+## Other two-way GAN
 Dual GAN: [DualGAN: Unsupervised Dual Learning for Image-to-Image Translation (ICCV 2017)](https://arxiv.org/abs/1704.02510)  
 DiscoGAN: [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks (ICML 2017)](https://arxiv.org/abs/1703.05192)
-### below 4 conditional variants
-
-|GAN               |condition apply to|the amount of generator/encoder| input                     |
-|------------------|---------------|-----------------------|--------------------------------------|
-|Augmented CycleGAN| within domain | 2 generators          | source image + encoding              |
-|Paired CycleGAN   | within domain | 2 generators          | source image  + reference image      |
-|ComboGAN          | cross-domains | encoder-decoder pairs | source image (to target encoder)     |
-|StarGAN           | cross-domains | 1 generators          | source image + label of target domain|
 
 ## Augmented CycleGAN (ICML 2018)
 [Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data](https://arxiv.org/abs/1802.10151)  
@@ -62,3 +56,12 @@ encoder-decoder pairs that share the latent coding.
 [StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation](https://arxiv.org/abs/1711.09020)  
 [pyTorch code](https://github.com/yunjey/stargan)  
 input mask vector, an one-shot label, the target domain as second input condition
+
+## Comparison of above 4 conditional variants
+
+|GAN               |condition apply to|the amount of generator/encoder| input                     |
+|------------------|---------------|-----------------------|--------------------------------------|
+|Augmented CycleGAN| within domain | 2 generators          | source image + encoding              |
+|Paired CycleGAN   | within domain | 2 generators          | source image  + reference image      |
+|ComboGAN          | cross-domains | encoder-decoder pairs | source image (to target encoder)     |
+|StarGAN           | cross-domains | 1 generators          | source image + label of target domain|
