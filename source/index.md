@@ -25,6 +25,7 @@ To be honest, for most of paper, I haven't read every sections of it. Some of pa
 [CNN Models](/CNN/models.md)  
 [object_detection](/CNN/object_detection/object_detection.md)  
 [super-resolution](/CNN/img2img/super-resolution.md)  
-[GAN: image2image](/generative_models/GAN_image2image.html)  
+[GAN: image2image](/generative_models/GAN/GAN_image2image.html)  
+[GAN: image2image](/generative_models/GAN/two-way_GAN.html)  
 [GAN: repersentation learning / condition](/generative_models/GAN_repersentation_learning.html)  
 [GAN: general improvement](/generative_models/GAN_general.html)  

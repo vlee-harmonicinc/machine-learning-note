@@ -1,6 +1,6 @@
 ## Generative Models
 
-* [GAN](/generative_models/GAN.md)
+* [GAN](/generative_models/GAN/index.md)
 * [VAE](/generative_models/VAE.md)
 * [Flow](/generative_models/flow.md)
 * [Metrics](/generative_models/metrics.md)

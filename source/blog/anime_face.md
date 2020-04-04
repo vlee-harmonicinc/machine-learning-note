@@ -42,6 +42,11 @@ Based on U-GAT-IT *official* pretrain model.
 Selfie2WaiFu 自動檢測人臉, 圖3把背景的竹當成人臉，玩不了。  
 個人感覺WaiFu畫風比較古早，線條較實，眼睛沒有崩，但眼睛以外的物件(眼鏡框, 頭髮)Selfie2Anime完整些。
 
+## Waifu Labs
+[Waifu Labs](https://waifulabs.com/)
+Quality of image is very high
+repeatedly pick 1 image from 16 grid
+I guess it is like StyleGAN? After picking 1 image, randomly generate 16 noise for the next feature and append to picked image.
 
 ## This WaiFu does not exist
 [This WaiFu does not exist](https://www.thiswaifudoesnotexist.net/)  
