@@ -6,7 +6,7 @@ Usage:
 2. Information retrieval via **semantic hashing**: produce a code that is low-dimensional and binary, then stored in hash table. 1. easily return entries with same binary code and search similar (or less similar) entries efficiently
 3. Denoising, inpaint task
 
-## Variational AutoEncoder (2013)
+## Variational AutoEncoder (ICLR 2014)
 [Auto-encoding variational bayes](https://arxiv.org/abs/1312.6114)
 force the latent pace follow standard distribution
 1. add divergence loss
@@ -20,5 +20,6 @@ Result:
 Disadvantages comparing with GAN:
 * Not asymptotically consistent unless q is perfect
 * samples tend to have lower quality
-#### AVB (2017)
-[Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks]()
+
+## AVB (2017)
+[Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks](https://arxiv.org/abs/1701.04722)

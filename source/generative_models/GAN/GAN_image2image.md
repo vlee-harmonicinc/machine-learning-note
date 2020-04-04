@@ -34,7 +34,7 @@ first proposed in Equation 6 of this paper
 
 ## Progressive GAN (ICLR 2018)
 [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196.pdf) by Nvidia  
-[Official TensorFlow implementation](https://github.com/tkarras/progressive_growing_of_gans) | [PyTorch implenetation (unofficial)](un-official)  
+[Official TensorFlow implementation](https://github.com/tkarras/progressive_growing_of_gans) | [PyTorch implenetation (unofficial)](https://github.com/nashory/pggan-pytorch) | [PyTorch/hub](https://pytorch.org/hub/facebookresearch_pytorch-gan-zoo_pgan/)  
 ### Growing
 resize + w * conv, increase weighting of convolution to fade smoothly  
 fully integrate previous learning result into bigger model  

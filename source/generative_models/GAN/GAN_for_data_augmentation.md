@@ -31,7 +31,7 @@ when data is limited yet originates from a diverse image modality, increasing th
 
 ## VERI-Wild (CVPR 2019)
 [VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lou_VERI-Wild_A_Large_Dataset_and_a_New_Method_for_Vehicle_CVPR_2019_paper.pdf)
-[Embedding adversarial learning for vehicle re-identification]()
+[Embedding adversarial learning for vehicle re-identification](https://www.researchgate.net/publication/331158735_Embedding_Adversarial_Learning_for_Vehicle_Re-Identification)  
 1. collect new dataset
 2. propose a new method for vehicle ReID 
 ### Feature Distance Adversarial Network (FDA-Net) 
