@@ -1,9 +1,8 @@
 # Some Anime related papers
-Here collect projects related to anime face. The main focus is fun rather than novel contribution.
+Here collect projects related to anime / anime face. The main focus is fun rather than novel contribution.
 ## CartoonGAN (CVPR 2018)
 [CartoonGAN: Generative Adversarial Networks for Photo Cartoonization](http://openaccess.thecvf.com/content_cvpr_2018/papers/Chen_CartoonGAN_Generative_Adversarial_CVPR_2018_paper.pdf)
 ![](https://github.com/mnicnc404/CartoonGan-tensorflow/raw/master/images/cover.gif)  
-比較像style transfer的效果?
 > In this paper, we propose a solution to transforming photos of *real-world scenes* into cartoon style images  
 (1) cartoon styles have unique characteristics with high level **simplification** and abstraction, and (2) cartoon images tend to have **clear edges**, smooth color shading and relatively simple textures, which exhibit significant challenges for texture-descriptor-based loss functions 
 Two novel losses suitable for cartoonization are proposed:  
