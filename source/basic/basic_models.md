@@ -1,16 +1,17 @@
 # Basic models
-## Fully connected
-
 ## Restricted Boltzann Machine, RBM
 shallow, 2 layer neural networks. First is visible layer, second is hidden layer with sigmoid.  
-probabilistic graphical model
+probabilistic graphical model models the distribution of data p(x) (not using backpropagation)
 Get embedding from hidden layer  
+
 ### Deep Belief Network, DBN (2009)
 Stacking unsupervised network (RBMs/autoencoders)
 Add classifier  (semi-supervisied, layer-wise pre-training)  
 The initial weighting is better-> solve local minimum
 application: classification, collaborative filtering, feature learning
 (better improve activation function, rarely use now)
+
+## Multi. layers perceptron(MLP)
 
 ## CNN (convolutional neural network)
 [CNN](/CNN/index.md)

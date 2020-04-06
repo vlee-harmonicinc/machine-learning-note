@@ -18,12 +18,13 @@ convolution encoder-decoder
 ## MEMC-Net (TPAMI 2018)
 [Motion Estimation and Motion Compensation Driven Neural Network for Video Interpolation and Enhancement](https://arxiv.org/abs/1810.08768) by Shanghai Jiao Tong University
 ![](img/MEMC-Net_architecture.png)  
+
 ## DAIN (CVPR 2019)
 [Depth-Aware Video Frame Interpolation](https://arxiv.org/pdf/1904.00830v1.pdf) by Shanghai Jiao Tong University  
 [pyTorch code](https://github.com/baowenbo/DAIN) | [Papers with Code](https://paperswithcode.com/paper/depth-aware-video-frame-interpolation)  
 based on [MEMC-Net](#memc-net-tpami-2018)  
 ##### testing pre-trained model
-
+GTX 1080 Ti 1280x720 about 2s per frame
 
 ## Zooming-Slow-Mo (CVPR-2020)
 [Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution](https://arxiv.org/abs/2002.11616)  

@@ -39,7 +39,10 @@ Based on U-GAT-IT *official* pretrain model.
 ![](img/selfie2anime/waifu13.jpg)
 ![](img/selfie2anime/waifu4.jpg)  
 Selfie2WaiFu 自動檢測人臉, 圖3把背景的竹當成人臉，玩不了。  
-個人感覺WaiFu畫風比較古早，線條較實，眼睛沒有崩，但眼睛以外的物件(眼鏡框, 頭髮)Selfie2Anime完整些。
+
+
+個人感覺WaiFu線條較實(分明, 顏色接近黑色)，眼睛沒有崩比較對稱，但眼睛以外的物件(眼鏡框, 頭髮)Selfie2Anime完整些。  
+也許只是個例。同一張畫裏畫風、線條風格相當統一，但輸入的照片會用哪種畫風是隨機。古早畫風線條較實，近年畫風比較保留原圖和容易模糊。可能可以用一些conditional cGAN控制畫風?(用年代/制作組區分)  
 
 ## Waifu Labs
 [Waifu Labs](https://waifulabs.com/)

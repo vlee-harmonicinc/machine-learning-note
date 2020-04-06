@@ -68,7 +68,14 @@ Question: What if growing network like Progressive GAN (fade) instead of residua
 
 ## GauGAN
 ### SPADE (CVPR 2019)
+stands for SPatially-Adaptive (DE)normalization, spatially-adaptive normalization  
 [Semantic Image Synthesis with Spatially-Adaptive Normalization](https://arxiv.org/abs/1903.07291) by Nvidia  
+![](https://nvlabs.github.io/SPADE/images/teaser_high_res_uncompressed.png)
+solving issue: semantic information washed away through stacks of convolution, normalization, and nonlinearity layers
+similar to batchNorm, activation is normalized in the channelwise manner, and then modulated with learned ``$`\gamma, \beta`$``  
+Unlike prior conditional normalization, ``$`\gamma, \beta`$`` are not vectors, but tensors with spatial dimensions
+![](https://nvlabs.github.io/SPADE/images/method.png)  
+using the input layout for modulating the activations in normalization layers through a spatially-adaptive, learned transformation (tow-layers convolutional network). 
 ### Project
 [Live Interactive Demos](https://www.nvidia.com/en-us/research/ai-playground/) | 
 [Project](https://arxiv.org/abs/1903.07291) | 

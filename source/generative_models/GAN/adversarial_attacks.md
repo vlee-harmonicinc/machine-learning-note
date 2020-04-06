@@ -1,4 +1,5 @@
 # Adversarial Attacks
+[Adversarial Examples and Adversarial Training](http://www.iangoodfellow.com/slides/2017-05-30-Stanford-cs213n.pdf)
 ## Attacks
 ### Perturbation on sample
 #### Domain GAN

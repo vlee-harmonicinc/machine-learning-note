@@ -3,10 +3,17 @@
 ## LeNet-5 (1998)
 [Gradient-Based Learning Applied to Document Recognition](http://www.dengfanxin.cn/wp-content/uploads/2016/03/1998Lecun.pdf)
 ![](img/LeNet.png)
-## AlexNet (2012)
+## AlexNet (NIPS 2012)
 ReLu: solve vanishing gradient, training process faster  
 dropout: solve overfitting  
+LRN: normalization
 [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+### Local Response Normalization
+```math
+b^i_{x,y}=\frac{a^i_{x,y}}{\Big(k+\frac{\alpha}{n}\sum^{min(N-1, c+n/2)}_{c=max(0,i-n/2)} (a^c_{x,y})^2 \Big)^\beta}
+```
+sum runs over n “adjacent” kernel maps at the same spatial position, and N is the total number of kernels in the layer. The ordering of the kernel maps is of course arbitrary and determined before training begins. This sort of response normalization implements a form of **lateral inhibition** inspired by the type found in real neurons, creating competition for big activities amongst neuron outputs computed using different kernels.
+
 ## VGG (ICLR 2014)
 [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)  
 replace large kernel by mult. small kernels  

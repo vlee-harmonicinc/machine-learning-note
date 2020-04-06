@@ -52,7 +52,7 @@ also called: RaGAN
 Aim to stablize the training process of GAN  
 ![](img/RaGAN_explaination.png)
 
-### SA-GAN (PMLR 2019)
+### SAGAN (PMLR 2019)
 [Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)  
 learn global, **long-range dependencies** for generating images.  
 ![](img/SAGAN_attention_map.png)

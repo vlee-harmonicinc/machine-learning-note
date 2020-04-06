@@ -25,10 +25,24 @@ Image resolution: 640×480
 label + boxes + segmentation + relationship annotation
 
 ## Image Segmenation 
-* PASCAL Visual Object Classes (PASCAL VOC)
-* PASCAL-Context
-* Cityscapes
+* [PASCAL Visual Object Classes (PASCAL VOC)](http://host.robots.ox.ac.uk/pascal/VOC/)
+* [PASCAL-Context](https://cs.stanford.edu/~roozbeh/pascal-context/)
+* [Cityscapes](https://www.cityscapes-dataset.com/)
 * [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
+* [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/)
+
+|             |Images  |Obj. Inst   |Obj. Cls|Part Inst.|Part Cls|Obj. Cls. per Img|
+|-------------|--------|------------|--------|--------|-----|-----|
+|COCO         |123,287 |  886,284   |      91|       0|    0|  3.5|
+|ImageNet∗    |476,688 |  534,309   |     200|       0|    0|  1.7|
+|NYU Depth V2 |  1,449 |   34,064   |     894|       0|    0| 14.1|
+|Cityscapes   | 25,000 |   65,385   |      30|       0|    0| 12.2|
+|SUN          | 16,873 |  313,884   |   4,479|       0|    0|  9.8|
+|OpenSurfaces | 22,214 |   71,460   |     160|       0|    0|  N/A|
+|PascalContext| 10,103 | ∼104,398∗∗ |     540| 181,770|   40|  5.1|
+|ADE20K       | 22,210 |  434,826   |   2,693| 175,961|  476|  9.9|
+from [Scene Parsing through ADE20K Dataset](http://people.csail.mit.edu/bzhou/publication/scene-parse-camera-ready.pdf)
+
 ### RGB-D  
 #### SUN RGB-D
 A RGB-D Scene Understanding Benchmark Suite  
