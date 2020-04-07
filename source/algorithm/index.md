@@ -1,10 +1,10 @@
 # Algorithm
-* [Linear Regession](/algorithm/linear_regression.md)
-* [Classifier](/algorithm/classifier.md)
+* [Linear Regession](linear_regression.md)
+* [Classifier](classifier.md)
 
 ## Logistic Regression
 ## Support Vector Machine, SVM
-[Support Vector Machine](/algorithm/classifier.md)
+[Support Vector Machine](classifier.md)
 ## K-Nearest Neighbors,KNN
 supervised learning
 For classification:  

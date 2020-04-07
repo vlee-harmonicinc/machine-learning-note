@@ -93,7 +93,7 @@ compare pixel by pixel
 Blurry results because Euclidean distance is minimized by averaging all plausible output
 e.g. MAE, MSE
 ### Perceptual Loss
-[Style Transfer/Perceptual Loss](/generative_models/style_transfer#perceptual-loss-eccv-2016)
+[Style Transfer/Perceptual Loss](/generative_models/style_transfer.html#perceptual-loss-eccv-2016)
 
 ## Detection
 ### Focal Loss

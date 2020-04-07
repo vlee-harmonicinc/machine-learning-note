@@ -79,6 +79,7 @@ For frame interpolation, super-resolution etc
 [Vimeo90K](http://toflow.csail.mit.edu/)
 ### Optical Flow
 [Middlebury](http://vision.middlebury.edu/flow/data/)
+[FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html)
 
 ## Image grading
 ### MIT-Adobe FiveK Dataset

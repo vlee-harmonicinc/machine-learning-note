@@ -13,16 +13,16 @@ i.i.d (independent and identically distributed)
 #### Focal Loss
 [Focal Loss](/CNN/object_detection/focal_loss.md)  
 ## Dropout
-[AlexNet](CNN/index#alexnet-2012)  
+[AlexNet](/CNN/index.html#alexnet-nips-2012)  
 solve: overfit
 ## Regarlization
 plenty the weight in loss function  
 solve: overfit
 ## Normalization
-[Normalization](basic/normalization.md)  
+[Normalization](normalization.md)  
 solve: Internal Covariate Shift
 ## Skip Connection
-[ResNet/U-net](CNN/index#resnet-vs-u-net)
+[ResNet/U-net](/CNN/index.html#resnet-vs-u-net)
 ## Residual scaling
 if the number of filters exceeded 1000, the residual variants started to exhibit instabilities and the network has just “died” early in the training, meaning that the last layer before the average pooling started to produce only zeros after a few tens of thousands of iterations.  
 caling down the residuals before adding them to the previous layer activation seemed to stabilize the training. 

@@ -9,10 +9,7 @@ dropout: solve overfitting
 LRN: normalization
 [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 ### Local Response Normalization
-```math
-b^i_{x,y}=\frac{a^i_{x,y}}{\Big(k+\frac{\alpha}{n}\sum^{min(N-1, c+n/2)}_{c=max(0,i-n/2)} (a^c_{x,y})^2 \Big)^\beta}
-```
-sum runs over n “adjacent” kernel maps at the same spatial position, and N is the total number of kernels in the layer. The ordering of the kernel maps is of course arbitrary and determined before training begins. This sort of response normalization implements a form of **lateral inhibition** inspired by the type found in real neurons, creating competition for big activities amongst neuron outputs computed using different kernels.
+[Normalization/LRN](/basic/normalization.html#local-response-normalization-nips-2012)
 
 ## VGG (ICLR 2014)
 [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)  
@@ -29,7 +26,16 @@ e.g. 192x25x32 ⇒ 192x1x16+16x25x32
 ![](img/inception.png)
 Application: GoogLeNet
 
-## ResNet (2015, CVPR 2016)
+## STN(CVPR 2015) 
+[Spatial Transformer Networks](https://arxiv.org/abs/1506.02025)
+
+
+## U-Net (MICCAI 2015)
+[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+An encoder-decoder architecture with skip-connections that forward the output of encoder layer directly to the input of the corresponding decoder layer through channel-wise concatenation.
+![](img/U-net.png)
+
+## ResNet (CVPR 2016)
 Residual Network  
 [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 ![](img/ResNet_core.png)
@@ -40,10 +46,6 @@ also solve 	1. vanishing gradient
 deeper network give higher train & test error than shallover network
 ![](img/resnet_degradation_problem.png)
 
-## U-Net (MICCAI 2015)
-[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-An encoder-decoder architecture with skip-connections that forward the output of encoder layer directly to the input of the corresponding decoder layer through channel-wise concatenation.
-![](img/U-net.png)
 ### ResNet vs U-Net
 Both are method to skip connection
 ResNet|U-Net

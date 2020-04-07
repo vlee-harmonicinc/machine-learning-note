@@ -4,7 +4,7 @@
 
 ## Nearest Neighbors
 ## SVM
-* [Support Vector Machine](/algorithm/svm.md)
+* [Support Vector Machine](svm.md)
 ## Gaussian Process
 [A Visual Exploration of Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/)
 ## Decision Tree

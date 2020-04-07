@@ -17,6 +17,8 @@ This section should be skipped since it already generated, but if you want to co
 `sphinx-quickstart`  
 ### build html
 `make html`
+### (optional) link check
+`make linkcheck`
 ### host HTTP server
 `cd build/html`
 `python3 -m http.server`

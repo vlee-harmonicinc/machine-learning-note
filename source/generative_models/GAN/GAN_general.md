@@ -3,7 +3,7 @@
 [Ian Goodfellow NIPS 2016 tutorial](https://arxiv.org/pdf/1701.00160.pdf)| [PPT](http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf) 
 
 ### DCGAN
-[DCGAN (ICLR 2016)](/generative_models/GAN_repersentation_learning.md#dcgan-iclr-2016)
+[DCGAN (ICLR 2016)](GAN_repersentation_learning.html#dcgan-iclr-2016)
 
 ### LSGAN
 [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)  

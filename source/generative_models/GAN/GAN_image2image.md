@@ -1,15 +1,10 @@
 # image-to-image
 
-pix2pix -> start point  
-LAPGAN, Progressive GAN, pix2pixHD -> higher resolution  
-cycleGAN -> unpaired, cross domain  
-Augmented CycleGAN, Paired CycleGAN, ComboGAN, StarGAN -> cycleGAN variant for representational learning/ multi. domains  
-
 ## pix2pix (CVPR 2017)
 [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004) by Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros  
 [https://phillipi.github.io/pix2pix/](https://phillipi.github.io/pix2pix/) | 
 [Image-to-Image Demo](https://affinelayer.com/pixsrv/)
-based on [conditional GAN](/generative_models/GAN_repersentation_learning.html#conditional-gan-2014), with image as conditional&noise input  
+based on [conditional GAN](GAN_repersentation_learning.html#conditional-gan-2014), with image as conditional&noise input  
 ![](img/pix2pix_result.png)
 dataset: paired image (supervised), e.g. segmentation/edge/map -> real photo, real photo → map
 discriminator: PatchGAN which also take conditional as pairs 
@@ -30,7 +25,8 @@ first proposed in Equation 6 of this paper
 > The generator trained with this loss will often be more conservative for unknown content. -- from CycleGAN FAQ
 
 ## Two-Way GANs
-[Two-Way GANs](two-way_GAN.md)
+[Two-Way GANs](two-way_GAN.md)  
+Could use unpaired datasets
 
 ## Progressive GAN (ICLR 2018)
 [Progressive Growing of GANs for Improved Quality, Stability, and Variation](https://arxiv.org/pdf/1710.10196.pdf) by Nvidia  
@@ -38,6 +34,8 @@ first proposed in Equation 6 of this paper
 ### Growing
 resize + w * conv, increase weighting of convolution to fade smoothly  
 fully integrate previous learning result into bigger model  
+### Normalization
+[Pixelwise Feature Vector Normalization](/basic/normalization.html#pixelwise-feature-vector-normalization-iclr-2018) in generator
 ### Result
 <iframe src="https://www.youtube.com/embed/XOxxPcy5Gr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -68,14 +66,7 @@ Question: What if growing network like Progressive GAN (fade) instead of residua
 
 ## GauGAN
 ### SPADE (CVPR 2019)
-stands for SPatially-Adaptive (DE)normalization, spatially-adaptive normalization  
-[Semantic Image Synthesis with Spatially-Adaptive Normalization](https://arxiv.org/abs/1903.07291) by Nvidia  
-![](https://nvlabs.github.io/SPADE/images/teaser_high_res_uncompressed.png)
-solving issue: semantic information washed away through stacks of convolution, normalization, and nonlinearity layers
-similar to batchNorm, activation is normalized in the channelwise manner, and then modulated with learned ``$`\gamma, \beta`$``  
-Unlike prior conditional normalization, ``$`\gamma, \beta`$`` are not vectors, but tensors with spatial dimensions
-![](https://nvlabs.github.io/SPADE/images/method.png)  
-using the input layout for modulating the activations in normalization layers through a spatially-adaptive, learned transformation (tow-layers convolutional network). 
+[Normalization/SPADE](/generative_models/GAN/GAN_image2image.html#gaugan)
 ### Project
 [Live Interactive Demos](https://www.nvidia.com/en-us/research/ai-playground/) | 
 [Project](https://arxiv.org/abs/1903.07291) | 

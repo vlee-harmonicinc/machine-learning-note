@@ -13,11 +13,11 @@ backbone  VGG16
 unpooling: the decoder uses *pooling indices* computed in the max-pooling step of the corresponding encoder to perform non-linear upsampling
 
 ## U-net (MICCAI 2015)
-[U-net](/CNN/models#u-net-miccai-2015)
+[U-net](/CNN/models.html#u-net-miccai-2015)
 
 ## Mask R-CNN (ICCV 2017)
 [Mask R-CNN](https://arxiv.org/abs/1703.06870)  
-extends [Faster R-CNN](/CNN/object_detection/object_detection#faster-r-cnn-2015) by adding a branch for predicting segmentation masks on each Region of Interest  
+extends [Faster R-CNN](/CNN/object_detection/object_detection.html#faster-r-cnn-2015) by adding a branch for predicting segmentation masks on each Region of Interest  
 ![](img/mask-rcnn.png)  
 ![](img/mask-rcnn-architecture.png)  
 code: [facebookresearch/Detectron](https://github.com/facebookresearch/Detectron2)

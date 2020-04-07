@@ -15,7 +15,7 @@ solutions:  generalized dataset, Orthonormal constraint (正交約束), diversit
 the model parameters oscillate, destabilize
 ### Vanishing gradient because of too good discriminator
 the discriminator gets too successful that the generator gradient vanishes and learns nothing
-solution: [WGAN - Wasserstein distance](/generative_models/GAN_general.html#wgan-icml-2017)
+solution: [WGAN - Wasserstein distance](GAN_general.html#wgan-icml-2017)
 ### Image quality
 * resolution
 * noise
