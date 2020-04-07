@@ -1,6 +1,7 @@
 # Neural Network
-* [Neural Network](/basic/neural_network.md)
-* [Loss Functions](/basic/loss_functions.md)  
-* [Optimizer](/basic/optimizer.md)  
-* [Activation Functions](/basic/activation_functions.md)  
-* [Normalization](/basic/normalization.md) 
+* [Neural Network](neural_network.md)
+* [Loss Functions](loss_functions.md)  
+* [Optimizer](optimizer.md)  
+* [Activation Functions](activation_functions.md)  
+* [Normalization](normalization.md) 
+* [Tricks](tricks.md)

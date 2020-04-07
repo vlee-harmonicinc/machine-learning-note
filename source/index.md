@@ -17,7 +17,6 @@ To be honest, for most of paper, I haven't read every sections of it. Some of pa
 * [Audio](/audio/index.md)
 * [AutoML](/AutoML/index.md)
 * [Issues](/issue.md)
-* [Tricks](/tricks.md)
 * [Useful Links](/links/useful_links.md)
 * [Blog](/blog/index.md)
 
