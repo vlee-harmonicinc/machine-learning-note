@@ -33,12 +33,13 @@ python3 test.py --dataroot <folder> --model test --dataset_mode single --learn_r
 ```
 
 ### DeblurGAN-v2 (ICCV 2019)
-[DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better](https://arxiv.org/abs/1908.03826)
+[DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better](https://arxiv.org/abs/1908.03826)  
 [pyTorch](https://github.com/TAMU-VITA/DeblurGANv2)
 * Framework: introduce [FPN](/CNN/object_detection/object_detection.html#fpn-cvpr-2017) to image restoration
 * Backbone: use [Inception-ResNet-v2](/CNN/models.html#resnet-2015-cvpr-2016) for quality, [MobileNet](/CNN/light-weight_models.html#mobilenet-v2-cvpr-2018) for speed  
 **test pre-trained inception**: Result of debluring video motion blur is quite good, speed also improved, 2.4fps for 1080P on GTX 1080Ti  
-[feature/video_inference](https://github.com/htleeab/DeblurGANv2/tree/feature/video_inference) support video inference :)
+[feature/video_inference](https://github.com/htleeab/DeblurGANv2/tree/feature/video_inference) support video inference :)  
+But there is some [purple artifact](https://github.com/TAMU-VITA/DeblurGANv2/issues/18) not fixed even the issue is closed :(
 
 ## CDVD-TSP (CVPR 2020)
 [Cascaded Deep Video Deblurring Using Temporal Sharpness Prior] - has not released yet?  
