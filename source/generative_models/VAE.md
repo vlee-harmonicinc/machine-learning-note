@@ -23,3 +23,6 @@ Disadvantages comparing with GAN:
 
 ## AVB (2017)
 [Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks](https://arxiv.org/abs/1701.04722)
+
+## VAE-GAN (ICML 2016)
+[Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300)

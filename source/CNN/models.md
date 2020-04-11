@@ -70,6 +70,10 @@ also used in Visualizing and understanding convolutional networks (ECCV 2014)
 fusion layer  
 usually used for global feature
 
+## CAM (CVPR 2016)
+[Learning deep features for discriminative localization](http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)  
+**Class Activation Mapping**, usually used for visualization.
+
 ## DenseNet (CVPR 2017)
 [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
 connect to previous layer with concatenation (rather than sum)  

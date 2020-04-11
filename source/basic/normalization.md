@@ -59,7 +59,7 @@ like batch norm with 1 batch size (still normalize though heightxwidth)
 ## Conditional BatchNorm (NIPS 2017)
 [Modulating early visual processing by language](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)  
 [pytorch](https://github.com/ap229997/Conditional-Batch-Norm) | [guessWhat?!](https://www.guesswhat.ai)  
-``$`\gamma, \Beta`$`` learnt from one-hidden-layer MLP rely on input  
+``$`\gamma, \beta`$`` learnt from one-hidden-layer MLP rely on input  
 used in [cGAN with projection discriminator](/generative_models/GAN/GAN_general.html#projection-discriminator-iclr-2018) and [SAGAN](/generative_models/GAN/GAN_general.html#sa-gan-pmlr-2019)  
 
 ## Conditional Instance Normalizatoin (ICLR 2017)
@@ -83,8 +83,8 @@ moving avg (larger than 1 batch) of mean and SD: ``$`\mu \sigma  `$``
 ```math
 \mu_B    & \leftarrow \frac1{m}\sum^m_{i=1}x_i \\
 \sigma_B & \leftarrow \sqrt{\epsilon + \frac1{m}\sum^m_{i=1}(x_i-\mu_B)^2}\\
-r        & \leftarrow stop_gradient(clip_{\[1/r_{max}, r_{max}\]}(\frac{\sigma_B}{\sigma})) \\
-d        & \leftarrow stop_gradient(clip_{\[-d_{max},d_{max}\]})(\frac{\mu_B-\mu}{\sigma})  \\
+r        & \leftarrow stop_gradient(clip_{[1/r_{max}, r_{max}]}(\frac{\sigma_B}{\sigma})) \\
+d        & \leftarrow stop_gradient(clip_{[-d_{max},d_{max}]})(\frac{\mu_B-\mu}{\sigma})  \\
 \hat{x}_i& \leftarrow \frac{x_i-\mu_B}{\sigma_B}\dot r + d
 y_i      & \leftarrow \gamma \hat{x}_i + \beta
 ```
