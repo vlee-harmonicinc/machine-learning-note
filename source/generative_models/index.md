@@ -1,7 +1,7 @@
 ## Generative Models
 
 * [GAN](GAN/index.md)
-* [VAE](VAE.md)
+* [Auto-Encoder](autoencoder.md)
 * [Flow](flow.md)
 * [Metrics](metrics.md)
 * [NLP](NLP.md)

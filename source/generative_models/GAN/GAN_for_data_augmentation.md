@@ -21,13 +21,12 @@ use GAN generate new (negative) input, assigns a **uniform label distribution** 
 ## BAGAN
 [BAGAN: Data Augmentation with Balancing GAN](https://arxiv.org/pdf/1803.09655.pdf)  
 > The generative model learns useful features from majority classes and uses these to generate images for minority classes. We apply **class conditioning in the latent space** to drive the generation process towards a target class. The generator in the GAN is initialized with the encoder module of an **autoencoder** that enables us to learn an accurate class-conditioning in the latent space. 
+
 ## DeLiGAN (CVPR 2017)
 [DeLiGAN : Generative Adversarial Networks for Diverse and Limited Data](https://arxiv.org/pdf/1706.02071.pdf)  
 when data is limited yet originates from a diverse image modality, increasing the network depth becomes infeasible. 
 * enhance intra-class diversity
 > Instead of increasing the model depth, we propose to increase the modelling power of the **prior distribution**. In particular, we propose a **reparameterization of the latent space** as a **Mixtureof-Gaussians model**
-### reparameterization trick
-[VAE]
 
 ## VERI-Wild (CVPR 2019)
 [VERI-Wild: A Large Dataset and a New Method for Vehicle Re-Identification in the Wild](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lou_VERI-Wild_A_Large_Dataset_and_a_New_Method_for_Vehicle_CVPR_2019_paper.pdf)

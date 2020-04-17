@@ -1,14 +1,18 @@
 ## General
-[Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) (NIPS 2014) by iangoodfellow  
+
+### GAN (NIPS 2014)
+[Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) by iangoodfellow  
 [Ian Goodfellow NIPS 2016 tutorial](https://arxiv.org/pdf/1701.00160.pdf)| [PPT](http://www.iangoodfellow.com/slides/2016-12-04-NIPS.pdf) 
 
 ### DCGAN
 [DCGAN (ICLR 2016)](GAN_repersentation_learning.html#dcgan-iclr-2016)
 
+<!--
 ### LSGAN
 [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)  
 adopt least squares loss function for the discriminator, which yeilds minimizing the Pearson x^2 divergence  
 Notes: [Gapeng](https://zhuanlan.zhihu.com/p/25768099) said change the loss in DCGAN without modification of model architecture do not imporve result
+-->
 
 ### WGAN (ICML 2017)
 [Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862)
@@ -79,3 +83,11 @@ Not only increase the computation, there are still novel improvement to handle t
 1. Batch size and regularization
 2. **truncation trick**: improve quality of output (trade-of diversity)
 3. why big GAn usually not stable and solutions
+
+### Mode Seeking GAN (CVPR 2019)
+[Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis](http://openaccess.thecvf.com/content_CVPR_2019/papers/Mao_Mode_Seeking_Generative_Adversarial_Networks_for_Diverse_Image_Synthesis_CVPR_2019_paper.pdf), MSGAN
+![](img/Mode_Seeking_GAN.png)
+mode seeking regularization term to directly maximize the ratio of the distance between G(c, z1) and G(c, z2) with respect to the distance between latent code z1 and z2  
+```math
+L_{ms}=max_G(\frac{d_I(G_(c,z_1), G_(c,z_2))}{d_z(z_1,z_2)})
+```

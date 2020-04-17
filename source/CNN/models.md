@@ -71,7 +71,7 @@ inidivual, not related to previous convolution
 ![small_img](https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/padding_strides_transposed.gif)[more animations](https://github.com/vdumoulin/conv_arithmetic)  
 Upsampling with deconvolution might lead to checkerboard artifact because of strides, [pixelShuffle](#pixelshuffle-cvpr-2016) could fully utils all weights hence and solve this issue    
 Paper using deconvolution for upsampling:
-1. [autoencoder](/generative_models/VAE.html)
+1. [autoencoder](/generative_models/autoencoder.html)
 1. “deconvolutional” generator from [GAN (NIPS 2014)](/generative_models/GAN/index.html)
 1. [segmentation/FCN](object_detection/segmentation.html#fcn-cvpr-2015): [Fully convolutional networks for semantic segmentation (CVPR 2015)](https://arxiv.org/abs/1605.06211) 
 1. [DeconvNet: Learning deconvolution network for semantic segmentation (ICCV 2015)](https://arxiv.org/abs/1505.04366)

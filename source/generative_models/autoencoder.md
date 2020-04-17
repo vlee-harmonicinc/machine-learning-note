@@ -1,8 +1,9 @@
-# VAE
-## Background - AutoEncoder, AE
+# Auto-Encoder
+## AutoEncoder, AE
+Not sure where is the origin
 [Autoencoder-Deep Learning](https://www.deeplearningbook.org/contents/autoencoders.html)
 Usage:
-1. Dimensionality reduction
+1. Dimensionality reduction [Reducing the dimensionality of data with neural networks (Science 2006)](https://dbirman.github.io/learn/hierarchy/pdfs/Hinton2006.pdf)  
 2. Information retrieval via **semantic hashing**: produce a code that is low-dimensional and binary, then stored in hash table. 1. easily return entries with same binary code and search similar (or less similar) entries efficiently
 3. Denoising, inpaint task
 
