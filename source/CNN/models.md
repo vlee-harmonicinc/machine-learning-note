@@ -48,18 +48,42 @@ deeper network give higher train & test error than shallover network
 
 ### ResNet vs U-Net
 Both are method to skip connection
-ResNet|U-Net
+
+ResNet / residual block|U-Net
 ---|---
-short connection usually|long connection usually 
+short connection usually, very general|long connection
 element-wise sum|concatenation
 channel remain the same|channel increase when concatentation (feature duplicated)
 keep w,h/ resolution|down-scaling in-between, upscale before concatentation
 
-## DeconvNet (ICCV 2015)
-[Learning deconvolution network for semantic segmentation](https://arxiv.org/abs/1505.04366)
+## Deconvolution
+The naming of “deconvolution”/ “transposed convolution” is quite unclear, so I put it together for direct comparison.
+1. Upsampling, image generation
+1. Covolutional sparse coding, unspervised learning
+1. Visualization
+
+
+ref: [谭旭: 如何理解深度学习中的deconvolution networks？ - 知乎](https://www.zhihu.com/question/43609045/answer/132235276)
+### Upsampling, image generation
+Also called **Fractionally strided convolutions**  
+inidivual, not related to previous convolution  
+![small_img](https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/no_padding_no_strides_transposed.gif)
+![small_img](https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/padding_strides_transposed.gif)[more animations](https://github.com/vdumoulin/conv_arithmetic)  
+Upsampling with deconvolution might lead to checkerboard artifact because of strides, [pixelShuffle](#pixelshuffle-cvpr-2016) could fully utils all weights hence and solve this issue    
+Paper using deconvolution for upsampling:
+1. [autoencoder](/generative_models/VAE.html)
+1. “deconvolutional” generator from [GAN (NIPS 2014)](/generative_models/GAN/index.html)
+1. [segmentation/FCN](object_detection/segmentation.html#fcn-cvpr-2015): [Fully convolutional networks for semantic segmentation (CVPR 2015)](https://arxiv.org/abs/1605.06211) 
+1. [DeconvNet: Learning deconvolution network for semantic segmentation (ICCV 2015)](https://arxiv.org/abs/1505.04366)
 **unpooling**: use the max locations of the encoder feature maps (pooling indices) to perform non-linear upsampling in the decoder network  
 **deconvolution**: convolution transpose  
-also used in Visualizing and understanding convolutional networks (ECCV 2014)
+### Covolutional sparse coding, unspervised learning
+Train an autoencoder first, then use deconvolution to extract features from trained weights.
+1. [Deconvolutional networks (CVPR 2010)](https://www.matthewzeiler.com/mattzeiler/deconvolutionalnetworks.pdf) - Matthew D. Zeiler
+1. [Adaptive deconvolutional networks for mid and high level feature learning (ICCV 2011)] - Matthew D. Zeiler  
+### Visualization
+Compute transpose of trained convolutional layer, to visualize the pixels that activate specified feature (channel in high-level layer), understand the approximate purpose of each convolution filter  
+1. [FZNet: Visualizing and Understanding Convolutional Networks (ECCV 2013)](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) - Matthew D. Zeiler  
 
 ## PixelShuffle (CVPR 2016)
 [Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158)
@@ -72,13 +96,25 @@ usually used for global feature
 
 ## CAM (CVPR 2016)
 [Learning deep features for discriminative localization](http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)  
-**Class Activation Mapping**, usually used for visualization.
+**Class Activation Mapping**
+1. Using **global average pooling layer** for weekly supervised method. Transfer the activation map learnt from classification (with simple object label) to other task like object recognition(that require boundary boxes), localization.
+1. visualize the model
+### Grad-CAM
+### Note:
+How is its performance comparing to deconvolution while traiing with autoencoder or classification(weekly supervised)?
+
 
 ## DenseNet (CVPR 2017)
 [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
-connect to previous layer with concatenation (rather than sum)  
-adv: 		Do not require data augmentation  
-disadv: 	higher memory requirement  
+Connect to previous layer with concatenation (rather than sum)  
+Many said it is not quite useful and using residual instead. 
+From visualization result, seems low-layer feature really useful for high layer. (Maybe the middle level layer will learn middle level information without storing low level info with DenseNet architecture.)  
+### [Memory-Efficient Implementation of DenseNets](https://arxiv.org/pdf/1707.06990.pdf)
+DenseNet less parameters but require more memory because of implementation of concatenation. Could be optimizated via shared memory.
+### Ablation Experiments of other paper:
+[PWC-Net](img2img/optical_flow.html#pwc-net-cvpr-2018)
+> Removing the DenseNet connections results in higher training error but lower validation errors when the model is trained on FlyingChairs. However, after the model is fine-tuned on FlyingThings3D, DenseNet leads to lower errors.
+PWC-Net-small further reduces this by an additional 2 times via dropping DenseNet connections and is more suitable for memorylimited applications
 
 ## CapsuleNet (2017)
 [Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829)
