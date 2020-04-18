@@ -4,25 +4,25 @@
 
 ## Papers
 * [arXiv.org](https://arxiv.org/)  
-* [OpenReview](https://openreview.net/)
-* [Papers With Code](https://paperswithcode.com)  
-* [Papers With Code - State of the Art](https://paperswithcode.com/sota)  
-* [arxiv-sanity](http://www.arxiv-sanity.com/top)
-
+    * [arXiv Analytics](http://arxitics.com/)
+    * [arxiv-sanity](http://www.arxiv-sanity.com/top)
 * [Computer Vision Foundataion open access](http://openaccess.thecvf.com/menu.py)
 * [CVPR 2019](http://openaccess.thecvf.com/CVPR2019.py)
 * [ICCV](http://abc-iccv)
-* [AAAI]
 
-### Papers Summary
-* [ICCV 2019 全部论文下载及解读汇总](http://bbs.cvmart.net/topics/447/iccv2019)
+### Paper comment
+* [OpenReview](https://openreview.net/)
+* [Shortscience](https://www.shortscience.org/)
+
+### Code
+* [Papers With Code](https://paperswithcode.com)  
+* [Papers With Code - State of the Art](https://paperswithcode.com/sota)  
 
 ## Book
 * [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow and Yoshua Bengio and Aaron Courville  
 
 ## Discussion
 * [reddit: r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
-* [PaperWeekly](http://www.paperweekly.site/)
 
 ## Blog
 * [Google AI Blog](https://ai.googleblog.com/)

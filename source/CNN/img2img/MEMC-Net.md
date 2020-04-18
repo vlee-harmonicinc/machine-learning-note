@@ -13,7 +13,7 @@
 ### (b) Learning-based - flow-based
 1. Motion Estimation: CNNs ([SPyNet(CVPR 2017)](http://openaccess.thecvf.com/content_cvpr_2017/papers/Ranjan_Optical_Flow_Estimation_CVPR_2017_paper.pdf), [Flownet (ICCV 2015)](https://arxiv.org/abs/1504.06852), [Flownet 2(CVPR 2017)](https://arxiv.org/abs/1612.01925))
     1. predict bi-directional flow: pretrained flow model first, then task-oriented. e.g. [TOFlow(IJCV 2019)](https://arxiv.org/abs/1711.09078)
-    2. bilinear warping operation to align input frames based on linear motion models (i.e. Synthesized frame) [Deep Voxel Flow(ICCV 2017)](), [FIGAN()](https://arxiv.org/abs/1711.06045), [Super SloMo(CVPR 2018)](https://arxiv.org/abs/1712.00080)
+    2. bilinear warping operation to align input frames based on linear motion models (i.e. Synthesized frame) [Deep Voxel Flow(ICCV 2017)](video_frame_interpolation.md#deep-voxel-flow-iccv-2017), [FIGAN(2017)](https://arxiv.org/abs/1711.06045), [Super SloMo(CVPR 2018)](https://arxiv.org/abs/1712.00080)
 1. Bilinear Warpping: blend neighbor pixels based on the sub-pixel shifts
 1. Post-processing
 ### (c) Learning-based - kernel-based

@@ -7,3 +7,7 @@ iframe {
 img[alt=small_img]{
     max-width:150px;
 }
+
+img[alt=middle_img]{
+    max-width:300px;
+}

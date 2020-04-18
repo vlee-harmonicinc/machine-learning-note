@@ -30,16 +30,16 @@ Hierarchical Grouping Algorithm, merge from small segment to large proposal
 ### Non-Maximum Suppression, NMS
 Post-processing to removes dupliicated detection for the same instance by [IoU](/CNN/object_detection/measurement#intersection-over-union-iou)
 
-## Spatial Pyramid Pooling, SPP-net / SPPNet (TPAMI 2015)
+## SPP-net / SPPNet (TPAMI 2015)
 [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition](https://arxiv.org/abs/1406.4729)  
 Previous model require a fixed-size input image.  
-### SPP
+### Spatial Pyramid Pooling SPP
 *spatial pyramid pooling layer* get fixed size output from flexible size input via adapting the step size  
 Improve _Bag-of-Words (BoW)_ to maintain *spatial infomation* by pooling in _local spatial bins_. These spatial bins have sizes proportional to the image size, so the number of bins is fixed regardless of the image size.
 
 ## Fast R-CNN (ICCV 2015)
 [Fast R-CNN](https://arxiv.org/abs/1504.08083)  
-R-CNN, SPP drawbacks:
+Previous model drawbacks:
 > Training is a multi-stage pipeline that involves extracting features, fine-tuning a network with log loss, training SVMs. Fine-tuning algorithm cannot update the CNN that precede spatial pyramid pooling.  
 
 Fast R-CNN: using fully connected classifer so it could also train the CNN features.  
@@ -55,7 +55,7 @@ Contributions:
 > The RoI layer is simply the special-case of the spatial pyramid pooling layer used in SPPnets in which there is only one pyramid level.
 
 ## Faster R-CNN (NIPS 2015)
-![](img/faster_R-CNN.png)  
+![middle_img](img/faster_R-CNN.png)  
 7fps
 ### Region Proposal Network (RPN)
 An RPN is a fully convolutional network that simultaneously predicts object bounds and objectness scores at each position with *anchor*. (RPN replace selective search to produce region proposal.)  
@@ -73,10 +73,10 @@ object for each proposal
 
 ## DenseBox (2015)
 [DenseBox: Unifying Landmark Localization with End to End Object Detection](https://arxiv.org/abs/1509.04874)  
-one-stage fully convolutional neural network (FCN), single-scale  
+**one-stage** fully convolutional neural network (FCN), single-scale  
 1. FCN, if designed and optimized carefully, can detect multiple different objects extremely accurately and efficiently
 2. incorporating with landmark localization during multi-task learning, DenseBox further improves object detection accuray  
-*anchor free*, no proposal required  
+**anchor free**, no proposal required  
 ### Detection
 input: ``$`m\times n`$`` image  
 the left top and right bottom points of the target bounding box: ``$`p_t=(x_t, y_t), p_b=(x_b, y_b)`$`` in output corrdinate space 
@@ -104,10 +104,10 @@ based on RPN of Faster R-CNN, extract RoI from 9 corners heatmaps
 ## UnitBox (ACM MM 2016)
 [UnitBox: An Advanced Object Detection Network](https://arxiv.org/abs/1608.01471)  
 * introduce a novel *Intersection over Union (IoU) loss function*
-* adopts a fully convolutional network architecture, to predict the object bounds as well as the *pixel-wise classification scores* on the feature maps directly (~ DenseBox)
+* adopts a fully convolutional network architecture, to predict the object bounds as well as the *pixel-wise classification scores* on the feature maps directly (concurrent work of DenseBox)
 
 ## SSD (ECCV 2016)
-[SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)  
+[SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325) from UNC Chapel Hill  
 *One-stage*: detecting objects in images using a single deep neural network
 > The core of SSD is predicting category scores and box offsets for *a fixed set of default bounding boxes using small convolutional filters applied to feature maps*
 Or a multi-scale version YOLOv1  
@@ -120,7 +120,9 @@ Or a multi-scale version YOLOv1
 Drawback: Difficult to detect small object since low level layer do not have high level feature  
 ![](img/SSD_architecture.png)
 ### DSSD (2017)
-[SSD: Deconvolutional Single Shot Detector](https://arxiv.org/abs/1701.06659)
+[SSD: Deconvolutional Single Shot Detector](https://arxiv.org/abs/1701.06659) from UNC Chapel Hill  
+shallow layers have less semantic information, use deconvolution to improve small object accuracy  
+slower than SSD, cannot real-time
 
 ## YOLO (2015~)
 * [YOLO](/CNN/object_detection/YOLO.md)  
@@ -274,6 +276,12 @@ based on [CenterNet: Objects as Points](#centernet-objects-as-points-2019)
 * using Gaussian kernels to encode training samples for center localization and size regression ~increasing batch size, so that enlarge the learning rate[(Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour)](https://arxiv.org/abs/1706.02677) and accelerate the training process. (It predict ``$`(w_l, h_t, w_r, h_b)`$`` instead of size since the training sample of size regression is not only the center points
 * initiative sample weight for better information utilization
 result: balance training time while the accuracy and inference time still comparable to CenterNet
+
+## EfficientDet (CVPR 2020)
+[EfficientDet: Scalable and Efficient Object Detection](https://arxiv.org/abs/1911.09070) from Google Brain  
+[pyTorch re-implementation](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)  
+### BiFPN
+### Compound Scaling 
 
 ## History
 ![](img/detector_history.png)
