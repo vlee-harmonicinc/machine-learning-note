@@ -22,7 +22,7 @@ improve the stability of learning by using Wasserstein-1 distance.
 KL, JS divegence is discontinue, not stable when training nerual network; introduce **WS divegence**, which is continues.  
 the minimum cost of transporting mass in converting the data distribution q to the data distribution p  
 solve: vanishing gradients in GAN casued by good discriminator + bad generator  
-![](img/WGAN_critic.png)
+![middle_img](img/WGAN_critic.png)
 ##### Apart from Wasserstein-1 distance:
 * No log in the loss. The output of D is no longer a probability, hence we do not apply sigmoid at the output of D
 * Clip the weight of D (0.01)

@@ -1,7 +1,14 @@
 # Vivian's machine learning note's
 
-This notes breifly mark some paper to keep track of the development on some topic that I interested in and understand the main contribution of each paper. 
-To be honest, for most of paper, I haven't read every sections of it. Some of paper haven't been read at all, just mark a link. Please correct me in git issue/pull request if I wrote something wrong. 
+This webpage collect machine learning (mainly neural network) papers based on topic with some brief note of novelity and contribution.
+
+## Important pages
+[CNN Models](/CNN/models.md)  
+[object detection](/CNN/object_detection/object_detection.md)  
+[GAN](/generative_models/GAN/GAN_general.md)  
+[GAN: image2image](/generative_models/GAN/GAN_image2image.md)  
+[GAN: two-way GAN](/generative_models/GAN/two-way_GAN.md)  
+[GAN: repersentation learning / condition](/generative_models/GAN/GAN_repersentation_learning.md)  
 
 ## Contents
 * [Math](/math/index.md)
@@ -19,12 +26,3 @@ To be honest, for most of paper, I haven't read every sections of it. Some of pa
 * [Issues](/issue.md)
 * [Useful Links](/links/useful_links.md)
 * [Blog](/blog/index.md)
-
-### Important pages
-[CNN Models](/CNN/models.md)  
-[object_detection](/CNN/object_detection/object_detection.md)  
-[super-resolution](/CNN/img2img/super-resolution.md)  
-[GAN: image2image](/generative_models/GAN/GAN_image2image.md)  
-[GAN: two-way GAN](/generative_models/GAN/two-way_GAN.md)  
-[GAN: repersentation learning / condition](/generative_models/GAN/GAN_repersentation_learning.md)  
-[GAN: general improvement](/generative_models/GAN/GAN_general.md)  
