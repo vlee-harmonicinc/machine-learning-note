@@ -7,17 +7,16 @@
 ### DCGAN
 [DCGAN (ICLR 2016)](GAN_repersentation_learning.html#dcgan-iclr-2016)
 
-<!--
 ### LSGAN
 [Least Squares Generative Adversarial Networks](https://arxiv.org/abs/1611.04076)  
-adopt least squares loss function for the discriminator, which yeilds minimizing the Pearson x^2 divergence  
-Notes: [Gapeng](https://zhuanlan.zhihu.com/p/25768099) said change the loss in DCGAN without modification of model architecture do not imporve result
--->
+adopt least squares loss function for the **discriminator**, which yeilds minimizing the Pearson x^2 divergence to enforce the fake samples toward the decision boundary  
+According to [Gapeng](https://zhuanlan.zhihu.com/p/25768099) , [google study](#are-gans-created-equal-a-large-scale-study-nips-2018), [ajolicoeur/cats](https://ajolicoeur.wordpress.com/cats/) seems LS loss do not improve result, but [DeblurGANv2](/CNN/img2img/deblurring.html#deblurgan-v2-iccv-2019) using it. I guess least-square loss is suitable for restoration/ enhancement, but not generative task.
 
 ### WGAN (ICML 2017)
 [Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862)
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875)  
-improve the stability of learning by using Wasserstein-1 distance. 
+improve the stability of learning by using Wasserstein-1 distance.  
+Note: WGAN aims for stabilize the GAN without tweaking, not improving output. 
 ##### Wasserstein distance= Earth-Mover(EM) distance
 KL, JS divegence is discontinue, not stable when training nerual network; introduce **WS divegence**, which is continues.  
 the minimum cost of transporting mass in converting the data distribution q to the data distribution p  
