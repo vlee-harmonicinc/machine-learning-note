@@ -1,17 +1,11 @@
 # CNN
 * [Models](models.md)
+* [Multi-Scale Feature Representations](multi-scale_feature_representations.md)
+* [Visualization](visualization.md)
 * [Image-to-Image Translation](img2img/index.md)
 * [Optical character recognition, OCR](optical_character_recognition.md)
 * [Image Retrieval](image_retrieval.md)
-## Detection
-* [Object Detection](object_detection/object_detection.md)
-* [Segmentation](object_detection/segmentation.md)
-* [Tracking](object_detection/tracking.md)
-* [Temporal Action Proposal Genration](object_detection/temporal_proposal.md)
-* [Measurement of Object Detection](object_detection/measurement.md)
-* [Face Recognition](object_detection/face.md)
-* [Pose Estimation](object_detection/pose.md)
-* [Action Recognition](object_detection/action.md)
+* [Object Detection](object_detection/index.md)
 ## 3D
 * [3D Object Detection](3D/3D_object_detection.md)
 * [3D Pose Estimation](3D/3D_pose_estimation.md)
