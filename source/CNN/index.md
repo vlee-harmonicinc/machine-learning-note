@@ -18,13 +18,18 @@
 ### Receptive Field
 [VGG](#vgg-iclr-2014)
 ### Pooling
+1. downscale
+1. small translation-invariance
+
 ### Downscale
-stride, pooling or resize
-less computation required 
-get high level features
+1. resize
+1. stride
+1. pooling
+    1. max pooling
+    1. avg pooling
+
 ##### Stride vs pooling
 
-|-----------|------|-------|
 |           |stride|pooling|
 |-----------|------|-------|
 |computation|less  |4 times more computation+pooling operate|

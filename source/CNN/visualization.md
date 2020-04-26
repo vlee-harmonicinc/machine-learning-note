@@ -27,6 +27,6 @@ Using gradiant of backpropagation to find the weight of CAM **without GAP**. Hen
 }^{\text{global average pooling}}
 \underbrace{\frac{\partial y^c}{\partial A^k_{ij}}}_{\text{gradients via backprop}} 
 ```
-(If I understand correctly, Grad-CAM require ground truth while CAM do not. But it is a very minor issue since usually visualization with ground truth. Also, it assume the weighting/importance of different location of same channel do not have much impact)
+
 ### Guided Grad-CAM
 element-wise multiple **guided backpropagation** from [Striving for Simplicity: The All Convolutional Net (ICLR 2015)](https://arxiv.org/pdf/1412.6806.pdf) to edge, stripe, texture etc

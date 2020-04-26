@@ -122,13 +122,7 @@ fusion layer
 usually used for global feature
 
 ## CAM (CVPR 2016)
-[Learning deep features for discriminative localization](http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf)  
-**Class Activation Mapping**
-1. Using **global average pooling layer** for weekly supervised method. Transfer the activation map learnt from classification (with simple object label) to other task like object recognition(that require boundary boxes), localization.
-1. visualize the model
-### Grad-CAM
-### Note:
-How is its performance comparing to deconvolution while traiing with autoencoder or classification(weekly supervised)?
+[CNN/visualization/CAM](visualization.html#cam-cvpr-2016)
 
 
 ## DenseNet (CVPR 2017)
