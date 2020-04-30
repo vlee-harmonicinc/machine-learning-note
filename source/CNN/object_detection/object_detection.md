@@ -51,8 +51,8 @@ Contributions:
 2. embedding (one shot) features with CNN with flexible size input
 3. bounding box regression
 4. classification with fully connnected network
-### RoI Pooling
-> The RoI layer is simply the special-case of the spatial pyramid pooling layer used in SPPnets in which there is only one pyramid level.
+### RoI
+> The RoI pooling layer uses max pooling to convert the features inside any valid region of interest into a small feature map with a fixed spatial extent of H × W. The RoI layer is simply the special-case of the spatial pyramid pooling layer used in SPPnets in which there is only one pyramid level.
 
 ## Faster R-CNN (NIPS 2015)
 [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf)  

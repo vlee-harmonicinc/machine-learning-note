@@ -27,35 +27,23 @@ the network loss to inception, but the pretrained network is useful for image fe
 
 
 ## Inception
-### Inception (ILSVRC 2014)
-[Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842)  
-By adding auxiliary classifiers connected to these intermediate layers, we would expect to encourage discrimination in the lower stages in the classifier, increase the gradient signal that gets propagated back, and provide additional regularization.
-![](img/inception.png)
-Application: GoogLeNet
-### Inception v2 (ICML 2015)
-[Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167), 
-[normalization/batch normalization](/basic/normalization.html#batch-normalization-icml-2015)
-### Inception v3 (CVPR 2016)
-[Rethinking the Inception Architecture for Computer Vision](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.pdf)
-#### Factorizing Convolutions with Large Filter Size
-##### Factorization into smaller convolutions
-computation of conv 5x5 > 3x3+3x3
-##### Spatial Factorization into Asymmetric Convolutions 
-3x3 > 3x1+1x3
-#### Rethinking the Utility of Auxiliary Classifiers
-Auxiliary classifiers did not improve convergence early in the training. Near the end of training, the network with the auxiliary branches starts to overtake the accuracy of the network without any auxiliary branch and reaches a slightly higher plateau.
-The hypothesis of v1 that auxiliary classifier help evolving the low-level features is most likely misplaced. Auxiliary classifiers act as regularizer.
-### Inception v4, Inception-ResNet (AAAI 2017)
-[Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](http://arxiv.org/pdf/1602.07261.pdf)
-#### Pure Inception blocks
-keep tuning...
-#### residual scaling
-stabilize training, prevent network died early. scale down the residual before element-wise sum with scale 0.1~0.3 
-Note: In other words, enforce the residual block learn x3~10 of residual value. It is how residual scaling avoid died?
+* [Inception](inception.md)
 
-## STN(CVPR 2015) 
-[Spatial Transformer Networks](https://arxiv.org/abs/1506.02025)
+1. auxiliary classifiers
+1. batch normalization
+1. factorizing convolutions
+1. residual scaling
 
+## STN (CVPR 2015)
+[Spatial Transformer Networks](https://arxiv.org/abs/1506.02025) from DeepMind  
+learn spatial transformation from data in a deep learning framework. It warps the feature map via a global parametric transformation such as affine transformation
+1. **Localisation net**: predict transform parameters ``$` \theta `$``
+1. **Parameterised Sampling Grid**: apply ``$` \theta `$``
+1. **Differentiable Image Sampling**: apply sampling kernel which defines the image interpolation (e.g. bilinear)
+
+Backpropagation: differentiate through the sampling mechanism.
+[r/what_happened_to_spatial_transformers](https://www.reddit.com/r/MachineLearning/comments/9moyzk/d_what_happened_to_spatial_transformers/) seems easily collapsed  
+alternative: [Deformable Convolution](#deformable-convolution)
 
 ## U-Net (MICCAI 2015)
 [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
@@ -142,14 +130,29 @@ PWC-Net-small further reduces this by an additional 2 times via dropping DenseNe
 For dynamic routing
 vector to vector instead of scalar to scalar
 
-## Deformable ConvNet
+## Deformable Convolution
 ### DCNv1 (ICCV 2017)
 [Deformable Convolutional Networks](http://openaccess.thecvf.com/content_ICCV_2017/papers/Dai_Deformable_Convolutional_Networks_ICCV_2017_paper.pdf) from MSRA  
 [MXNet](https://github.com/msracver/Deformable-ConvNets)  
 ![](img/deformable_convolution.png)  
+
+```math
+y(p)=\sum^K_{k=1}w_k \dot x(p+p_k+\delta p_k)
+```
+The backpropagation of ``$`\delta p_k`$`` is similar to [STN](#stn).
+comparing to STN, Deformable ConvNet samples the feature map in a local and dense manner  
+
 ### DCNv2 (CVPR 2019)
 [Deformable ConvNets v2: More Deformable, Better Results](https://arxiv.org/abs/1811.11168) from MSRA  
+1. Stacking More Deformable Conv Layers
+1. modulated deformable convolution
+    ```math
+    y(p)=\sum^K_{k=1}w_k \dot x(p+p_k+\delta p_k) \dot \delta m_k
+    ```
+    output 3K channels, where first 2K correspond to ``$` {\delta p_k}^K_{k=1} `$``, remaining K channels further fed to sigmoid to obtain ``$` \{\delta m_k\}^K_{k=1} `$``
+1. R-CNN Feature Mimicking (knowledge distillation) to Faster R-CNN
 
+Some said the detection result of DCNv1, v2 is not SOTA. However, the novelty is very high and it could be applied to many other img2img tasks with good result, such as [EDVR]. From the experience of training EDVR, training with DCN is unstable.  
 ## Deep Layer Aggregation, DLA (CVPR 2018)
 [Deep Layer Aggregation](https://arxiv.org/abs/1707.06484)  
 image classification network with hierarchical skip connections

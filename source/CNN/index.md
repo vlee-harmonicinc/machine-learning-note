@@ -16,7 +16,7 @@
 ![](img/image_convolution.png)
 ### Weighting Sharing
 ### Receptive Field
-[VGG](#vgg-iclr-2014)
+[VGG](models.html#vgg-iclr-2014)
 ### Pooling
 1. downscale
 1. small translation-invariance
@@ -40,12 +40,6 @@ used for 1. reverse downscale, 2. increase resolution
 usually required for pix 2 pix application, e.g. segmentation, super-resolution
 ###### Methods
 1. resize  
-resampling and interpolation
-2. deconvolution [Deconvnet](models.html#deconvolution)
-4. [PixelShuffle](#pixelshuffle-cvpr-2016)
-
-### 1x1 convolution
-could be used for changing the number of features
-see [Inception (ILSVRC 2014)](#inception-ilsvrc-2014), 
-[ACNet: Strengthening the Kernel Skeletons for Powerful CNN via Asymmetric Convolution Blocks (ICCV 2019)](https://arxiv.org/abs/1908.03930)
-
+    resampling and interpolation
+1. deconvolution [Deconvnet](models.html#deconvolution)
+1. [PixelShuffle](models.html#pixelshuffle-cvpr-2016)
