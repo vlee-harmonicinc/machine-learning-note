@@ -77,6 +77,13 @@ tone mapping with multi. exposures, 106 images
 ## Video
 For frame interpolation, super-resolution etc  
 [Vimeo90K](http://toflow.csail.mit.edu/)
+### video restoration dataset 
+[REDS](https://seungjunnah.github.io/Datasets/reds.html)  
+1. sharp (ground truth)
+1. blur
+1. blur+compression
+1. low resolution
+1. blur + low resolution
 ### Optical Flow
 [Middlebury](http://vision.middlebury.edu/flow/data/)
 [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html)
