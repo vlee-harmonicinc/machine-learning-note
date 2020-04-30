@@ -1,8 +1,8 @@
 # Neural Network
 ![image](img/neural.png)
 ## Perceptron
-## Backpropagation (1985)
-[Learning internal representations by error propagation] by Geoffrey Hinton  
+## Backpropagation
+[Learning internal representations by error propagation (Nature 1986)](https://www.nature.com/articles/323533a0)  
 Algorithm used to learning the parameters of neural network to minimize the loss  
 Math: find the derivation of loss  
 ### Optimizer
