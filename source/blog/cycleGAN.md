@@ -1,5 +1,5 @@
 # Blog: test cycleGAN
-paper: [CycleGAN](/generative_models/GAN/two-way_GAN.html#cyclegan-iccv-2017)  
+paper: [CycleGAN](/GAN/two-way_GAN.html#cyclegan-iccv-2017)  
 I want to apply cycleGAN on some custom dataset. How much sample is needed? How to handle resolution? What is expected result? What's the hardware requirement? Is cycleGAN suitable for this task?  
 Play with cycleGAN's dataset and have a taste first.  
 sadly I only have a poor RTX 2070, which only could fit 2 batches.

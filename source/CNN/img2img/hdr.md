@@ -26,7 +26,7 @@ HDR image database is for creating bracketed LDR image by simulating cameras
 ## Deep Photo Enhancer (CVPR 2018)
 [Deep Photo Enhancer: Unpaired Learning for Image Enhancement from Photographs with GANs](https://www.cmlab.csie.ntu.edu.tw/project/Deep-Photo-Enhancer/CVPR-2018-DPE.pdf)  
 [Tensorflow implementation](https://github.com/nothinglo/Deep-Photo-Enhancer)  
-trackle the problem with two-ways GAN whose structure similar to [CycleGAN](/generative_models/GAN_image2image.html#cyclegan-iccv-2017)  
+trackle the problem with two-ways GAN whose structure similar to [CycleGAN](/GAN/cycleGAN.md)  
 individual batch normalization layers in generators with raw/ generated source  
 **iBN**: without iBN, color will be broken  
 **Global features**: extract iin layer 5, FC until 1x1x128, duplicated to 32x32x128  

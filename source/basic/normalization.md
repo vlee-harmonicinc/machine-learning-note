@@ -7,7 +7,7 @@ b^i_{x,y}=\frac{a^i_{x,y}}{\Big(k+\frac{\alpha}{n}\sum^{min(N-1, c+n/2)}_{c=max(
 sum runs over n “adjacent” kernel maps at the same spatial position, and N is the total number of kernels in the layer. The ordering of the kernel maps is of course arbitrary and determined before training begins. This sort of response normalization implements a form of **lateral inhibition** inspired by the type found in real neurons, creating competition for big activities amongst neuron outputs computed using different kernels.
 
 ### Pixelwise Feature Vector Normalization (ICLR 2018)
-from [Progressive GAN](/generative_models/GAN/GAN_image2image.html#progressive-gan-iclr-2018)
+from [Progressive GAN](/GAN/GAN_image2image.html#progressive-gan-iclr-2018)
 variant of LRN with all channels, i.e. n=N
 ```math
 b_{x,y}=\frac{a_{x,y}}{sqrt{\frac1{N}\sum^{N-1}_{j=0}(a^j_{x,y})^2+\epsilon}}
@@ -60,7 +60,7 @@ like batch norm with 1 batch size (still normalize though heightxwidth)
 [Modulating early visual processing by language](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)  
 [pytorch](https://github.com/ap229997/Conditional-Batch-Norm) | [guessWhat?!](https://www.guesswhat.ai)  
 ``$`\gamma, \beta`$`` learnt from one-hidden-layer MLP rely on input  
-used in [cGAN with projection discriminator](/generative_models/GAN/GAN_general.html#projection-discriminator-iclr-2018) and [SAGAN](/generative_models/GAN/GAN_general.html#sa-gan-pmlr-2019)  
+used in [cGAN with projection discriminator](/GAN/GAN_representation_learning.html#projection-discriminator) and [SAGAN](/GAN/GAN_general.html#sagan-pmlr-2019)  
 
 ## Conditional Instance Normalizatoin (ICLR 2017)
 [A learned representation for artistic style](https://arxiv.org/pdf/1610.07629.pdf)
@@ -91,9 +91,9 @@ y_i      & \leftarrow \gamma \hat{x}_i + \beta
 * have higher improvement when the batch small and data distribution diverse, not easy to over-fit
 [如何评价batch renormalization？ - 汪汪的回答 - 知乎](https://www.zhihu.com/question/55890057/answer/267872896)
 
-## SPADE (CVPR 2019)
+## SPADE
 stands for **SP**atially-**A**daptive (**DE**)normalization  
-[Semantic Image Synthesis with Spatially-Adaptive Normalization](https://arxiv.org/abs/1903.07291) by Nvidia  
+[Semantic Image Synthesis with Spatially-Adaptive Normalization (CVPR 2019)](https://arxiv.org/abs/1903.07291) by Nvidia  
 ![](https://nvlabs.github.io/SPADE/images/teaser_high_res_uncompressed.png)
 solving issue: semantic information washed away through stacks of convolution, normalization, and nonlinearity layers
 similar to batchNorm, activation is normalized in the channelwise manner, and then modulated with learned ``$`\gamma, \beta`$``  

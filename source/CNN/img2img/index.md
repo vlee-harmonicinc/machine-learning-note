@@ -9,4 +9,4 @@
 * [HDR](hdr.md)
 
 ## GAN
-[GAN image-to-image](/generative_models/GAN/GAN_image2image.md)
+[GAN image-to-image](/GAN/GAN_image2image.md)

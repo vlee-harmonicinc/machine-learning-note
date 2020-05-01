@@ -93,7 +93,7 @@ compare pixel by pixel
 Blurry results because Euclidean distance is minimized by averaging all plausible output
 e.g. MAE, MSE
 ### Perceptual Loss
-[Style Transfer/Perceptual Loss](/generative_models/style_transfer.html#perceptual-loss-eccv-2016)
+[Style Transfer/Perceptual Loss](/CNN/img2img/style_transfer.html#perceptual-loss-eccv-2016)
 
 ## Detection
 ### Focal Loss
@@ -110,5 +110,5 @@ smoothen version of KL divergence via
 ```math
 D_{JS}(p||q)=\dfrac{1}{2}D_{KL}(p||\dfrac{p+q}{2})+\dfrac{1}{2}D_{KL}(q||\dfrac{p+q}{2})
 ```
-### Wasserstein distance= Earth-Mover(EM) distance (NIPS 2017)
-[WGAN](/generative_models/GAN.html#wgan-icml-2017)
+### Wasserstein distance= Earth-Mover(EM) distance
+[WGAN](/GAN.html#wgan-icml-2017)

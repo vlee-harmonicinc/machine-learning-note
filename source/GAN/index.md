@@ -1,8 +1,10 @@
 # GAN
+
 * [General Enhancement](GAN_general.md)
-* [Repersentation Learning with GAN](GAN_repersentation_learning.md)
+* [Training Stability](GAN_stability.md)
+* [Conditional / Repersentation of GAN](GAN_repersentation_learning.md)
 * [image-to-image GAN](GAN_image2image.md)
-* [Two-Way GANs](two-way_GAN.md)
+* [Unpaired translation](unpaired_GAN.md)
 * [GAN for data augmentation](GAN_for_data_augmentation.md)
 * [Adversarial Attacks](adversarial_attacks.md)
 

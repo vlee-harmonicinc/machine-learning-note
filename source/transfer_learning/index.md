@@ -6,7 +6,7 @@ Example: Given labelled grey-scaled MNIST and unlabeled color MNIST, want to tra
 [Self-taught learning: transfer learning from unlabeled data (NIPS 2007)](http://ai.stanford.edu/~hllee/icml07-selftaughtlearning.pdf)  
 train classifier with feature representation (e.g. with auto-encoder)
 
-## DaNN 
+## DaNN (PRICAI 2014)
 [Domain Adaptive Neural Networks for Object Recognition (PRICAI 2014)](https://arxiv.org/pdf/1409.6041.pdf)  
 **Maximum Mean Discrepancy (MMD)** is a measure of the difference between two probability distributions from their samples. It is an effective criterion that compares distributions without initially estimating their density functions.
 

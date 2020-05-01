@@ -22,4 +22,4 @@ Content Target y_c = Input Image x
 **Kernel loss**  
 
 ## More paper
-There are a lot [GAN](/generative_models/GAN/index.md) that could handle Style Transfer
+There are a lot [GAN](/GAN/index.md) that could handle Style Transfer

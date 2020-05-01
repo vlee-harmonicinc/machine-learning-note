@@ -3,7 +3,7 @@ Here collect projects related to anime / anime face. The main focus is fun rathe
 
 ## IllustrationGAN (2016)
 [tdrussell/IllustrationGAN](https://github.com/tdrussell/IllustrationGAN) 
-based on [DCGAN (ICLR 2016)](/generative_models/GAN/GAN_repersentation_learning.html#dcgan-iclr-2016) 
+based on [DCGAN (ICLR 2016)](/GAN/GAN_repersentation_learning.html#dcgan-iclr-2016) 
 
 ## DRAGAN - MakeGirlsMoe (2017)
 [Towards the Automatic Anime Characters Creation with Generative Adversarial Networks](https://arxiv.org/abs/1708.05509)  
@@ -23,7 +23,7 @@ Two novel losses suitable for cartoonization are proposed:
 We further introduce an **initialization phase**, to improve the convergence of the network to the target manifold.
 
 ## StyleGAN (2019)
-[styleGAN](/generative_models/GAN/GAN_repersentation_learning.html#stylegan-cvpr-2019)
+[styleGAN](/GAN/GAN_repersentation_learning.html#stylegan-cvpr-2019)
 Generate with noise + latent space control in different scale.
 ### This WaiFu does not exist
 [This WaiFu does not exist](https://www.thiswaifudoesnotexist.net/)  

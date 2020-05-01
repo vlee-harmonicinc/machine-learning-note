@@ -66,7 +66,7 @@ Question: What if growing network like Progressive GAN (fade) instead of residua
 
 ## GauGAN
 ### SPADE (CVPR 2019)
-[Normalization/SPADE](/generative_models/GAN/GAN_image2image.html#gaugan)
+[Normalization/SPADE](/normalization.html#spade)
 ### Project
 [Live Interactive Demos](https://www.nvidia.com/en-us/research/ai-playground/) | 
 [Project](https://arxiv.org/abs/1903.07291) | 
