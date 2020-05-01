@@ -19,6 +19,7 @@ This webpage collect machine learning (mainly neural network) papers based on to
 * [Generative Models](/generative_models/index.md)
 * [Transfer Learning](transfer_learning/index.md)
 * [RNN](/RNN/index.md)
+* [Attention](/attention.md)
 * [NLP](/NLP/index.md)
 * [Audio](/audio/index.md)
 * [AutoML](/AutoML/index.md)

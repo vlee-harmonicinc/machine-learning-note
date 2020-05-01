@@ -19,9 +19,6 @@ application: classification, collaborative filtering, feature learning
 ## RNN
 [RNN](/RNN/index.md)
 
-## Attention
-* [Attention Mechanism](/basic/attention.md)
-
 ## Generative Models
 [Generative Models](/generative_models/index.md)
 

@@ -61,9 +61,7 @@ add cosine margin penalty to the target logit
 admits easier implementation and relieves the need for joint supervision from the softmax loss
 
 ### ArcFace
-[ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/abs/1801.07698)
-Implementation: [https://github.com/deepinsight/insightface]  
-RetinaNet: detection  
-InsightNet: embedding  
+[ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/abs/1801.07698)  
+[MXNet: InsightNet](https://github.com/deepinsight/insightface) RetinaNet: detection, InsightNet: embedding  
 ![](img/ArcFace.png)  
 ![](img/margin_loss_.png)
