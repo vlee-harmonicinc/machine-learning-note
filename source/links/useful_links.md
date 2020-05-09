@@ -52,3 +52,4 @@
 ## Documentation
 * [Online LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
 * [LaTeX Base](https://latexbase.com/)
+* [Detexify: search LaTeX symbol via drawing](http://detexify.kirelabs.org/classify.html)

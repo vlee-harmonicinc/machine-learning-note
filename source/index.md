@@ -20,6 +20,7 @@ This webpage collect machine learning (mainly neural network) papers based on to
 * [Transfer Learning](transfer_learning/index.md)
 * [RNN](/RNN/index.md)
 * [NLP](/NLP/index.md)
+* [GNN](GNN.md)
 * [AutoML](/AutoML/index.md)
 * [Issues](/issue.md)
 * [Useful Links](/links/useful_links.md)

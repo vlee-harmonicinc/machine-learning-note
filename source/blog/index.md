@@ -13,9 +13,10 @@ I like to learning theory behind model. Simply running program without understan
 Programing is also relaxing while the brain overwhelm with algorithm. Better do it both, reading papers when training new model or generating results.
 
 ## Contribution
-If you are interested in contributing or recommend some papers; or I write something wrong, please 
-1. click the "edit on github" on top right corner, then 
-1. fork + commit + pull request, or create an issue
+If you are interested in contributing or recommend some papers (SOTA or the novel idea used or supported by other papers); or want to correct my mistake, please  
+click the "edit on github" on top right corner or [htleeab/machine-learning-note](https://github.com/htleeab/machine-learning-note), then 
+* fork + commit + pull request; or
+* create an issue
 
 # Blog
 * [my computer - 01/04/2020](computer.md)

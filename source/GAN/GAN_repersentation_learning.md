@@ -63,3 +63,7 @@ The generator starts from a learned constant input and adjusts the “style” o
 ### StyleGAN2
 [Analyzing and Improving the Image Quality of StyleGAN](https://arxiv.org/abs/1912.04958)  
 <iframe src="https://www.youtube.com/embed/c-NJtV9Jvp0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## StyleALAE
+Model of [antoencoder/ALAE](/generative_models/autoencoder.html#alae)  
+apply VAE on StyleGAN to enable *manipulations based on real images*, while previous generative GAN manipulate with generated images only.

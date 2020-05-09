@@ -30,7 +30,7 @@ Disadvantages comparing with GAN:
 ## VAE-GAN (ICML 2016)
 [Autoencoding beyond pixels using a learned similarity metric](https://arxiv.org/abs/1512.09300)
 
-## ALAE (CVPR 2020)
+## ALAE
 [Adversarial Latent Autoencoders (CVPR 2020)](https://arxiv.org/pdf/2004.04467v1.pdf)  
 [PyTorch](https://github.com/podgorskiy/ALAE)  
 StyleGAN + latent space reconstruction via VAE (is the concept a bit like UNIT in single domain & loss based on latent space ?)
