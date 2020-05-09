@@ -1,7 +1,7 @@
 # Normalization
 PS: usually use before activication
 ## Local Response Normalization
-LRN from [AlexNet](/CNN/models.html#alexnet-nips-2012)  
+LRN from [AlexNet](/CNN/models.html#alexnet)  
 ```math
 b^i_{x,y}=\frac{a^i_{x,y}}{\Big(k+\frac{\alpha}{n}\sum^{min(N-1, c+n/2)}_{c=max(0,i-n/2)} (a^c_{x,y})^2 \Big)^\beta}
 ```

@@ -6,6 +6,10 @@
 * [Optical character recognition, OCR](optical_character_recognition.md)
 * [Image Retrieval](image_retrieval.md)
 * [Object Detection](object_detection/index.md)
+## Video
+* [Video Enhancement](video/video_enhancement.md)
+* [Video Frame Interpolation](video/video_frame_interpolation.md)
+* [Video Fingerprint](video/video_fingerprint.md)
 ## 3D
 * [3D Object Detection](3D/3D_object_detection.md)
 * [3D Pose Estimation](3D/3D_pose_estimation.md)
