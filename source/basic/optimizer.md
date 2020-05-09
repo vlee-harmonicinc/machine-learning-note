@@ -19,8 +19,9 @@ Adam + further adjust learning rate by the ratio of change of input after updati
 
 ## Cyclical Learning Rates
 [Cyclical Learning Rates for Training Neural Networks (WACV 2017)](https://arxiv.org/abs/1506.01186)  
+Instead of monotonically decreasing the learning rate, this method lets the learning rate cyclically vary between reasonable boundary values  
 ### LR Range test 
-### Cyclical Learning Rates
+ractically eliminates the need to experimentally find the best values and schedule for the global learning rates  
 Note: Even though some said the performance of cyclical learning rate is not significant, the concept of LR range test used for other cycle/restart based optimizer
 
 ## SGDR
