@@ -21,8 +21,10 @@ This webpage collect machine learning (mainly neural network) papers based on to
 * [RNN](/RNN/index.md)
 * [Attention](/attention.md)
 * [NLP](/NLP/index.md)
-* [Audio](/audio/index.md)
+* [GNN](GNN.md)
 * [AutoML](/AutoML/index.md)
 * [Issues](/issue.md)
 * [Useful Links](/links/useful_links.md)
 * [Blog](/blog/index.md)
+
+<!--* [Audio](/audio/index.md)-->

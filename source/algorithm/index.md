@@ -1,6 +1,7 @@
 # Algorithm
 * [Linear Regession](linear_regression.md)
 * [Classifier](classifier.md)
+* [Dimension Reduction](dimension_reduction.md)
 
 ## Logistic Regression
 ## Support Vector Machine, SVM

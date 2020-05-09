@@ -1,15 +1,13 @@
 # CNN Models
 ![](img/CNN_max_pooling.png)
-## LeNet-5 (1998)
-[Gradient-Based Learning Applied to Document Recognition](http://www.dengfanxin.cn/wp-content/uploads/2016/03/1998Lecun.pdf)
+## LeNet-5
+[Gradient-Based Learning Applied to Document Recognition (1998)](http://www.dengfanxin.cn/wp-content/uploads/2016/03/1998Lecun.pdf)
 ![](img/LeNet.png)
-## AlexNet (NIPS 2012)
+## AlexNet
+[ImageNet Classification with Deep Convolutional Neural Networks (NIPS 2012)](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)  
 ReLu: solve vanishing gradient, training process faster  
 dropout: solve overfitting  
-LRN: normalization
-[ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
-### Local Response Normalization
-[Normalization/LRN](/basic/normalization.html#local-response-normalization-nips-2012)
+[Local Response Normalization - Normalization/LRN](/basic/normalization.html#local-response-normalization-nips-2012)  
 
 ## VGG (ICLR 2014)
 [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)  
@@ -133,7 +131,7 @@ vector to vector instead of scalar to scalar
 ## Deformable Convolution
 ### DCNv1 (ICCV 2017)
 [Deformable Convolutional Networks](http://openaccess.thecvf.com/content_ICCV_2017/papers/Dai_Deformable_Convolutional_Networks_ICCV_2017_paper.pdf) from MSRA  
-[MXNet](https://github.com/msracver/Deformable-ConvNets)  
+[Original: Caffe on Window-not released] | [MXnet](https://github.com/msracver/Deformable-ConvNets) | [pyTorch:mmdetection ](https://github.com/open-mmlab/mmdetection)  
 ![](img/deformable_convolution.png)  
 
 ```math

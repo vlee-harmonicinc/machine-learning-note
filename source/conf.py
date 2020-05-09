@@ -61,6 +61,7 @@ exclude_patterns = []
 
 # The master toctree document.
 master_doc = 'index'
+exclude_patterns = ['capsule.md', 'audio', 'idea']
 
 # -- Options for HTML output -------------------------------------------------
 
