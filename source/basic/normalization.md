@@ -1,10 +1,12 @@
 # Normalization
-## Local Response Normalization (NIPS 2012)
-LRN from [AlexNet](/CNN/models.html#alexnet-nips-2012)
+PS: usually use before activication
+## Local Response Normalization
+LRN from [AlexNet](/CNN/models.html#alexnet-nips-2012)  
 ```math
 b^i_{x,y}=\frac{a^i_{x,y}}{\Big(k+\frac{\alpha}{n}\sum^{min(N-1, c+n/2)}_{c=max(0,i-n/2)} (a^c_{x,y})^2 \Big)^\beta}
 ```
-sum runs over n “adjacent” kernel maps at the same spatial position, and N is the total number of kernels in the layer. The ordering of the kernel maps is of course arbitrary and determined before training begins. This sort of response normalization implements a form of **lateral inhibition** inspired by the type found in real neurons, creating competition for big activities amongst neuron outputs computed using different kernels.
+sum runs over n “adjacent” kernel maps at the same spatial position, and N is the total number of kernels in the layer. The ordering of the kernel maps is of course arbitrary and determined before training begins. This sort of response normalization implements a form of **lateral inhibition** inspired by the type found in real neurons, creating competition for big activities amongst neuron outputs computed using different kernels.  
+In later development, it is claimed that LRN is not useful.
 
 ### Pixelwise Feature Vector Normalization (ICLR 2018)
 from [Progressive GAN](/GAN/GAN_image2image.html#progressive-gan-iclr-2018)
@@ -13,20 +15,15 @@ variant of LRN with all channels, i.e. n=N
 b_{x,y}=\frac{a_{x,y}}{sqrt{\frac1{N}\sum^{N-1}_{j=0}(a^j_{x,y})^2+\epsilon}}
 ```
 
-## Batch Normalization (ICML 2015)
-[Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
+## Batch Normalization
+[Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (ICML 2015)](https://arxiv.org/abs/1502.03167)  
 normalize x based on value over all values within same mini-batch with mean and variance  
 learnable parameters: scale and bias ``$`\gamma, \beta`$``  
-instance normalization ()
-seems good for generative task
-usage:
-1. reduce [Internal Covariate Shift](/issue.html#Internal Covariate Shift)
-1. avoid [Gradient Vanishing](/issue.html#Gradient Vanishing)
-1. as regularizer to minize need of dropout (reduce overfiting)
-![](img/batchNorm_ICS.png)  
-used before activiation function  
 For Prediction, use population mean and population variance calucated during training.  
-the effectiveness diminishes when the training minibatches are small.  
+The effectiveness diminishes when the training minibatches are small.  
+### Why BatchNorm works?
+Origin paper said BatchNorm reduce *Internal Covariate Shift*: the change in the distribution of network activations due to the change in network parameters during training.  
+[How Does Batch Normalization Help Optimization? (NIPS 2018)](https://arxiv.org/abs/1805.11604) demonstrate is NOT Internal covariate shift and suggest it makes the optimization **landscape** significantly **smoother**. 
 
 ## Layer Normalization (NIPS 2016)
 [Layer Normalization](https://arxiv.org/abs/1607.06450)  
