@@ -24,3 +24,7 @@ click the "edit on github" on top right corner or [htleeab/machine-learning-note
 * [Anime Face - 12/04/2020](anime_face.md)
 * [AlexeyAB darknet API - 01/05/2020](yolo34py_AlexeyAB.md)
 <!--* [Anime frame interpolatin - 17/04/2020](anime_frame_interpolation.md)-->
+
+# Cheatsheets
+* [Python Lint](cheatsheets/python_lint.md)
+* [docker with GPU](cheatsheets/docker_with_GPU.md)
