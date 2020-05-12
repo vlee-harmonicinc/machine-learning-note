@@ -42,7 +42,6 @@ Adaptive Warping Layer|[MEMC-Net/Adaptive Warping Layer](MEMC-Net.html#adaptive-
 GTX 1080 Ti 1280x720 about 2s per frame  
 issue: drifting inwards  
 [jmspiewak](https://github.com/baowenbo/DAIN/issues/51) said it is because of anomaly in the pretrained PWCNet model. The workaround of jmspiewak seems fix the issue. Need to study more about PWCNet
-memory...is it possible to put some branch to another GPU?
 
 ## Zooming-Slow-Mo (CVPR-2020)
 [Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution](https://arxiv.org/abs/2002.11616)  

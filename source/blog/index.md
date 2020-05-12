@@ -28,3 +28,4 @@ click the "edit on github" on top right corner or [htleeab/machine-learning-note
 # Cheatsheets
 * [Python Lint](cheatsheets/python_lint.md)
 * [docker with GPU](cheatsheets/docker_with_GPU.md)
+* [Nvidia GPU](cheatsheets/Nvidia_GPU.md)
