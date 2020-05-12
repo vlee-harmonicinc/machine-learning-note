@@ -15,7 +15,7 @@ focal loss
 ```math
 FL(y) = -(1-p_t)^\gamma log(p_t)
 ```
-``$`\alpha`$``-balanced variant
+`$\alpha$`-balanced variant
 ```math
 FL(y) &= -\alpha_t(1-p_t)^\gamma log(p_t)\\
 &=-\alpha_t

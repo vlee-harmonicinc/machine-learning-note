@@ -34,8 +34,8 @@ Apply GAN with learning conditions
 architecture based on [DCGAN](#dcgan-iclr-2016)
 ![](img/iGAN.png)
 ###  Manipulating the Latent Vector
-Each editing operation is formulated as a constraint ``$`f_g(x)=v_g`$``, g include color, shape and warping constraints  
-given an initial projection ``$`x_0`$``, find a new image x close to ``$`x_0`$`` trying to satisfy as many constraint as possible via **Gradient descent update** (just like style-transfer, training 1 model for specified loss)  
+Each editing operation is formulated as a constraint `$f_g(x)=v_g$`, g include color, shape and warping constraints  
+given an initial projection `$x_0$`, find a new image x close to `$x_0$` trying to satisfy as many constraint as possible via **Gradient descent update** (just like style-transfer, training 1 model for specified loss)  
 
 ### Applications
 1. Manipulating an existing photo based on an underlying generative model to achieve a different look (shape and color);

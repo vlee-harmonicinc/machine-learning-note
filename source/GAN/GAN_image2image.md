@@ -25,7 +25,7 @@ first proposed in Equation 6 of this paper
 > The generator trained with this loss will often be more conservative for unknown content. -- from CycleGAN FAQ
 
 ## Two-Way GANs
-[Two-Way GANs](two-way_GAN.md)  
+[cycleGAN](cycleGAN.md)  
 Could use unpaired datasets
 
 ## Progressive GAN (ICLR 2018)

@@ -46,7 +46,7 @@ f(\vect{y},\hat{\vect{y}})=-\dfrac{\vect{y} \cdot \hat{\vect{y}}}{||\vect{y}||_2
 
 ## Binary Classification Loss Functions
 ### Binary Cross-Entropy
-``$`\hat{y}`$`` is prediction, y is ground truth
+`$\hat{y}$` is prediction, y is ground truth
 ```math
 f(y,\hat{y})=-\dfrac{1}{n}\sum^n_{i=1}[y_i log(\hat{y}_i)+(1-y_i) log(1-\hat{y}_i)]
 ```
@@ -72,7 +72,7 @@ Probability of each class
 ```math
 f(s,\hat{y})=-\sum^M_{c=1}\hat{y}_c log(s_c) 
 ```
-``$`\hat{y}`$`` is 1*M vector, the value of true class is 1, other value is 0, hence
+`$\hat{y}$` is 1*M vector, the value of true class is 1, other value is 0, hence
 ```math
 f(s,\hat{y})=-\sum^M_{c=1}\hat{y}_c log(s_c) = -log(s_c)
 ```

@@ -3,7 +3,7 @@
 Matrix Decomposition method  
 project feature to max. variance  
 ### SVD
-A better way to perform PCA that aovid huge computation of ``$`A^TA`$``  
+A better way to perform PCA that aovid huge computation of `$A^TA$`  
 sklearn is using SVD algo for PCA function  
 ## eigenvector
 Manifold  method

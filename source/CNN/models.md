@@ -35,8 +35,8 @@ the network loss to inception, but the pretrained network is useful for image fe
 ## STN (CVPR 2015)
 [Spatial Transformer Networks](https://arxiv.org/abs/1506.02025) from DeepMind  
 learn spatial transformation from data in a deep learning framework. It warps the feature map via a global parametric transformation such as affine transformation
-1. **Localisation net**: predict transform parameters ``$` \theta `$``
-1. **Parameterised Sampling Grid**: apply ``$` \theta `$``
+1. **Localisation net**: predict transform parameters `$ \theta $`
+1. **Parameterised Sampling Grid**: apply `$ \theta $`
 1. **Differentiable Image Sampling**: apply sampling kernel which defines the image interpolation (e.g. bilinear)
 
 Backpropagation: differentiate through the sampling mechanism.
@@ -137,7 +137,7 @@ vector to vector instead of scalar to scalar
 ```math
 y(p)=\sum^K_{k=1}w_k \dot x(p+p_k+\delta p_k)
 ```
-The backpropagation of ``$`\delta p_k`$`` is similar to [STN](#stn).
+The backpropagation of `$\delta p_k$` is similar to [STN](#stn).
 comparing to STN, Deformable ConvNet samples the feature map in a local and dense manner  
 
 ### DCNv2 (CVPR 2019)
@@ -147,7 +147,7 @@ comparing to STN, Deformable ConvNet samples the feature map in a local and dens
     ```math
     y(p)=\sum^K_{k=1}w_k \dot x(p+p_k+\delta p_k) \dot \delta m_k
     ```
-    output 3K channels, where first 2K correspond to ``$` {\delta p_k}^K_{k=1} `$``, remaining K channels further fed to sigmoid to obtain ``$` \{\delta m_k\}^K_{k=1} `$``
+    output 3K channels, where first 2K correspond to `$ {\delta p_k}^K_{k=1} $`, remaining K channels further fed to sigmoid to obtain `$ \{\delta m_k\}^K_{k=1} $`
 1. R-CNN Feature Mimicking (knowledge distillation) to Faster R-CNN
 
 Some said the detection result of DCNv1, v2 is not SOTA. However, the novelty is very high and it could be applied to many other img2img tasks with good result, such as [EDVR]. From the experience of training EDVR, training with DCN is unstable.  

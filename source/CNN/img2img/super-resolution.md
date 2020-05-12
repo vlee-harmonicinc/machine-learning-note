@@ -40,7 +40,7 @@ Keras-super-resolution (Single Image Super-Resolution with WDSR, EDSR and SRGAN)
 
 ## SFTGAN (CVPR 2018)
 [Recovering Realistic Texture in Image Super-resolution by Deep Spatial Feature Transform](https://arxiv.org/abs/1804.02815) by senseTime  
-**Spatial Feature Transform**: learns a mapping function ``$`M`$`` that outputs a modulation parameter pair (``$` `$``
+**Spatial Feature Transform**: learns a mapping function `$M$` that outputs a modulation parameter pair (`$ $`
 generate affine transformation parameters for spatial-wise feature modulation  
 ![](img/SFTGAN.png)
 ![](img/SFTGAN_architecture.png)

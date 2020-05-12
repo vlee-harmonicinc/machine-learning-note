@@ -40,7 +40,7 @@ DiscoGAN: [Learning to Discover Cross-Domain Relations with Generative Adversari
 [Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data (ICML 2018)](https://arxiv.org/abs/1802.10151)  
 [pyTorch (Python2, pyTorch 0.3)](https://github.com/aalmah/augmented_cyclegan) | [Theano re-implementation](https://github.com/justanhduc/AugmentedCycleGAN)  
 ![](img/AugCGAN_male_to_females.png)
-Apart from generator, also have 2 **encoders** ``$`E_A: A \times B → Z_a, E_B: B \times A → Z_b`$`` which enable optimization of cycle-consistency with stochastic, structured mapping  
+Apart from generator, also have 2 **encoders** `$E_A: A \times B → Z_a, E_B: B \times A → Z_b$` which enable optimization of cycle-consistency with stochastic, structured mapping  
 ![](img/AugCGAN_components.png)
 
 ## Paired CycleGAN

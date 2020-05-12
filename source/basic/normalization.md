@@ -18,7 +18,7 @@ b_{x,y}=\frac{a_{x,y}}{sqrt{\frac1{N}\sum^{N-1}_{j=0}(a^j_{x,y})^2+\epsilon}}
 ## Batch Normalization
 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (ICML 2015)](https://arxiv.org/abs/1502.03167)  
 normalize x based on value over all values within same mini-batch with mean and variance  
-learnable parameters: scale and bias ``$`\gamma, \beta`$``  
+learnable parameters: scale and bias `$\gamma, \beta$`  
 For Prediction, use population mean and population variance calucated during training.  
 The effectiveness diminishes when the training minibatches are small.  
 ### Why BatchNorm works?
@@ -56,7 +56,7 @@ like batch norm with 1 batch size (still normalize though heightxwidth)
 ## Conditional BatchNorm (NIPS 2017)
 [Modulating early visual processing by language](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)  
 [pytorch](https://github.com/ap229997/Conditional-Batch-Norm) | [guessWhat?!](https://www.guesswhat.ai)  
-``$`\gamma, \beta`$`` learnt from one-hidden-layer MLP rely on input  
+`$\gamma, \beta$` learnt from one-hidden-layer MLP rely on input  
 used in [cGAN with projection discriminator](/GAN/GAN_representation_learning.html#projection-discriminator) and [SAGAN](/GAN/GAN_general.html#sagan-pmlr-2019)  
 
 ## Conditional Instance Normalizatoin (ICLR 2017)
@@ -75,8 +75,8 @@ AdaIN(x,y)=\sigma_y\big(\frac{x-\mu_x }{\sigma_x}\big)+\mu_y
 data in batch cannot cover the real data distribution -> batchNorm perform badly
 using moving avg mean and SD -> the gradient optimization and the normalization to counteract each other -> model blow up
 novel re-normalization apply on x (before scaling)
-mean and SD of batch: ``$`\mu_B \sigma_B  `$``  
-moving avg (larger than 1 batch) of mean and SD: ``$`\mu \sigma  `$``  
+mean and SD of batch: `$\mu_B \sigma_B  $`  
+moving avg (larger than 1 batch) of mean and SD: `$\mu \sigma  $`  
 ```math
 \mu_B    & \leftarrow \frac1{m}\sum^m_{i=1}x_i \\
 \sigma_B & \leftarrow \sqrt{\epsilon + \frac1{m}\sum^m_{i=1}(x_i-\mu_B)^2}\\
@@ -93,8 +93,8 @@ stands for **SP**atially-**A**daptive (**DE**)normalization
 [Semantic Image Synthesis with Spatially-Adaptive Normalization (CVPR 2019)](https://arxiv.org/abs/1903.07291) by Nvidia  
 ![](https://nvlabs.github.io/SPADE/images/teaser_high_res_uncompressed.png)
 solving issue: semantic information washed away through stacks of convolution, normalization, and nonlinearity layers
-similar to batchNorm, activation is normalized in the channelwise manner, and then modulated with learned ``$`\gamma, \beta`$``  
-Unlike prior conditional normalization, ``$`\gamma, \beta`$`` are not vectors, but tensors with spatial dimensions
+similar to batchNorm, activation is normalized in the channelwise manner, and then modulated with learned `$\gamma, \beta$`  
+Unlike prior conditional normalization, `$\gamma, \beta$` are not vectors, but tensors with spatial dimensions
 ![](https://nvlabs.github.io/SPADE/images/method.png)  
 using the input layout for modulating the activations in normalization layers through a spatially-adaptive, learned transformation (two-layers convolutional network). 
 

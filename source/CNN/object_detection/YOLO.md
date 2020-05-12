@@ -5,7 +5,7 @@ Single Shot, very fast, real-time
 [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)
 1. divides input image into SxS grid
 2. Each grid cell predicts B bounding boxes and confidence scores for those boxes.
-3. Each grid cell predicts C conditional *class probabilites* ``$`Pr(Class_i|Object)`$``  << classifier is within each grid, no proposal
+3. Each grid cell predicts C conditional *class probabilites* `$Pr(Class_i|Object)$`  << classifier is within each grid, no proposal
 Drawback: 
 > YOLO imposes strong spatial constraints on bounding
 box predictions since each grid cell only predicts two boxes

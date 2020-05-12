@@ -34,8 +34,8 @@ Quality of image usually is very high. sometime there is broken/weird output.
 ## U-GAT-IT (ICLR 2020)
 [U-GAT-IT: **U**nsupervised **G**enerative **At**tentional Networks with Adaptive Layer-**I**nstance **N**ormalization for Image-to-Image Translation](https://arxiv.org/abs/1907.10830)| [OpenReview](https://openreview.net/forum?id=BJlZ5ySKPH)  
 [tensorflow](https://github.com/taki0112/UGATIT) | [pyTorch](https://github.com/znxlwm/UGATIT-pytorch) | [reddit](https://www.reddit.com/r/MachineLearning/comments/ck4do7/r_190710830_ugatit_unsupervised_generative/)  
-1. new attention module that could handle geometric (shape) changes, with an **auxiliary classifier** ``$`\mu_s`$`` provide attention map for decoder
-1. learnable normalization: **AdaLIN (Adaptive Layer-Instance Normalization)** with parameters ``$`\gamma, \beta`$`` computed from attention map
+1. new attention module that could handle geometric (shape) changes, with an **auxiliary classifier** `$\mu_s$` provide attention map for decoder
+1. learnable normalization: **AdaLIN (Adaptive Layer-Instance Normalization)** with parameters `$\gamma, \beta$` computed from attention map
 
 There are 2 implemetation/app with U-GAT-IT models.
 ### Selfie2Anime

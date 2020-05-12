@@ -11,11 +11,11 @@ Regions with CNN features
 3. detect & classify object by SVM
 4. *adjust boundary box* by linear regression
 ### Bounding-Box Regression
-``$`P=(P_x, P_y, P_w, P_h)`$``: the pixel corrdinates of the center of proposal together with width and height  
-``$`G=(G_x, G_y, G_w, G_h)`$``: the ground-truth  
-``$`\hat{G}`$``: predicted ground-truth  
-``$`d_x(P), d_y(P)`$``: scale-invariant translation of P_x, P_y  
-``$`d_w(P), d_h(P)`$``: log-space translation of P_w, P_h  
+`$P=(P_x, P_y, P_w, P_h)$`: the pixel corrdinates of the center of proposal together with width and height  
+`$G=(G_x, G_y, G_w, G_h)$`: the ground-truth  
+`$\hat{G}$`: predicted ground-truth  
+`$d_x(P), d_y(P)$`: scale-invariant translation of P_x, P_y  
+`$d_w(P), d_h(P)$`: log-space translation of P_w, P_h  
 ```math
 \begin{split}
 &\hat{G}_x=P_wd_x(P)+P_x\\
@@ -75,11 +75,11 @@ object for each proposal
 [DenseBox: Unifying Landmark Localization with End to End Object Detection](https://arxiv.org/abs/1509.04874)  
 a unified end-to-end fully convolutional network that directly predicts bounding boxes and object class confidences through all locations and scales of an image, one-stage, anchor-free
 ### Detection
-input: ``$`m\times n`$`` image  
-the left top and right bottom points of the target bounding box: ``$`p_t=(x_t, y_t), p_b=(x_b, y_b)`$`` in output corrdinate space 
-output: a ``$`\dfrac{m}{4}\times\dfrac{n}{4}`$`` feature map with 5 channels, ``$`\hat{t}_i=\{\hat{s}, \hat{dx^t} = x_i − x_t, \hat{dy^t} = y_i −y_t,\hat{dx^b} = x_i − x_b,\hat{dy^b} = y_i − y_b\}`$``  
-``$`\hat{s}`$`` is confidence score  
-``$`\hat{dx^t}, \hat{dy^t}, \hat{dx^b}, \hat{dy^b}`$`` is the distance between pixel i with boundary of target bounding box  
+input: `$m\times n$` image  
+the left top and right bottom points of the target bounding box: `$p_t=(x_t, y_t), p_b=(x_b, y_b)$` in output corrdinate space 
+output: a `$\dfrac{m}{4}\times\dfrac{n}{4}$` feature map with 5 channels, `$\hat{t}_i=\{\hat{s}, \hat{dx^t} = x_i − x_t, \hat{dy^t} = y_i −y_t,\hat{dx^b} = x_i − x_b,\hat{dy^b} = y_i − y_b\}$`  
+`$\hat{s}$` is confidence score  
+`$\hat{dx^t}, \hat{dy^t}, \hat{dx^b}, \hat{dy^b}$` is the distance between pixel i with boundary of target bounding box  
 #### Multi-Level Feature Fusion
 Upsampling so the feature map of high resolution also contains high level context information. (Similar to FPN)  
 ##### Receptive field (Object size)
@@ -95,7 +95,7 @@ landmark localization
 [R-FCN: Object Detection via Region-based Fully Convolutional Networks](https://arxiv.org/abs/1605.06409)
 based on RPN of Faster R-CNN  
 Ideally, classification network should be translation invariance(shift of an object inside an image should be indiscriminative), while detection network should be translation variant. However, mapping RPN to vector is translation invariance.
-**Position-sensitive score maps & Position-sensitive RoI pooling**: output ``$`k\times k \times (C+1)`$`` channels for ``$`k\times k`$`` grid
+**Position-sensitive score maps & Position-sensitive RoI pooling**: output `$k\times k \times (C+1)$` channels for `$k\times k$` grid
 ![middle_img](img/R-FCN_visualization.png)
 
 ## MTCNN (2016)

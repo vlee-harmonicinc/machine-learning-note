@@ -76,11 +76,11 @@ f(x) =
     x             , & \text{if } x> 0
 \end{cases}
 ```
-The momentum method is adopted when updating ``$`a_i`$``  
+The momentum method is adopted when updating `$a_i$`  
 ```math
 \Delta\alpha_i := \mu\Delta\alpha_i+\epsilon\dfrac{\partial\varepsilon}{\partial\Delta\alpha_i}
 ```
-where µ is the momentum and ``$`\epsilon`$`` is the learning rate  
+where µ is the momentum and `$\epsilon$` is the learning rate  
 
 ### ELU - Exponential Linear Uints  (2015)
 [Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)](https://arxiv.org/abs/1511.07289)

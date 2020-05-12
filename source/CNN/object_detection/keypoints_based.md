@@ -21,8 +21,8 @@ L_det = -\dfrac{1}{N} \sum_{c=1}^C\sum_{i=1}^H\sum_{j=1}^W
 ```
 where N is the number of objects in an image, and 
 α and β are the hyper-parameters which control the contribution of each point (we set α to 2 and β to 4 in all experiments). 
-α = ``$`\gamma`$`` in focal loss
-With the Gaussian bumps encoded in ``$`y_{cij}`$`` , the ``$`(1-y_{cij})^\beta`$`` term reduces the penalty around the ground truth locations
+α = `$\gamma$` in focal loss
+With the Gaussian bumps encoded in `$y_{cij}$` , the `$(1-y_{cij})^\beta$` term reduces the penalty around the ground truth locations
 ### Corner pooling  Layer
 It is one-stage detector with ~4fps (even slower than two-stage?)
 ### Backbone: Hourglass
@@ -50,12 +50,12 @@ It is NOT [CenterNet: Keypoint Triplets for Object Detection](#centernet-keypoin
 code: [xingyizhou/CenterNet (pyTorch)](https://github.com/xingyizhou/CenterNet)  
 output: heatmap of center points (# of class channel) + width, height of pixel location (2 channels) + offset (2 channels)
 ### From points to bounding boxes (Inference)
-0. Get network output keypoints ``$`\hat{Y}`$`` x number of class, offset ``$`O`$`` x 2 channels (x,y) and size ``$`S`$`` x 2 channels
+0. Get network output keypoints `$\hat{Y}$` x number of class, offset `$O$` x 2 channels (x,y) and size `$S$` x 2 channels
 1. extract the peaks in heatmap for each category independently
     1. detect all response whose value greater or equal to its 8 connected neighbors
-    2. keep top n peaks ``$`\hat{P}_c`$``
-2. For each keypoint in ``$`\hat{P}`$``, get it 2D location (i,j)
-3. Get corresponding ``$`O_{i,j}`$``, ``$`S_{i,j}`$``
+    2. keep top n peaks `$\hat{P}_c$`
+2. For each keypoint in `$\hat{P}$`, get it 2D location (i,j)
+3. Get corresponding `$O_{i,j}$`, `$S_{i,j}$`
 4. Produce bounding boxes
 5. (Optional) Post-processing all boxes with NMS.
 inference time: 28fps with DLA-34 backbone, 7.8fps with hourglass-104 (45.1 AP)
@@ -88,6 +88,6 @@ According to [issue 269: Comparing with ExtremeNet and CornerNet](https://github
 ## TTFNet (AAAI 2020)
 [Training-Time-Friendly Network for Real-Time Object Detection](https://arxiv.org/abs/1909.00700)  
 based on [CenterNet: Objects as Points](#centernet-objects-as-points-2019)  
-* using Gaussian kernels to encode training samples for center localization and size regression ~increasing batch size, so that enlarge the learning rate[(Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour)](https://arxiv.org/abs/1706.02677) and accelerate the training process. (It predict ``$`(w_l, h_t, w_r, h_b)`$`` instead of size since the training sample of size regression is not only the center points
+* using Gaussian kernels to encode training samples for center localization and size regression ~increasing batch size, so that enlarge the learning rate[(Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour)](https://arxiv.org/abs/1706.02677) and accelerate the training process. (It predict `$(w_l, h_t, w_r, h_b)$` instead of size since the training sample of size regression is not only the center points
 * initiative sample weight for better information utilization
 result: balance training time while the accuracy and inference time still comparable to CenterNet

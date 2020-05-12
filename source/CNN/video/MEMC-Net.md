@@ -26,9 +26,9 @@ e.g. [SepConv(ICCV 2017)](http://openaccess.thecvf.com/content_ICCV_2017/papers/
 ### 3.2 Adaptive Warping Layer
 warps images or feature based on given optical flow and local convolutional kernels  
 **Foward pass**  
-``$`I(x) : \mathbb{Z}^2 \to \mathbb{R}^3`$`` denote the RGB image (from 2D coordinates to 3 RGB color real value)  
-``$`f(x):= (u(x),v(x) `$`` represent the optical flow field, u(x), v(x) denote the horizontal and vertical part of 2D vector  
-``$` k^l(x) = [k^l_\mathbf{r}(x)]_{H \times W} (r \in [-R+1,R]^2) `$`` indicate the interpolation kernel where R is the kernel size  
+`$I(x) : \mathbb{Z}^2 \to \mathbb{R}^3$` denote the RGB image (from 2D coordinates to 3 RGB color real value)  
+`$f(x):= (u(x),v(x) $` represent the optical flow field, u(x), v(x) denote the horizontal and vertical part of 2D vector  
+`$ k^l(x) = [k^l_\mathbf{r}(x)]_{H \times W} (r \in [-R+1,R]^2) $` indicate the interpolation kernel where R is the kernel size  
 ```math
 \hat{I}(x) = \sum_{\mathbf{r} \in [-R+1,R]^2 k_\mathbf{r}(x) I(x+\lfloor f(x)\rfloor+r)}
 ```  
@@ -37,19 +37,19 @@ Image part: shift by optical flow + Kernel
 ```math
 k_\mathbf{r} = k^l_\mathbf{r} k^d_\mathbf{r}
 ```
-``$`k^l_\mathbf{r}`$``: 16 (maps to 4x4) channels interpolation kernel learned in kernel estimation network  
-``$`k^d_\mathbf{r}`$``: 4x4 coefficients computed from f(x)= u(x), v(x) fractional part  
+`$k^l_\mathbf{r}$`: 16 (maps to 4x4) channels interpolation kernel learned in kernel estimation network  
+`$k^d_\mathbf{r}$`: 4x4 coefficients computed from f(x)= u(x), v(x) fractional part  
 ![](img/MEMC-Net_fig5.png)  
-interpolate the 4x4 kernel ``$`k^l_\mathbf{r}`$`` with optical flow  
+interpolate the 4x4 kernel `$k^l_\mathbf{r}$` with optical flow  
 **backward pass**  
-compute the gradients with respect to optical flow and interpolation kernels respectively.  I do not understand how to differentiate ``$`I(x+f(x)+r)`$`` part… It seems it do not learn optional flow estimation, using pre-trained model directly, in this case adaptive wrapping layer only learn/fine tune the optical flow transform for kernel layer. From Hyper-parameter settings, it only fine tune pre-trained model with low learning rate.
+compute the gradients with respect to optical flow and interpolation kernels respectively.  I do not understand how to differentiate `$I(x+f(x)+r)$` part… It seems it do not learn optional flow estimation, using pre-trained model directly, in this case adaptive wrapping layer only learn/fine tune the optical flow transform for kernel layer. From Hyper-parameter settings, it only fine tune pre-trained model with low learning rate.
 
 ### 3.3 Flow Project Layer
-Let ``$`f_{t_x \to t_y}(x) `$`` be the motion vector field of coordinate x in frame ``$`I_{t_x} to I_{t_y}`$``
-given ``$`f_{t-1 \to t+1}(y) `$``, find ``$`f_{t \to t-1}(x)`$`` and ``$`f_{t \to t+1} `$``
+Let `$f_{t_x \to t_y}(x) $` be the motion vector field of coordinate x in frame `$I_{t_x} to I_{t_y}$`
+given `$f_{t-1 \to t+1}(y) $`, find `$f_{t \to t-1}(x)$` and `$f_{t \to t+1} $`
 Project with outside-in strategy
 ## 4 video frame interpolation
-All 4 branches take ``$`I_{t-1}, I_{t+1} `$``as input
+All 4 branches take `$I_{t-1}, I_{t+1} $`as input
 
 |module            |function/output                                  |architecture|
 |------------------|-------------------------------------------------|---|
