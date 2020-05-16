@@ -75,6 +75,9 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_extra_path = ['googleec3fcf9501d2264e.html']
+html_js_files = [
+    'js/disqus.js', # disqus comment system, disqus shortname hardcoded in this js
+]
 
 # -- CommonMark Markdown -----------------------------------------------------
 
@@ -132,6 +135,7 @@ html_search_language = 'zh'
 
 html_search_options = {'dict': jieba.DEFAULT_DICT}
 
+### AutoStructifyPatch
 class AutoStructifyPatch(AutoStructify):
     def parse_ref(self, ref):
         """

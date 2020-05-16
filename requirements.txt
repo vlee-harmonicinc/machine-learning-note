@@ -1,9 +1,10 @@
 sphinx
 sphinx-autobuild
-sphinx_rtd_theme
+# sphinx_rtd_theme
+git+git://github.com/htleeab/sphinx_rtd_theme.git@feature/disqus # my sphinx_rtd_theme fork with disqus div inserted, used with js/disqus.js
 #recommonmark==0.6.0
 git+git://github.com/brentfollin/recommonmark.git@fix-inline-math # recommonmark
 #git+git://github.com/chrisburr/recommonmark.git@patch-1 # recommonmark fix inline math
-jieba
+jieba # search enhancement
 sphinx_markdown_tables
 numpy
