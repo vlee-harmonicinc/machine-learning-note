@@ -1,5 +1,6 @@
 # Math
-* [Distribution](/math/distribution.md)
-* [Kullback-Leibler Divergence](/math/Kullback-Leibler_divergence.md)
-* [Maximum Likelihood Estimation](/math/maximum_likelihood_estimation.md)
-* [Variational Inference](/math/variational_inference.md)
+* [Derivative](derivative.md)
+* [Distribution](distribution.md)
+* [Kullback-Leibler Divergence](Kullback-Leibler_divergence.md)
+* [Maximum Likelihood Estimation](maximum_likelihood_estimation.md)
+* [Variational Inference](variational_inference.md)
