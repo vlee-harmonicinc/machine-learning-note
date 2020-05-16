@@ -1,15 +1,16 @@
 # Loss Functions
-## L2 & L1 Norm (regularization)
-### L2 - Square
+## L2 & L1 Loss
+### L2 - MSE, Mean Square Error
 ```math
 &L_2(x)=x^2\\
 &f(y,\hat{y})=\sum^N_{i=1} (y_i-\hat{y_i})^2
 ```
-### L1 - Absolute
+### L1 - MAE, Mean Absolute Error
 ```math
 &L_1(x)=|x|\\
 &f(y,\hat{y})=\sum^N_{i=1} |y_i-\hat{y}_i|
 ```
+** MAE seems better than MSE in image generation task, such as super-resolution
 ### Smooth L1
 ```math
 \text{smooth L}_1(x)=

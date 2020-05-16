@@ -50,6 +50,8 @@
 * [Which GPU(s) to Get for Deep Learning: My Experience and Advice for Using GPUs in Deep Learning](https://timdettmers.com/2019/04/03/which-gpu-for-deep-learning/)  
 
 ## Documentation
+* [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+### LaTex
 * [Online LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
 * [LaTeX Base](https://latexbase.com/)
 * [Detexify: search LaTeX symbol via drawing](http://detexify.kirelabs.org/classify.html)
