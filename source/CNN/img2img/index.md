@@ -1,9 +1,10 @@
 # Image-to-Image
-* [Super-Resolution](super-resolution.md)
-* [Debluring](deblurring.md)
-* [Colorization](colorization.md)
 * [Inpaint](inpaint.md)
 * [Style Transfer](style_transfer.md)
+* [Colorization](colorization.md)
+* [Super-Resolution](super-resolution.md)
+* [Debluring](deblurring.md)
+* [Matting](matting.md)
 * [HDR](hdr.md)
 
 ## GAN

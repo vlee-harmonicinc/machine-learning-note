@@ -14,8 +14,9 @@
 
 ## ELMo (NAACL 2018)
 [Deep contextualized word representations](https://arxiv.org/abs/1802.05365)  
+**E**mbeddings from **L**anguage **Mo**dels  
 [code](https://allennlp.org/elmo)  
-    LSTM
+LSTM
 
 ## Transformer (NIPS 2017)
 [Attention is all you need](https://arxiv.org/abs/1706.03762)
