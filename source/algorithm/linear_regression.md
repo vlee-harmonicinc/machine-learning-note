@@ -28,9 +28,8 @@ always return expected y regardless of inputs: `$r^2`$=1``
 2. fast (when dataset is small)
 #### Disadvantage:  
 1. not scalable. Required lot of memory when dataset is large
-## Stochastic Gradient Descent
-### 
-
+## Gradient Descent
+[optimizer/Gradient Descent](../basic/optimizer.html#gradient-descent)
 
 
 ## library implementation

@@ -7,12 +7,13 @@ f'(x) &= \lim_{h\to0} \frac{f(x+h)-f(x)}{h} \\
 ```
 ## Derivative Rule
 ```math
-(c f)'               &= c f'(x)                    \\
-(f \pm	g)'          &= f'(x) \pm g'(x)       \\
-(f g)'               &= f'g + fg'            &\text{- Product Rule}\\
-(\frac f g)'         &=\frac{f'g-fg'} {g^2}  &\text{- Quotient Rule}\\
-\frac d {dx}(x^n)    &=nx^{n-1}              &\text{- Power Rule}\\
-\frac d{dx}(f(g(x))) &=f'(g(x))g'(x)         &\text{- Chain Rule}\\
+(c f)'                 &= c f'(x)                    \\
+(f \pm g)'             &= f'(x) \pm g'(x)       \\
+(f g)'                 &= f'g + fg'                    &\text{- Product Rule}\\
+(\frac f g)'           &=\frac{f'g-fg'} {g^2}          &\text{- Quotient Rule}\\
+\frac d {dx}(x^n)      &=nx^{n-1}                      &\text{- Power Rule}\\
+\frac {d}{dx}(f(g(x))) &= f'(g(x))g'(x)                &\text{- Chain Rule}\\
+\frac {dx}{dy}         &= \frac{dx}{du} \frac{du}{dy}  &\text{- Chain Rule}\\
 ```
 ## Common
 ```math
