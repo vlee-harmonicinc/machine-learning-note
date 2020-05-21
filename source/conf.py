@@ -22,7 +22,7 @@ from docutils import nodes
 # -- Project information -----------------------------------------------------
 
 project = 'machine learning note'
-copyright = '2019, Vivian LEE'
+copyright = '2020, Vivian LEE'
 author = 'Vivian LEE'
 
 
