@@ -9,8 +9,10 @@ Attention mechanism m ostly used on RNN for NLP, but SAGAN using self-attention 
 [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention (ICML 2015)](https://arxiv.org/abs/1502.03044)  
 Generate word by word based on image
 
-## Self-Attention
-[Attention is all you need (NIPS 2017)](https://arxiv.org/abs/1706.03762)
+## Transformer
+[Attention is all you need (NIPS 2017)](https://arxiv.org/abs/1706.03762)  
+[google AI blog](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)  
+[The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
 
 ## Non-local Neural Networks
 [Non-local Neural Networks (CVPR 2018)](https://arxiv.org/pdf/1711.07971.pdf)  

@@ -2,6 +2,11 @@
 [How transferable are features in deep neural networks? (NIPS 2014)](https://arxiv.org/abs/1411.1792)  
 Example: Given labelled grey-scaled MNIST and unlabeled color MNIST, want to train model for classifier of color MNIST without labelling color MNIST.  
 
+## Embedding
+* word embedding in NLP, such as word2vec
+* face embedding in image, such as faceNet
+* etc...
+
 ## STL
 [Self-taught learning: transfer learning from unlabeled data (NIPS 2007)](http://ai.stanford.edu/~hllee/icml07-selftaughtlearning.pdf)  
 train classifier with feature representation (e.g. with auto-encoder)
