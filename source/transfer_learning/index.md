@@ -56,3 +56,7 @@ multi adaptation layers, multi-MMD ([A Kernel Two-Sample Test (JMLR 2012)](http:
 
 ### CDAN
 [Conditional Adversarial Domain Adaptation (NIPS 2018)](https://arxiv.org/abs/1705.10667)
+
+## BiT
+[Big Transfer (BiT): General Visual Representation Learning](https://arxiv.org/pdf/1912.11370v3.pdf) by Google  
+[tensorflow 2, JAX, pyTorch](https://github.com/google-research/big_transfer)
