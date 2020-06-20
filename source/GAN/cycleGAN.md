@@ -61,8 +61,15 @@ encoder-decoder pairs that share the latent coding.
 input mask vector, an one-shot label, the target domain as second input condition
 ![](img/star_GAN.png)
 ### StarGANv2
-[StarGAN v2: Diverse Image Synthesis for Multiple Domains (CVPR 2020)](https://arxiv.org/abs/1912.01865)  
-[stargan-v2](https://github.com/clovaai/stargan-v2)  
+[StarGAN v2: Diverse Image Synthesis for Multiple Domains (CVPR 2020)](https://arxiv.org/abs/1912.01865) |
+[Github stargan-v2](https://github.com/clovaai/stargan-v2) | 
+[Youtube](https://youtu.be/0EVh5Ki4dIY) | 
+[Twitter](https://twitter.com/yunjey_choi) | 
+[Reddit](https://www.reddit.com/r/MachineLearning/comments/g8s1af/r_clova_ai_researchs_stargan_v2_cvpr_2020_code/)
+> Goal: train a **single** generator G that can generate **diverse** images of each domain y that corresponds to the image x. We generate **domain-specific** style vectors in the learned style space of each domain and train G to reflect the style vectors
+Replace its domain label with our proposed **domains pecific style code** that can represent diverse styles of a specific domain with 2 modules
+1. mapping network: learns to transform random Gaussian noise into a style code
+1. style encoder: learns to extract the style code from a given reference image
 
 ## Comparison of above 4 conditional variants
 

@@ -2,6 +2,7 @@
 * [Linear Regession](linear_regression.md)
 * [Classifier](classifier.md)
 * [Dimension Reduction](dimension_reduction.md)
+* [Decision Tree](decision_tree.md)
 
 ## Logistic Regression
 ## Support Vector Machine, SVM
@@ -21,7 +22,4 @@ small k-> overfitting
 large k-> underfitting  
 ## K-Means
 clustering
-## Decision Tree
-## Random Forest
 ## Naive Bayes
-## Gradient Boosting

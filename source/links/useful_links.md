@@ -29,7 +29,7 @@
 * [Google AI Blog](https://ai.googleblog.com/)
 
 ## News
-* [机器之心](https://www.jiqizhixin.com/) 最新->理論  
+* [Synced](https://syncedreview.com/) | [机器之心](https://www.jiqizhixin.com/)  
 
 ## Review Survey
 * The History Began from AlexNet: A Comprehensive Survey on Deep Learning Approaches
