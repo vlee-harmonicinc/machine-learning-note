@@ -33,4 +33,4 @@ comparing with cycleGAN, it learn shape better.
 [reddit](https://www.reddit.com/r/MachineLearning/comments/h8qhsg/r_rethinking_the_truly_unsupervised_imagetoimage/) | 
 [Twitter](https://twitter.com/KyungjuneB/status/1272093489635835904) | [youtube](https://www.youtube.com/watch?v=sEG8hD64c_Q&feature=youtu.be)  
 *Truly unsupervised*: no any supervision, neither image-level(paired) or set-level (unpaired, domain)  
-similar to styleGAN? but styleGAN assume no domain as all while TUNIT assume dataset have dmoain, but it is unknown in training dataset
+similar to styleGAN? but styleGAN assume no domain as all while TUNIT assume dataset have dmoain, but it is unknown in training dataset. TUNIT learn to produce domain label via [IIC](https://arxiv.org/abs/1807.06653) clustering.
