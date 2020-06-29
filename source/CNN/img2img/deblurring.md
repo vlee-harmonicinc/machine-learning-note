@@ -14,8 +14,8 @@ The first one related to video
 ## Self-paced Kernel Estimation for Robust Blind Image Deblurring (ICCV 2017)
 ## blur2mflow (CVPR 2017)
 [From Motion Blur to Motion Flow: a Deep Learning Solution for Removing Heterogeneous Motion Blur](https://donggong1.github.io/docs/blur2mflow_cvpr17.pdf)
-[Project](https://donggong1.github.io/blur2mflow)
-estimate motion flow and use then estimated motion flow to recover the unblurred image
+[Project](https://donggong1.github.io/blur2mflow)  
+estimate motion flow and use then estimated motion flow to recover the clear image
 ![](https://donggong1.github.io/projects/blur2mflow/framework.jpg)
 ![](https://donggong1.github.io/projects/blur2mflow/net.png)
 
@@ -41,8 +41,7 @@ python3 test.py --dataroot <folder> --model test --dataset_mode single --learn_r
 [feature/video_inference](https://github.com/htleeab/DeblurGANv2/tree/feature/video_inference) support video inference :)  
 But there is some [purple artifact](https://github.com/TAMU-VITA/DeblurGANv2/issues/18) not fixed even the issue is closed :(
 
-## CDVD-TSP (CVPR 2020)
-[Cascaded Deep Video Deblurring Using Temporal Sharpness Prior] - has not released yet?  
+## CDVD-TSP
+[Cascaded Deep Video Deblurring Using Temporal Sharpness Prior (CVPR 2020)](https://arxiv.org/pdf/2004.02501.pdf)
 [Project](https://baihaoran.xyz/projects/cdvd-tsp/index.html) |
 [PyTorch code](https://github.com/csbhr/CDVD-TSP)
-
