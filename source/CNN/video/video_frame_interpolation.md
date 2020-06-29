@@ -54,3 +54,8 @@ video frame interpolation (VFI) and video super-resolution (VSR), i.e. temporal 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/8mgD8JxBOus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ##### testing pre-trained model
 used 6m to process 360x640 120 frames -> 1440x2560 238 frames on GTX 1080 Ti
+
+## BIN
+[**B**lurry Video Frame **In**terpolation (CVPR 2020)](https://arxiv.org/abs/2002.12259)  
+[pyTorch 1.3](https://github.com/laomao0/BIN) | [result video](https://www.youtube.com/watch?v=C_bL9YQJU1w)
+frame deblur + interpolation with inter-pyramid recurrent module that adopts ConvLSTM units
