@@ -49,9 +49,11 @@ Using Transformer, undirectional
 [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (2018)](https://arxiv.org/abs/1810.04805) | 
 [Google AI Blog](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html) | 
 [Reddit](https://www.reddit.com/r/MachineLearning/comments/9nfqxz/r_bert_pretraining_of_deep_bidirectional/)  
-<!--[The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](http://jalammar.github.io/illustrated-bert/) -->
+<!--[The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](http://jalammar.github.io/illustrated-bert/) -->  
+almost identical to the original [Attention is all you need](../attention.html#transformer)  
 2 Training task:
 1. Masked LM: CBOW cannot be used to traing on multi-layer bi-directional model because it "see itself". 15% words selected; 80% changed to "masked" label, 10% changed to other word, 10% unchanged.
 1. Next Sentence Prediction
-
-Different from ELMO: ELMO is "shallowly bidirectional" since the context-before and context-after do not trained together, only concatenate. BERT is deeply directional
+### Multi-Head Attention
+Attention in same layer could be shared to reduce computational cost.
+[What Does BERT Look At? An Analysis of BERT’s Attention (BlackBoxNLP 2019)](https://arxiv.org/abs/1906.04341) - analyse the attention heads
