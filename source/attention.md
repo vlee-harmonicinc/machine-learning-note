@@ -22,15 +22,15 @@ Generate word by word based on image
 [The Annotated Transformer - Harvard](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 *Self-attention*: sometimes called *intra-attention* is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence. (For previous non-self attention, decoder consider the output of encoder. For self-attention, layer (both encoder or decoder) consider other repersentation within sequence.
 ### Scaled Dot-Product Attention
-![](http://nlp.seas.harvard.edu/images/the-annotated-transformer_33_0.png)
+![](http://nlp.seas.harvard.edu/images/the-annotated-transformer_33_0.png)  
 The input consists of queries `$Q$` and keys `$K$` of dimension `$d_k$`, and values `$V$` of dimension `$d_v$` (channel of features)
 $$ Attention(Q, K, V) = softmax(\frac{QK^T}{sqrt{d_k}})V $$
 ### Multi-Head Attention
 ![small_img](http://nlp.seas.harvard.edu/images/the-annotated-transformer_38_0.png)  
-$$
+```math
 MultiHead(Q,K,V) = Concat(head_1,...,head_h)W^O \\
 where head_i = Attention(QW_i^Q,KW_i^K,VW_i^V)
-$$
+```
 Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.
 
 ## Non-local Neural Networks
