@@ -5,6 +5,7 @@
 &L_2(x)=x^2\\
 &f(y,\hat{y})=\sum^N_{i=1} (y_i-\hat{y_i})^2
 ```
+Generally, L2 loss converge faster than l1. But it prone to over-smooth for image processing, hence l1 and its variants used for img2img more than l2.
 ### L1 - MAE, Mean Absolute Error
 ```math
 &L_1(x)=|x|\\
@@ -26,6 +27,13 @@
 |y-\hat{y}|-0.5    & otherwise
 \end{cases}
 ```
+### Charbonnier Loss
+LapSRN: [Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Networks](http://xxx.itp.ac.cn/pdf/1710.01992)
+```math
+\text{Charbonnier Loss}(x) = \sqrt{x^2+\epsilon^2}, where \epsilon = 1\times 10^{-3}
+```
+![small_img](img/loss_l1_l2_cb.png) ![small_img](img/loss_l1_l2_cb_0_001.png)
+
 ## Regression Loss Functions
 ### MSE - Mean Squared Error
 ```math
