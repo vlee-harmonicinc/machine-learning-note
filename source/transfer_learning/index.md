@@ -57,6 +57,12 @@ multi adaptation layers, multi-MMD ([A Kernel Two-Sample Test (JMLR 2012)](http:
 ### CDAN
 [Conditional Adversarial Domain Adaptation (NIPS 2018)](https://arxiv.org/abs/1705.10667)
 
+## DNI
+[Deep Network Interpolation for Continuous Imagery Effect Transition (CVPR 2019)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Deep_Network_Interpolation_for_Continuous_Imagery_Effect_Transition_CVPR_2019_paper.pdf) - CUHK + SenseTime  
+[Project](https://xinntao.github.io/projects/DNI) | [github: pyTorch (the last section of readme)](https://github.com/xinntao/DNI)  
+Network interpolation strategy also used in ablation Study of ESRGAN. It is less costly comparing to ablation via tuning loss weight.
+![](https://camo.githubusercontent.com/913baa366ba395595a9638ab6282a9cbb088ab98/68747470733a2f2f78696e6e74616f2e6769746875622e696f2f70726f6a656374732f444e495f7372632f7465617365722e6a7067)
+
 ## BiT
 [Big Transfer (BiT): General Visual Representation Learning](https://arxiv.org/pdf/1912.11370v3.pdf) by Google  
 [tensorflow 2, JAX, pyTorch](https://github.com/google-research/big_transfer)
