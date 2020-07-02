@@ -38,11 +38,11 @@ multiscale architecture that reconstructs various scales of high-resolution imag
 * linear low-rank convolution stack and large channel
 
 ## SFTGAN
-[Recovering Realistic Texture in Image Super-resolution by Deep Spatial Feature Transform (CVPR 2018)](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Recovering_Realistic_Texture_CVPR_2018_paper.pdf) - SenseTime  
-**Spatial Feature Transform**: learns a mapping function `$M$` that outputs a modulation parameter pair (γ, β)
-generate affine transformation parameters for spatial-wise feature modulation  
+[Recovering Realistic Texture in Image Super-resolution by Deep Spatial Feature Transform (CVPR 2018)](https://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Recovering_Realistic_Texture_CVPR_2018_paper.pdf) - SenseTime + CUHK  
+[pyTorch + Lua](https://github.com/xinntao/SFTGAN) | [STF Layer](https://github.com/xinntao/BasicSR/blob/00bbaf87163956fd00c22db73d051b9e27bcd563/codes/models/modules/sft_arch.py#L8-L20)  
+* **Spatial Feature Transform**: learns a mapping function `$M$` that outputs a modulation parameter pair (γ, β) based on some prior condition Ψ (Segmentation probability maps)
+* generate affine transformation parameters for spatial-wise (pixel-wise) feature modulation  
 ![](img/SFTGAN_architecture.png)
-* Could add categorical prior
 ![](img/SFTGAN.png)
 
 ## RDN
