@@ -1,4 +1,4 @@
-# Deblurring
+# Image Deblurring
 Many [super-resolution](super-resolution.md) papers also handle deblur
 ## Type of blur or noise
 * Motion Blur
@@ -41,7 +41,5 @@ python3 test.py --dataroot <folder> --model test --dataset_mode single --learn_r
 [feature/video_inference](https://github.com/htleeab/DeblurGANv2/tree/feature/video_inference) support video inference :)  
 But there is some [purple artifact](https://github.com/TAMU-VITA/DeblurGANv2/issues/18) not fixed even the issue is closed :(
 
-## CDVD-TSP
-[Cascaded Deep Video Deblurring Using Temporal Sharpness Prior (CVPR 2020)](https://arxiv.org/pdf/2004.02501.pdf)
-[Project](https://baihaoran.xyz/projects/cdvd-tsp/index.html) |
-[PyTorch code](https://github.com/csbhr/CDVD-TSP)
+## Video Debluring
+[Video Debluring](../video/video_deblurring.md)

@@ -9,7 +9,9 @@
 ## Video
 * [Video Enhancement](video/video_enhancement.md)
 * [Video Frame Interpolation](video/video_frame_interpolation.md)
+* [Video Deblurring](video/video_deblurring.md)
 * [Video Fingerprint](video/video_fingerprint.md)
+
 ## 3D
 * [3D Object Detection](3D/3D_object_detection.md)
 * [3D Pose Estimation](3D/3D_pose_estimation.md)
