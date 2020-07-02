@@ -41,6 +41,9 @@ The contextual representation of each token is the concatenation of the left-to-
 ## GPT
 [Improving Language Understanding by **Generative Pre-Training** (2018)](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | [OpenAI blog](https://openai.com/blog/language-unsupervised/)  
 Using Transformer, undirectional  
+### GPT-3
+[Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) - OpenAI  
+It is not open-source and the computation cost is high even for inference. OpenAI provide API.
 ### Image GPT
 [OpenAI blog](https://openai.com/blog/image-gpt/)
 
