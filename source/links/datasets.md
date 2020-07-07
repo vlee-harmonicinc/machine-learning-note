@@ -75,18 +75,27 @@ provide one boundary box in a reference frame, then following this items
 tone mapping with multi. exposures, 106 images
 
 ## Video
-For frame interpolation, super-resolution etc  
-[Vimeo90K](http://toflow.csail.mit.edu/)
-### video restoration dataset 
-[REDS](https://seungjunnah.github.io/Datasets/reds.html)  
+### Optical Flow
+* [Middlebury](http://vision.middlebury.edu/flow/data/)
+* [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html)
+### Video Debluring
+* [Hand-held camaera](https://www.cs.ubc.ca/labs/imager/tr/2017/DeepVideoDeblurring/) from Deep Video Deblurring for Hand-held Cameras (CVPR 2017)
+* [GoPro](https://github.com/SeungjunNah/DeepDeblur_release), from Deep Multi-Scale Convolutional Neural Network for Dynamic Scene Deblurring (CVPR 2017)
+* [REDS](https://seungjunnah.github.io/Datasets/reds.html) from NTIRE 2019
+### Video Restoration
+#### REDS
+from [NTIRE 2019](https://seungjunnah.github.io/Datasets/reds.html)
 1. sharp (ground truth)
 1. blur
 1. blur+compression
 1. low resolution
 1. blur + low resolution
-### Optical Flow
-[Middlebury](http://vision.middlebury.edu/flow/data/)
-[FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html)
+#### Vimeo90K
+from [Video Enhancement with Task-Oriented Flow (IJCV 2019)](http://toflow.csail.mit.edu/)
+1. temporal frame interpolation
+1. video denoising
+1. video deblocking
+1. video super-resolution
 
 ## Image grading
 ### MIT-Adobe FiveK Dataset
