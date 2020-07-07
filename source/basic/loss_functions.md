@@ -32,7 +32,7 @@ LapSRN: [Fast and Accurate Image Super-Resolution with Deep Laplacian Pyramid Ne
 ```math
 \text{Charbonnier Loss}(x) = \sqrt{x^2+\epsilon^2}, where \epsilon = 1\times 10^{-3}
 ```
-![small_img](img/loss_l1_l2_cb.png) ![small_img](img/loss_l1_l2_cb_0_001.png)
+![middle_img](img/loss_l1_l2_cb.png) ![middle_img](img/loss_l1_l2_cb_0_001.png)
 
 ## Regression Loss Functions
 ### MSE - Mean Squared Error
@@ -43,7 +43,7 @@ f(y,\hat{y})=\dfrac{1}{d}\sum^N_{i=1} (y_i-\hat{y}_i)^2
 ```math
 f(y,\hat{y})=\dfrac{1}{d}\sum^N_{i=1} |y_i-\hat{y}_i|
 ```
-### MSE - Mean Squared Logarithmic Error
+### MSLE - Mean Squared Logarithmic Error
 ```math
 f(y,\hat{y})=\dfrac{1}{d}\sum^N_{i=1} (log(y_i+1)-log(\hat{y}_i+1))^2
 ```
