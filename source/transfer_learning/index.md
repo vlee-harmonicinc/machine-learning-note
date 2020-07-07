@@ -12,12 +12,14 @@ Example: Given labelled grey-scaled MNIST and unlabeled color MNIST, want to tra
 train classifier with feature representation (e.g. with auto-encoder)
 
 ## DaNN (PRICAI 2014)
+<!--(PRICAI 2014) it is required to distinguish DaNN and DANN, since the tag is smaller case after compile by sphinx-->
 [Domain Adaptive Neural Networks for Object Recognition (PRICAI 2014)](https://arxiv.org/pdf/1409.6041.pdf)  
-**Maximum Mean Discrepancy (MMD)** is a measure of the difference between two probability distributions from their samples. It is an effective criterion that compares distributions without initially estimating their density functions.
+use [Maximum Mean Discrepancy (MMD)](/math/MMD.md) as regularization to reduce the distribution mismatch between the source and target domains in the latent space.
 
 ## DDC
 [**Deep domain confusion**: Maximizing for domain invariance (2014)](https://arxiv.org/abs/1412.3474)  
-adaptation layer along with a domain confusion loss based on MMD
+adaptation layer along with a domain confusion loss based on MMD  
+deeper than DaNN
 
 ## Distillistion
 Train big model first, then use it as teacher to teach small model (with faster inference speed)

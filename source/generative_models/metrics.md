@@ -18,12 +18,19 @@ i.e. a good generative model should output different classes uniformly
 * IS do not use the statistics of real world samples and compare it to the statistics of synthetic samples
 
 ## Fréchet Inception Distance (FID)
-introduced by [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium](https://arxiv.org/abs/1706.08500) section A1  
+introduced by [GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium (NIPS 2017)](https://arxiv.org/abs/1706.08500) section A1  
 Let `$p(.)$` be distribution of model samples, `$p_w(.)$` be distrubtion of samples from real world, 
-The Fréchet distance `$d(., .)$` between the Gaussian with mean and covariance `$(m, \sigma)$` obtained from `$p(.)$` and the Gaussian `$(m_w, \sigma_w)$` obtained from `$p_w(.)$`
+The *Fréchet distance*, also known as Wasserstein-2 distance, `$d(., .)$` between the *Gaussian* with mean and covariance `$(m, \sigma)$` obtained from `$p(.)$` and the Gaussian `$(m_w, \sigma_w)$` obtained from `$p_w(.)$`
 `$ d^2{((m,C),{m_w, C_w)} = ||m-m_w||^2_2 + Trace(\sigma+\sigma_w - 2 \sqrt{(\sigma \sigma_w)}) $`
 * the lower FID, the better GAN
 
+## Kernel Inception Distance (KID)
+[Demystifying mmd gans (ICLR 2018)](https://arxiv.org/pdf/1801.01401.pdf)  
+[OpenReview](https://openreview.net/forum?id=r1lUOzWCW)  
+$$
+* similar to FID, also using Inception-v3, but unbiased
+* the lower KID, the better GAN
+
 ## Learned Perceptual Image Patch Similarity (LPIPS)
-[The Unreasonable Effectiveness of Deep Features as a Perceptual Metric(CVPR 2018)](https://zpascal.net/cvpr2018/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.pdf)
+[The Unreasonable Effectiveness of Deep Features as a Perceptual Metric(CVPR 2018)](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.pdf)
 to measure the average feature distances between generated samples. Higher LPIPS scores indicate better diversity among the generated images.

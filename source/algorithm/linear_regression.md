@@ -20,8 +20,8 @@ r^2 = 1-\dfrac{SS_{res}}{SS_{tot}}= 1-\dfrac{\sum_i(\hat{y}_i-y_i)^2}{\sum_i(\ha
 ```
 Measure of how well the model approximate the real data
 `$r^2$`
-perfect match: `$r^2`$=0``
-always return expected y regardless of inputs: `$r^2`$=1``
+perfect match: `$r^2=0$`
+always return expected y regardless of inputs: `$r^2=1$`
 
 #### Advantage:  
 1. exact solution
