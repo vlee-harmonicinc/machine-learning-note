@@ -25,14 +25,14 @@ The effectiveness diminishes when the training minibatches are small.
 Origin paper said BatchNorm reduce *Internal Covariate Shift*: the change in the distribution of network activations due to the change in network parameters during training.  
 [How Does Batch Normalization Help Optimization? (NIPS 2018)](https://arxiv.org/abs/1805.11604) demonstrate is NOT Internal covariate shift and suggest it makes the optimization **landscape** significantly **smoother**. 
 
-## Layer Normalization (NIPS 2016)
-[Layer Normalization](https://arxiv.org/abs/1607.06450)  
+## Layer Normalization
+[Layer Normalization (NIPS 2016)](https://arxiv.org/abs/1607.06450)  
 no batch size required  
 for shared weight model, e.g. RNN, CNN(but not good for CNN)  
 might reduce the representivity of model  
 
-## Weight Normalization (NIPS 2016)
-[Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks](https://arxiv.org/abs/1602.07868)  
+## Weight Normalization
+[Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks (NIPS 2016)](https://arxiv.org/abs/1602.07868)  
 adv: 
 1. not relay on batch
 1. less noise
@@ -42,36 +42,36 @@ disadv:
 1. need good initialization, high dependency of input data  
 1. unstable on training  
 
-## Instance normalization (2016)
-[Instance Normalization: The Missing Ingredient for Fast Stylization](https://arxiv.org/abs/1607.08022)  
+## Instance normalization
+[Instance Normalization: The Missing Ingredient for Fast Stylization (2016)](https://arxiv.org/abs/1607.08022)  
 like batch norm with 1 batch size (still normalize though heightxwidth)  
 
 ## SELU (NIPS 2017)
 [Activation functions/SELU](activation_functions.html#selu-scaled-exponential-linear-unit-nips-2017)
 
-## Group Normalization (ECCV 2018)
-[Group Normalization](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yuxin_Wu_Group_Normalization_ECCV_2018_paper.pdf)  
+## Group Normalization
+[Group Normalization (ECCV 2018)](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Yuxin_Wu_Group_Normalization_ECCV_2018_paper.pdf)  
 ![](img/group_norm_comparison.png)
 
-## Conditional BatchNorm (NIPS 2017)
-[Modulating early visual processing by language](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)  
+## Conditional BatchNorm
+[Modulating early visual processing by language (NIPS 2017)](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)  
 [pytorch](https://github.com/ap229997/Conditional-Batch-Norm) | [guessWhat?!](https://www.guesswhat.ai)  
 `$\gamma, \beta$` learnt from one-hidden-layer MLP rely on input  
 used in [cGAN with projection discriminator](/GAN/GAN_representation_learning.html#projection-discriminator) and [SAGAN](/GAN/GAN_general.html#sagan-pmlr-2019)  
 
-## Conditional Instance Normalizatoin (ICLR 2017)
-[A learned representation for artistic style](https://arxiv.org/pdf/1610.07629.pdf)
+## Conditional Instance Normalizatoin
+[A learned representation for artistic style (ICLR 2017)](https://arxiv.org/pdf/1610.07629.pdf)
 
-## Adaptive Instance Normalization (ICCV 2017)
-also called AdaIN  
-[Arbitrary style transfer in real-time with **ada**ptive **i**nstance **n**ormalization](http://openaccess.thecvf.com/content_ICCV_2017/papers/Huang_Arbitrary_Style_Transfer_ICCV_2017_paper.pdf)  
+## AdaIN
+Stands for **Ada**ptive **I**nstance **N**ormalization  
+[Arbitrary style transfer in real-time with **ada**ptive **i**nstance **n**ormalization (ICCV 2017)](http://openaccess.thecvf.com/content_ICCV_2017/papers/Huang_Arbitrary_Style_Transfer_ICCV_2017_paper.pdf)  
 scale with output domain distribution
 ```math
 AdaIN(x,y)=\sigma_y\big(\frac{x-\mu_x }{\sigma_x}\big)+\mu_y
 ```
 
-## Batch Renormalization (NIPS 2017)
-[Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models](https://arxiv.org/pdf/1702.03275.pdf) by Google  
+## Batch Renormalization
+[Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models (NIPS 2017)](https://arxiv.org/pdf/1702.03275.pdf) by Google  
 data in batch cannot cover the real data distribution -> batchNorm perform badly
 using moving avg mean and SD -> the gradient optimization and the normalization to counteract each other -> model blow up
 novel re-normalization apply on x (before scaling)
@@ -100,16 +100,16 @@ using the input layout for modulating the activations in normalization layers th
 
 ## Summary and use cases
 
-|  |usable situation|unsuitable application | example model(s)|
-|---|---|---|---|
-LRN         |                                             AlexNet, ProgressiveGAN(variant n=N with all channels)
+|           |usable situation|unsuitable application | example model(s)|
+|-----------|----------------|-----------------------|-----------------|
+LRN         |AlexNet, ProgressiveGAN(variant n=N with all channels)
 BatchNorm   |batch reflect real data distribution|RNN,small batch size,patch based,WGAN-GP|UNet
 LayerNorm   |no batch sized required, RNN
-WeightNorm  |no batch sized required | |WDSR|
+WeightNorm  |no batch sized required     |           |WDSR|
 InstanceNorm|instance specified, e.g. img2img|classification|DeblurGAN
-SELU        |feed-forward network (FNNs)|CNN, RNN|audio, features based model
+SELU        |feed-forward network (FNNs)|CNN, RNN    |audio, features based model
 GroupNorm   |
-BatchReNorm |any BatchNorm with small batch size||[OCR](https://arxiv.org/pdf/1812.11894.pdf)
-Conditional BatchNorm|conditional GAN|unconditional|SAGAN
-AdaIN       |Style Transfer ||StyleGAN
-SPADE       |conditional CNN GAN|unconditional|GauGAN
+BatchReNorm |any BatchNorm with small batch size|    |[OCR](https://arxiv.org/pdf/1812.11894.pdf)
+Conditional BatchNorm|conditional GAN|unconditional  |SAGAN
+AdaIN       |Style Transfer |                        |StyleGAN, U-GAT-IT, FUNIT
+SPADE       |conditional CNN GAN|unconditional       |GauGAN

@@ -9,15 +9,15 @@ ReLu: solve vanishing gradient, training process faster
 dropout: solve overfitting  
 [Local Response Normalization - Normalization/LRN](/basic/normalization.html#local-response-normalization-nips-2012)  
 
-## VGG (ICLR 2014)
-[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)  
+## VGG
+[Very Deep Convolutional Networks for Large-Scale Image Recognition (ICLR 2014)](https://arxiv.org/abs/1409.1556)  
 replace large kernel by mult. small kernels  
 receptive field of 3x3+3x3 = 5x5  
 parameters 18 < 25  
 the network loss to inception, but the pretrained network is useful for image feature embedding  
 
-## NIN (ICLR 2014)
-[Network In Network(ICLR 2014)](https://arxiv.org/abs/1312.4400)
+## NIN
+[Network In Network(ICLR 2014) (ICLR 2014)](https://arxiv.org/abs/1312.4400)
 ### MLPconv (ICLR 2014)
 ![middle_img](img/NIN_MLPconv.png)
 ### GAP
@@ -32,8 +32,8 @@ the network loss to inception, but the pretrained network is useful for image fe
 1. factorizing convolutions
 1. residual scaling
 
-## STN (CVPR 2015)
-[Spatial Transformer Networks](https://arxiv.org/abs/1506.02025) from DeepMind  
+## STN
+[Spatial Transformer Networks (CVPR 2015)](https://arxiv.org/abs/1506.02025) from DeepMind  
 learn spatial transformation from data in a deep learning framework. It warps the feature map via a global parametric transformation such as affine transformation
 1. **Localisation net**: predict transform parameters `$ \theta $`
 1. **Parameterised Sampling Grid**: apply `$ \theta $`
@@ -43,20 +43,17 @@ Backpropagation: differentiate through the sampling mechanism.
 [r/what_happened_to_spatial_transformers](https://www.reddit.com/r/MachineLearning/comments/9moyzk/d_what_happened_to_spatial_transformers/) seems easily collapsed  
 alternative: [Deformable Convolution](#deformable-convolution)
 
-## U-Net (MICCAI 2015)
-[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+## U-Net
+[U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI 2015)](https://arxiv.org/abs/1505.04597)
 An encoder-decoder architecture with skip-connections that forward the output of encoder layer directly to the input of the corresponding decoder layer through channel-wise concatenation.
 ![](img/U-net.png)
 
-## ResNet (CVPR 2016)
-Residual Network  
-[Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
-![](img/ResNet_core.png)
-preserve information, learning details
-also solve 	1. vanishing gradient
-            2. Degradation problem
+## ResNet
+[Deep Residual Learning for Image Recognition (CVPR 2016)](https://arxiv.org/abs/1512.03385)  
+![](img/ResNet_core.png)  
+preserve information, learn details, solve vanishing gradient and Degradation problem
 ### Degradation problem
-deeper network give higher train & test error than shallover network
+deeper network give higher train & test error than shallover network  
 ![](img/resnet_degradation_problem.png)
 
 ### ResNet vs U-Net
@@ -98,21 +95,21 @@ Train an autoencoder first, then use deconvolution to extract features from trai
 Compute transpose of trained convolutional layer, to visualize the pixels that activate specified feature (channel in high-level layer), understand the approximate purpose of each convolution filter  
 1. [FZNet: Visualizing and Understanding Convolutional Networks (ECCV 2013)](https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf) - Matthew D. Zeiler  
 
-## PixelShuffle (CVPR 2016)
-[Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158)
-![](img/PixelShuffle.png)
+## PixelShuffle
+[Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network (CVPR 2016)](https://arxiv.org/abs/1609.05158)  
+upsampling
+![](img/PixelShuffle.png)  
 
 ## Fusing global feature
 [Let there be Color! (2016)](/CNN/img2img/colorization#let-there-be-color-siggraph-2016)
-fusion layer  
-usually used for global feature
+fusion layer, usually used for global feature
 
 ## CAM (CVPR 2016)
 [CNN/visualization/CAM](visualization.html#cam-cvpr-2016)
 
 
-## DenseNet (CVPR 2017)
-[Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
+## DenseNet
+[Densely Connected Convolutional Networks (CVPR 2017)](https://arxiv.org/abs/1608.06993)
 Connect to previous layer with concatenation (rather than sum)  
 Many said it is not quite useful and using residual instead. 
 From visualization result, seems low-layer feature really useful for high layer. (Maybe the middle level layer will learn middle level information without storing low level info with DenseNet architecture.)  
@@ -123,15 +120,17 @@ DenseNet less parameters but require more memory because of implementation of co
 > Removing the DenseNet connections results in higher training error but lower validation errors when the model is trained on FlyingChairs. However, after the model is fine-tuned on FlyingThings3D, DenseNet leads to lower errors.
 PWC-Net-small further reduces this by an additional 2 times via dropping DenseNet connections and is more suitable for memorylimited applications
 
+<!--
 ## CapsuleNet (2017)
 [Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829)
 For dynamic routing
 vector to vector instead of scalar to scalar
+-->
 
 ## Deformable Convolution
-### DCNv1 (ICCV 2017)
-[Deformable Convolutional Networks](http://openaccess.thecvf.com/content_ICCV_2017/papers/Dai_Deformable_Convolutional_Networks_ICCV_2017_paper.pdf) from MSRA  
-[Original: Caffe on Window-not released] | [MXnet](https://github.com/msracver/Deformable-ConvNets) | [pyTorch:mmdetection ](https://github.com/open-mmlab/mmdetection)  
+### DCNv1
+[Deformable Convolutional Networks (ICCV 2017)](http://openaccess.thecvf.com/content_ICCV_2017/papers/Dai_Deformable_Convolutional_Networks_ICCV_2017_paper.pdf) from MSRA  
+[Original: Caffe on Window-not released] | [MXnet](https://github.com/msracver/Deformable-ConvNets) | [pyTorch:mmdetection](https://github.com/open-mmlab/mmdetection)  
 ![](img/deformable_convolution.png)  
 
 ```math
@@ -140,8 +139,8 @@ y(p)=\sum^K_{k=1}w_k \dot x(p+p_k+\delta p_k)
 The backpropagation of `$\delta p_k$` is similar to [STN](#stn).
 comparing to STN, Deformable ConvNet samples the feature map in a local and dense manner  
 
-### DCNv2 (CVPR 2019)
-[Deformable ConvNets v2: More Deformable, Better Results](https://arxiv.org/abs/1811.11168) from MSRA  
+### DCNv2
+[Deformable ConvNets v2: More Deformable, Better Results (CVPR 2019)](https://arxiv.org/abs/1811.11168) from MSRA  
 1. Stacking More Deformable Conv Layers
 1. modulated deformable convolution
     ```math
@@ -149,14 +148,17 @@ comparing to STN, Deformable ConvNet samples the feature map in a local and dens
     ```
     output 3K channels, where first 2K correspond to `$ {\delta p_k}^K_{k=1} $`, remaining K channels further fed to sigmoid to obtain `$ \{\delta m_k\}^K_{k=1} $`
 1. R-CNN Feature Mimicking (knowledge distillation) to Faster R-CNN
+#### Remark
+Some said the detection result of DCNv1, v2 is not SOTA. However, the novelty is very high and it could be applied to many other img2img tasks with good result, such as [EDVR](./video/video_enhancement.md#edvr).  
+From the experience of training EDVR, training with DCN is unstable. DCN might output large offset and produces artifact for unseen pattern.  
 
-Some said the detection result of DCNv1, v2 is not SOTA. However, the novelty is very high and it could be applied to many other img2img tasks with good result, such as [EDVR]. From the experience of training EDVR, training with DCN is unstable.  
-## Deep Layer Aggregation, DLA (CVPR 2018)
-[Deep Layer Aggregation](https://arxiv.org/abs/1707.06484)  
+## Deep Layer Aggregation, DLA
+[Deep Layer Aggregation (CVPR 2018)](https://arxiv.org/abs/1707.06484)  
 image classification network with hierarchical skip connections
 
-## CSPNet (2019)
-[CSPNet: A New Backbone that can Enhance Learning Capability of CNN](https://arxiv.org/abs/1911.11929v1)  
+## CSPNet
+[CSPNet: A New Backbone that can Enhance Learning Capability of CNN (2019)](https://arxiv.org/abs/1911.11929v1)  
+Cross Stage Partial Networks  
 [Darknet code](https://github.com/WongKinYiu/CrossStagePartialNetworks) | 
 [AlexeyAB darknet](https://github.com/AlexeyAB/darknet/issues/4406)  
 

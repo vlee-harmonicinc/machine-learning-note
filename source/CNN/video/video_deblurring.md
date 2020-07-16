@@ -32,4 +32,5 @@ TSP is designed for hand-held cameras dataset from [DVD](#dvd) based on below as
 Hence it might not suitable for continuous motion blur (e.g. racing)
 
 ## BIN
-[Frame interpolation/BIN](video_frame_interpolation.html#bin)
+[Frame interpolation/BIN](video_frame_interpolation.html#bin)  
+[EDVR](#edvr) is better than BIN when only deblur
