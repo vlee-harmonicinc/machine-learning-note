@@ -34,16 +34,6 @@ Self-attention: map attention map by transpose (adapt non-local model of [Non-lo
 ##### Application
 [DeOldify](https://github.com/jantic/DeOldify) [mention](https://www.reddit.com/r/MachineLearning/comments/9tcfls/p_introducing_deoldify_a_progressive/) self-attention GAN work well.
 
-### BigGAN (ICLR 2019)
-[Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/abs/1809.11096) by DeepMind  
-__TPU advertisement__: 512 TPU  
-[PyTorch code](https://github.com/ajbrock/BigGAN-PyTorch) | 
-[\[P\] Want to train your own BigGAN on just 4-8 GPUs? Today we're releasing BigGAN-PyTorch](https://www.reddit.com/r/MachineLearning/comments/b461zt/p_want_to_train_your_own_biggan_on_just_48_gpus/)  
-high resolution (512x512) output, based on [SA-GAN](#sa-gan-pmlr-2019)  
-Not only increase the computation, there are still novel improvement to handle the big GAN.
-1. Batch size and regularization
-2. **truncation trick**: improve quality of output (trade-of diversity)
-3. why big GAn usually not stable and solutions
 
 ### Mode Seeking GAN (CVPR 2019)
 [Mode Seeking Generative Adversarial Networks for Diverse Image Synthesis](http://openaccess.thecvf.com/content_CVPR_2019/papers/Mao_Mode_Seeking_Generative_Adversarial_Networks_for_Diverse_Image_Synthesis_CVPR_2019_paper.pdf), MSGAN

@@ -5,6 +5,7 @@
 * [Conditional / Repersentation of GAN](GAN_repersentation_learning.md)
 * [image-to-image GAN](GAN_image2image.md)
 * [Unpaired translation](unpaired_GAN.md)
+* [GAN: improve resolution](GAN_resolution.md)
 * [GAN for data augmentation](GAN_for_data_augmentation.md)
 * [Adversarial Attacks](adversarial_attacks.md)
 

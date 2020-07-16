@@ -59,6 +59,9 @@ multi adaptation layers, multi-MMD ([A Kernel Two-Sample Test (JMLR 2012)](http:
 ### CDAN
 [Conditional Adversarial Domain Adaptation (NIPS 2018)](https://arxiv.org/abs/1705.10667)
 
+## Transferring GANs
+[Transferring GANs: generating images from limited data (ECCV 2018)](http://openaccess.thecvf.com/content_ECCV_2018/papers/yaxing_wang_Transferring_GANs_generating_ECCV_2018_paper.pdf)
+
 ## DNI
 [Deep Network Interpolation for Continuous Imagery Effect Transition (CVPR 2019)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Deep_Network_Interpolation_for_Continuous_Imagery_Effect_Transition_CVPR_2019_paper.pdf) - CUHK + SenseTime  
 [Project](https://xinntao.github.io/projects/DNI) | [github: pyTorch (the last section of readme)](https://github.com/xinntao/DNI)  
