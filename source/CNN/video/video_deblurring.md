@@ -22,7 +22,7 @@ No source code?
 ## CDVD-TSP
 [Cascaded Deep Video Deblurring Using Temporal Sharpness Prior (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Pan_Cascaded_Deep_Video_Deblurring_Using_Temporal_Sharpness_Prior_CVPR_2020_paper.pdf) - Nanjing University of Science and Technology  
 [Project](https://baihaoran.xyz/projects/cdvd-tsp/index.html) |
-[PyTorch code](https://github.com/csbhr/CDVD-TSP)
+[PyTorch code](https://github.com/csbhr/CDVD-TSP) | [Author's blog overview (chinese)](https://baihaoran.xyz/2020/05/04/Overview-Cascaded-Deep-Video-Deblurring-Using-Temporal-Sharpness-Prior.html)
 > * We propose a simple and compact deep CNN model that simultaneously **estimates the optical flow**(PWC-Net) and latent frames for video deblurring.
 > * To better explore the properties of consecutive frames, we develop a **temporal sharpness prior** to constrain deep CNN models. 
 ###### Other Note: Motion blur
