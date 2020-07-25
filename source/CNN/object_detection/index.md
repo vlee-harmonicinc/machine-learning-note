@@ -6,8 +6,10 @@
 * [Temporal Action Proposal Genration](temporal_proposal.md)
 * [Measurement of Object Detection](measurement.md)
 * [Face Recognition](face.md)
+## Pose related
 * [Pose Estimation](pose.md)
 * [Action Recognition](action.md)
+* [Motion Retargeting](motion_retargeting.md)
 
 ## History
 ![](img/detector_history.png)
