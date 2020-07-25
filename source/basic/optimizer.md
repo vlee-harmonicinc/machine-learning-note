@@ -20,11 +20,9 @@ v_t      & \leftarrow \gamma v_{t-1}+\eta \nabla_\theta L(\theta_{t-1}) \\
 [**Ada**ptive Subgradient Methods for Online Learning and Stochastic Optimization (JMLR 2011)](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)  
 adaptively tune learning rate based on the previous gradient
 ```math
-g_t \leftarrow \nabla_\theta L(\theta_{t-1}) \\
-G_t \leftarrow \sum^t_{\tau=1} g_\tau g_\tau^T = \sum^t_{\tau=1} g^2_\tau \\
-```
-```math
-\theta_t \leftarrow \theta_{t-1} - \underbrace{\frac{\eta}{\sqrt{G_t+\epsilon}}}_{\text{adaptive learning rate}} \nabla_\theta L(\theta_{t-1})
+g_t      & \leftarrow \nabla_\theta L(\theta_{t-1}) \\
+G_t      & \leftarrow \sum^t_{\tau=1} g_\tau g_\tau^T = \sum^t_{\tau=1} g^2_\tau \\
+\theta_t & \leftarrow \theta_{t-1} - \underbrace{\frac{\eta}{\sqrt{G_t+\epsilon}}}_{\text{adaptive learning rate}} \nabla_\theta L(\theta_{t-1})
 ```
 If the gradient of weight always small, amplify the learning rate. 
 If the gradient of weight always large, decrease the learning rate. 
@@ -64,6 +62,19 @@ m_t &\leftarrow \beta_1 \cdot m_{m-1}+(1-\beta_1) \cdot g_t \text{(Update biased
 u_t &\leftarrow max(\beta_2 \cdot u_{t-1}, |g_t|) \text{(Update the exponentially weighted infinity norm)}\\
 \theta_t &\leftarrow \theta_{t-1} - \frac{\alpha}{1-\beta^t_1}\cdot \frac{m_t}{v_t}
 ```
+#### Drawback
+[The Marginal Value of Adaptive Gradient Methods in Machine Learning (NIPS 2017)](https://arxiv.org/pdf/1705.08292.pdf) suggest use SGD(+momentum) over adaptive methods (AdaGrad, RMSProp, and Adam). Adam is fast but generalize worse than fine-tuned SGD.
+[reddit discussion](https://www.reddit.com/r/MachineLearning/comments/6d0p7h/r_the_marginal_value_of_adaptive_gradient_methods/) 
+
+## AdamW
+[Decoupled Weight Decay Regularization (ICLR 2019)](https://arxiv.org/pdf/1711.05101.pdf)  
+* **`$L_2$` regularization and weight decay are not identical.** The two techniques can be made equivalent for SGD by a reparameterization of the weight decay factor based on the learning rate; however, as is often overlooked, this is not the case for Adam. In particular, when combined with adaptive gradients, L2 regularization leads to weights with large historic parameter and/or gradient amplitudes being regularized less than they would be when using weight decay.  
+* **`$L2$` regularization is not effective in Adam.** One possible explanation why Adam and other adaptive gradient methods might be outperformed by SGD with momentum is that common deep learning libraries only implement L2 regularization, not the original weight decay. Therefore, on tasks/datasets where the use of L2 regularization is beneficial for SGD (e.g., on many popular image classification datasets), Adam leads to worse results than SGD with momentum (for which L2 regularization behaves as expected).
+* **Weight decay is equally effective in both SGD and Adam.** For SGD, it is equivalent to L2 regularization, while for Adam it is not. 
+* **Optimal weight decay depends on the total number of batch passes/weight updates.** Our empirical analysis of SGD and Adam suggests that the larger the runtime/number of batch passes to be performed, the smaller the optimal weight decay.
+* **Adam can substantially benefit from a scheduled learning rate multiplier.** The fact that Adam is an adaptive gradient algorithm and as such adapts the learning rate for each parameter does not rule out the possibility to substantially improve its performance by using a global learning rate multiplier, scheduled, e.g., by cosine annealing.
+
+![img](img/AdamW_algo.png)
 
 ## Cyclical Learning Rates
 [Cyclical Learning Rates for Training Neural Networks (WACV 2017)](https://arxiv.org/abs/1506.01186)  
