@@ -6,6 +6,7 @@
 * [Optical character recognition, OCR](optical_character_recognition.md)
 * [Image Retrieval](image_retrieval.md)
 * [Object Detection](object_detection/index.md)
+* [Pose & Action](pose/index.md)
 ## Video
 * [Video Enhancement](video/video_enhancement.md)
 * [Video Frame Interpolation](video/video_frame_interpolation.md)

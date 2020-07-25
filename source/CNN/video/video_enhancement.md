@@ -10,7 +10,7 @@
 **T**ask-**O**riented **Flow** (TOFlow or TOF), a motion representation learned in a selfsupervised, task-specific manner. 
 
 ## EDVR
-[EDVR: Video Restoration with Enhanced Deformable Convolutional Networks](https://arxiv.org/abs/1905.02716) from SenseTime, CUHK  
+[EDVR: Video Restoration with Enhanced Deformable Convolutional Networks (CVPR 2019)](https://arxiv.org/abs/1905.02716) from SenseTime, CUHK  
 [Project](https://xinntao.github.io/projects/EDVR) | [pyTorch (deperciated)](https://github.com/xinntao/EDVR) | [MMSR](https://github.com/open-mmlab/mmsr)
 ![](https://xinntao.github.io/projects/EDVR_src/arch.png)
 ##### Pre-deblur

@@ -12,7 +12,7 @@ re-implemented of OpenPose by tensorlayer. Version 2 of OpenPose Plus
 [tensorlayer/hyperpose](https://github.com/tensorlayer/hyperpose): A Fast & Flexible Library for Human Pose Estimation - Apache 2.0 license
 
 ## CPN
-[Cascaded pyramid network for multi-person pose estimation (CVPR 2018)](https://arxiv.org/abs/1711.07319)
+[Cascaded pyramid network for multi-person pose estimation (CVPR 2018)](https://arxiv.org/abs/1711.07319)  
 [tensorflow](https://github.com/chenyilun95/tf-cpn)
 
 ## MSPN
