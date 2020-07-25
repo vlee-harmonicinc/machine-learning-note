@@ -3,7 +3,7 @@
 ## PSNR
 ## SSIM
 ```math
-\text{SSIM}(x,y) &= \left[ l(x,y)^\alpha \cdot c(x,y)^\beta \cdot s(x,y)^\gamma \right]                
+\text{SSIM}(x,y) = \left[ l(x,y)^\alpha \cdot c(x,y)^\beta \cdot s(x,y)^\gamma \right]                
 ```
 l: luminance, c: contrast, s: structure  
 ```math

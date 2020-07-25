@@ -3,6 +3,8 @@
 * [Classifier](classifier.md)
 * [Dimension Reduction](dimension_reduction.md)
 * [Decision Tree](decision_tree.md)
+## Measurement
+* [Image Measurement](image_measure.md)
 
 ## Logistic Regression
 ## Support Vector Machine, SVM
