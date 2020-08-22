@@ -24,12 +24,6 @@ Could use unpaired datasets
 ## UNIT
 [UNIT](UNIT.md)  
 
-## vid2vid
-(put in this section because video considered as sequence of images, might be create new page if more video GAN)  
-[Video-to-Video Synthesis (NIPS 2018)](https://arxiv.org/abs/1808.06601) | 
-[Video-to-Video Synthesis](https://tcwang0509.github.io/vid2vid/) | 
-[github](https://github.com/NVIDIA/vid2vid) - by Nvidia (Includes works of pix2pixHD and SPADE)
-
 ## GauGAN
 ### SPADE (CVPR 2019)
 [Normalization/SPADE](/normalization.html#spade)
