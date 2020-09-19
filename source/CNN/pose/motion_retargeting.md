@@ -1,15 +1,10 @@
 # Motion Retargeting
 
-## PoseWarp
-[Synthesizing images of humans in unseen poses (CVPR 2018)](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/1978.pdf)  
-[CVPR 2018 Oral](https://youtu.be/XWr0Fg5XbPs?t=1970) | [Keras](https://github.com/balakg/posewarp-cvpr2018)  
-training on pairs of images within the **same** video
-
 ## LCM
 [Learning Character-Agnostic Motion for Motion Retargeting in 2D (SIGGRAPH 2019)](https://arxiv.org/abs/1905.01680) - Kfir Aberman  
 [Project](https://motionretargeting2d.github.io/) | [pyTorch 0.4](https://github.com/ChrisWu1997/2D-Motion-Retargeting)  
 Train a deep neural network to decompose temporal sequences of 2D poses into three components: **motion, skeleton, and camera view-angle**. Having extracted such a representation, we are able to re-combine motion with novel skeletons and camera views, and decode a retargeted temporal sequence. 
-Pose transfer/ performance cloning is not focus of this paper. It apply [Deep Video-Based Performance Cloning](https://arxiv.org/pdf/1808.06847.pdf) directly with skeleton retarget instead of global scaling.
+Pose transfer/ performance cloning is not focus of this paper. It apply [Deep Video-Based Performance Cloning](./pose2body.md) directly with skeleton retarget instead of global scaling.
 ![img](https://motionretargeting2d.github.io/images/recompose.gif)  
 dataset: synthetic paired data
 
