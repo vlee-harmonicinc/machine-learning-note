@@ -4,11 +4,19 @@
 [Project](https://people.eecs.berkeley.edu/~pathak/context_encoder/) | [torch code](https://github.com/pathak22/context-encoder)
 Semantic Image Inpainting with Deep Generative Models  
 GAN with encoding manifold, weighted context loss
+
 ## Globally and Locally Consistent Image Completion
 [Globally and Locally Consistent Image Completion (SIGGRAPH 2017)](http://iizuka.cs.tsukuba.ac.jp/projects/completion/data/completion_sig2017.pdf)  
 [Project](http://iizuka.cs.tsukuba.ac.jp/projects/completion/en/)  
 ![](img/completion_model.png)
 * global discriminator + local(patch) discriminator
+
+## Partial Convolutions
+[Image Inpainting for Irregular Holes Using Partial Convolutions (ECCV 2018)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Guilin_Liu_Image_Inpainting_for_ECCV_2018_paper.pdf) - Nvidia  
+[PyTorch](https://github.com/NVIDIA/partialconv) | [Playground](https://www.nvidia.com/research/inpainting/)  
+Existing deep learning based image inpainting methods use convolutional filter responses conditioned on both valid pixels as well as the *substitute values* in the masked holes . This often leads to artifacts such as color discrepancy and blurriness.
+Partial convolutions is **masked** and renormalized to be **conditioned on only valid pixels**.  
+Could also used for general CNN padding [Partial Convolution based Padding (2018)](https://arxiv.org/pdf/1811.11718.pdf)  
 
 # Image synthesis
 ## Stereo Magnification
