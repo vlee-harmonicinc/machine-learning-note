@@ -27,8 +27,8 @@ Image-to-image translation model like pix2pix could be considiered conditional G
 Apply GAN with learning conditions
 
 ## iGAN
-[Generative Visual Manipulation on the Natural Image Manifold (ECCV 2016)](https://arxiv.org/abs/1609.03552) - Adobe  
-[Theano](https://github.com/junyanz/iGAN)  
+[**i**nteractive **GAN**: Generative Visual Manipulation on the Natural Image Manifold (ECCV 2016)](https://arxiv.org/abs/1609.03552) - Adobe  
+[Project](http://efrosgans.eecs.berkeley.edu/iGAN/) | [Theano](https://github.com/junyanz/iGAN)  
 >  learn the natural image manifold directly from data using a generative adversarial neural network. We then define a class of image editing operations, and constrain their output to lie on that learned manifold at all times.
 
 architecture based on [DCGAN](#dcgan-iclr-2016)
@@ -67,3 +67,11 @@ The generator starts from a learned constant input and adjusts the “style” o
 ## StyleALAE
 Model of [antoencoder/ALAE](/generative_models/autoencoder.html#alae)  
 apply VAE on StyleGAN to enable *manipulations based on real images*, while previous generative GAN manipulate with generated images only.
+
+## Deep Generative Prior
+[Exploiting Deep Generative Prior for Versatile Image Restoration and Manipulation (ECCV 2020)](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470256.pdf)  
+[Youtube](https://youtu.be/p7ToqtwfVko?t=122) | [pyTorch >=1.0.1](https://github.com/XingangPan/deep-generative-prior) | [ECCV2020 Oral | Deep Generative Prior：实现通用的图像复原与编辑 - 知乎](https://zhuanlan.zhihu.com/p/165050802)  
+main idea: relax [GAN-Inversion, e.g. iGAN](#igan) so that generator can be **fine-tuned** among with latent vector. iGAN latent space limited, precision might not enough. Fine-tuning generator increase precision.  
+1. Feature matching loss from the coupled discriminator
+1. Progressive reconstruction: fine-tunes the generator gradually from the shallowest layers(high level configuration) to the deepest layers(texture) to preserve image prior
+![img](https://github.com/XingangPan/deep-generative-prior/raw/master/data/restoration.gif)  
