@@ -53,3 +53,12 @@ real-time
 ![](img/segmentation-ICNet.png)
 based on PSPNet
 ### Cascade Feature Fusion, CFF 
+
+## DANet
+[Dual attention network for scene segmentation (CVPR 2019)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Fu_Dual_Attention_Network_for_Scene_Segmentation_CVPR_2019_paper.pdf)  
+[pyTorch 1.4.0](https://github.com/junfu1115/DANet)  
+> integrate local features with their global dependencies based on the self-attention mechanism.
+#### PAM
+> The position attention module selectively aggregates the feature at each position by a weighted sum of the features at all positions. Similar features would be related to each other regardless of their distances. 
+#### CAM
+> Meanwhile, the channel attention module selectively emphasizes interdependent channel maps by integrating associated features among all channel maps.
