@@ -22,8 +22,9 @@ learnable parameters: scale and bias `$\gamma, \beta$`
 For Prediction, use population mean and population variance calucated during training.  
 The effectiveness diminishes when the training minibatches are small.  
 ### Why BatchNorm works?
-Origin paper said BatchNorm reduce *Internal Covariate Shift*: the change in the distribution of network activations due to the change in network parameters during training.  
-[How Does Batch Normalization Help Optimization? (NIPS 2018)](https://arxiv.org/abs/1805.11604) demonstrate is NOT Internal covariate shift and suggest it makes the optimization **landscape** significantly **smoother**. 
+Original paper said BatchNorm reduce *Internal Covariate Shift*: the change in the distribution of network activations due to the change in network parameters during training.  
+[How Does Batch Normalization Help Optimization? (NIPS 2018)](https://arxiv.org/abs/1805.11604) demonstrate is NOT Internal covariate shift and suggest it makes the optimization **landscape** significantly **smoother**.  
+[High Frequency Component Helps Explain the Generalization of Convolutional Neural Networks (CVPR 2020)](https://arxiv.org/pdf/1905.13545.pdf) suggested that batchNorm pick more high frequence component, which reduce robustness. It is probably why [Batch Normalization is a Cause of Adversarial Vulnerability (ICML 2019)](https://arxiv.org/abs/1905.02161).
 
 ## Layer Normalization
 [Layer Normalization (NIPS 2016)](https://arxiv.org/abs/1607.06450)  
