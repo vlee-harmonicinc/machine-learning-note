@@ -19,6 +19,11 @@ For inference, only the portrait image `$I$` is required.
 [Project](https://sites.google.com/view/deepimagematting)  
 Adobe Deep Image Matting Dataset: not public :(
 
+## BASNet
+[BASNet: Boundary-Aware Salient Object Detection (CVPR 2019)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_BASNet_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf)  
+[pyTroch 0.4.0](https://github.com/NathanUA/BASNet)
+
+<!--
 ## LFM
 [A Late Fusion CNN for Digital Matting (CVPR 2019)](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_A_Late_Fusion_CNN_for_Digital_Matting_CVPR_2019_paper.pdf)  
 [Project page on github, with Keras code in OneDrive](https://github.com/yunkezhang/FusionMatting)
@@ -27,6 +32,7 @@ Adobe Deep Image Matting Dataset: not public :(
 [Author's reply](https://zhuanlan.zhihu.com/p/128146732)
 > 我们放出的model是在DIM上pretrain，然后在Human Matting Dataset上finetune的model. 
 > due to Alibaba's policy we cannot share our human matting dataset currently
+-->
 
 ## Background Matting: The World is Your Green Screen
 [Background Matting: The World is Your Green Screen (CVPR 2020)](https://arxiv.org/abs/2004.00626)  
