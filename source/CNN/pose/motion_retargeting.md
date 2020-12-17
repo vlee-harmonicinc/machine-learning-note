@@ -1,10 +1,10 @@
 # Motion Retargeting
-
+* also see [Human Image Synthesis](./human_image_synthesis.md) for output part
 ## LCM
 [Learning Character-Agnostic Motion for Motion Retargeting in 2D (SIGGRAPH 2019)](https://arxiv.org/abs/1905.01680) - Kfir Aberman  
 [Project](https://motionretargeting2d.github.io/) | [pyTorch 0.4](https://github.com/ChrisWu1997/2D-Motion-Retargeting)  
 Train a deep neural network to decompose temporal sequences of 2D poses into three components: **motion, skeleton, and camera view-angle**. Having extracted such a representation, we are able to re-combine motion with novel skeletons and camera views, and decode a retargeted temporal sequence. 
-Pose transfer/ performance cloning is not focus of this paper. It apply [Deep Video-Based Performance Cloning](./pose2body.md) directly with skeleton retarget instead of global scaling.
+Pose transfer/ performance cloning is not focus of this paper. It apply [Deep Video-Based Performance Cloning](./human_image_synthesis.md) directly with skeleton retarget instead of global scaling.
 ![img](https://motionretargeting2d.github.io/images/recompose.gif)  
 dataset: synthetic paired data
 

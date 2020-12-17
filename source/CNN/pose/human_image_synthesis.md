@@ -1,15 +1,20 @@
-# Pose-to-Body
+# Human Synthesis
 also see [Video Synthesis](../video/video_synthesis.md)
+<!--
+Pose-to-Body - focuse on pose, single image
+video synthesis - focuse on sequences of image
+-->
 
 ## Types
 A. Train a uniform generator for different videos. Reference appearance frame and pose/motion are input as condition during inference.  
 B. Train a generator on frames of **same** video. The appearance is encoded in the model. Only pose/motion input is required during inference.  
 Generally, type B seems give nicer result with less artifact, but need to re-train a new model for each traget person. Used in motion re-target papers.
+type B:  
 - vid2vid
 - Deep Video-Based Performance Cloning
 - Everybody Dance Now
 
-## Pose Guided Person Image Generation
+## `$PG^2$`
 [Pose Guided Person Image Generation (NIPS 2017)](https://arxiv.org/abs/1705.09368)  
 [python 2.7 + tensorflow-gpu 1.4.1](https://github.com/charliememory/Pose-Guided-Person-Image-Generation)  
 ![](https://raw.githubusercontent.com/charliememory/Pose-Guided-Person-Image-Generation/master/imgs/Paper-framework.svg)
@@ -39,11 +44,11 @@ Source	Image	Segmentation + Spatial Transformation + Foreground	Synthesis + Back
 [Progressive Pose Attention Transfer for Person Image Generation (CVPR 2019)](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Progressive_Pose_Attention_Transfer_for_Person_Image_Generation_CVPR_2019_paper.pdf)  
 [PyTorch 0.3.1 or 1.0](https://github.com/tengteng95/Pose-Transfer)
 <p float="center">
-	<img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women1.jpg' width="100"/>
-  	<img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/walkfront.gif' width="100"/>
-  	<img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women2.jpg' width="100"/>
-	<img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/dance.gif' width="100"/>
-	<img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women3.jpg' width="100"/>
+    <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women1.jpg' width="100"/>
+    <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/walkfront.gif' width="100"/>
+    <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women2.jpg' width="100"/>
+    <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/dance.gif' width="100"/>
+    <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women3.jpg' width="100"/>
     <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/dance2.gif' width="100"/>
     <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/women4.jpg' width="100"/>
     <img src='https://raw.githubusercontent.com/tengteng95/Pose-Transfer/master/imgs/dance3.gif' width="100"/>
@@ -59,3 +64,14 @@ Source	Image	Segmentation + Spatial Transformation + Foreground	Synthesis + Back
 [Python 2, pyTorch 1.0.1 ](https://github.com/UBC-Computer-Vision-Group/DwNet)
 ![](https://raw.githubusercontent.com/UBC-Computer-Vision-Group/DwNet/master/demo/teaser.png)
 -->
+
+## Liquid Warping GAN
+[Liquid Warping GAN: A Unified Framework for Human Motion Imitation,
+Appearance Transfer and Novel View Synthesis (ICCV 2019)](https://arxiv.org/pdf/1909.12224.pdf)
+[SVIP Website](https://svip-lab.github.io/project/impersonator.html) | [PyTorch: svip-lab/impersonator](https://github.com/svip-lab/impersonator)  
+** type A  
+![](https://svip-lab.github.io/project_img/impersonator/pipeline.png)
+* **3D body mesh recovery module** to *disentangle the pose and shape*, which not only model the joint location and rotation but also characterize the personalized body shape. 
+* To *preserve the source information*, such as texture, style, color, and face identity, we propose a **Liquid Warping GAN with Liquid Warping Block (LWB)** that propagates the source information in both image and feature spaces, and synthesizes an image with respect to the reference. Specifically, the source features are extracted by a denoising convolutional auto-encoder for characterizing the source identity well. 
+* Furthermore, our proposed method is able to support a more *flexible warping from multiple sources*. 
+* In addition, we build a *new dataset*, namely Impersonator (iPER) dataset, for the evaluation of human motion imitation, appearance transfer, and novel view synthesis.
