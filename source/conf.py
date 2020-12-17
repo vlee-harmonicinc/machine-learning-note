@@ -181,4 +181,4 @@ def setup(app):
             'enable_eval_rst': True,
             }, True)
     app.add_transform(AutoStructifyPatch) # replace AutoStructify to patch parse_ref
-    app.add_stylesheet('css/style.css')
+    app.add_css_file('css/style.css') # app.add_stylesheet() is deprecated
