@@ -31,6 +31,6 @@ d^2{((m,C),{m_w, C_w)} = ||m-m_w||^2_2 + Trace(\sigma+\sigma_w - 2 \sqrt{(\sigma
 ## Kernel Inception Distance (KID)
 [Demystifying mmd gans (ICLR 2018)](https://arxiv.org/pdf/1801.01401.pdf)  
 [OpenReview](https://openreview.net/forum?id=r1lUOzWCW)  
-* the squared [MMD](/math/mmd.md) between Inception representations, with polynomial kernel, `$k(x, y)={(\frac{1}{d}x^T y+1)}^3$` where d is the representation dimension
+* the squared [MMD](/math/MMD.md) between Inception representations, with polynomial kernel, `$k(x, y)={(\frac{1}{d}x^T y+1)}^3$` where d is the representation dimension
 * similar to FID, also using Inception-v3, but KID does not assume a parametric form for the distribution of activation and is unbiased
 * the lower KID, the better GAN

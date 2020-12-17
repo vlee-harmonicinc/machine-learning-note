@@ -12,6 +12,7 @@
 * [Video Frame Interpolation](video/video_frame_interpolation.md)
 * [Video Deblurring](video/video_deblurring.md)
 * [Video Fingerprint](video/video_fingerprint.md)
+* [Video Synthesis](video/video_synthesis.md)
 
 ## 3D
 * [3D Object Detection](3D/3D_object_detection.md)
