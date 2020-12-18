@@ -5,7 +5,7 @@
 * [Motion Retargeting](motion_retargeting.md)
 * [Human Image Synthesis](human_image_synthesis.md)
 
-## Description
+**Description**
 * [Pose Estimation](pose.md) - extract pose from image, prediction pose type with image as input
 
 * [Action Recognition](action.md) - prediction action type with image sequence as input
